@@ -1,2 +1,11 @@
-# consistency
-The art of science of consistency
+# The art and science of consistency
+
+Two core aspects of Celeste speedrunning are movement and consistency, and the two are frequently in conflict with each other. Different players may value one over the other, but both are required for improvement. Plenty of resources exist that discuss and showcase the aspects of movement, whether it be guides on basic movement mechanics and macroscale strats (e.g. [AverageImposter](https://www.youtube.com/watch?v=-SQKKG7Dz5c&embeds_referring_euri=https%3A%2F%2Fwww.speedrun.com%2F), [Vapo](https://docs.google.com/spreadsheets/d/1HsFtpz_wfA4yrMuZOMX-f69O6ZEZph8db1ReKX8SNIY/edit?gid=0#gid=0)) or explanations of fundamental microscale optimizations and patterns (e.g. [Tiyo](https://youtu.be/DOCTFCWPW5I), [yujene](https://www.youtube.com/watch?v=82gpR9rozdE)). 
+
+Guides for consistency within the Celeste speedrunning community are harder to come by because of how abstract and personal it can be. Common advice and understanding of consistency is to just "practice more." [Buhbai's video](https://youtu.be/qii8_efLPe8) is perhaps this community's most well-known resource for further ideas, where he discusses the importance of segmenting practice, practicing with context, and developing a flow. [Wonderginger documented of his experience](https://gist.github.com/WonderGinger/8df5904f296afb8d40f879767d0ebfe1) of how he managed his time on a limited schedule, how he designed his practice routine, and lessons that he learned. That said, it's hard to come up with universal concrete advice on consistency, as everyone has different tastes. The struggle and the beauty is that there is no right answer: part of the journey is finding what works for you and forging your own path forward. 
+
+Running this game has taught me so much on how to push myself to learn, improve, and put together a performance. Playing the piano in my childhood has also been helpful in shaping my mindset. I wanted to share my thoughts on how I approach consistency in two branches: the art and the science. The art describes more of my overall approach and mentality to practice and runs. The science goes into highly technical aspects on how I look to optimize consistency: maximizing use of the game's leniency mechanics, and toeing the line of the fundamental movement vs consistency tradeoff. 
+
+The art
+
+The science
