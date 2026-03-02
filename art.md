@@ -1,3 +1,5 @@
+[back to main](https://github.com/kwan22/consistency/blob/main/README.md)
+
 # The art of consistency
 
 <img src="./media/gdq_hearts.png" width="960"/>
