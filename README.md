@@ -6,6 +6,6 @@ Guides for consistency within the Celeste speedrunning community are harder to c
 
 Running this game has taught me so much on how to push myself to learn, improve, and put together a performance. Playing the piano in my childhood has also been helpful in shaping my mindset. I wanted to share my thoughts on how I approach consistency in two branches: the art and the science. The art describes more of my overall approach and mentality to practice and runs. The science goes into highly technical aspects on how I look to optimize consistency: maximizing use of the game's leniency mechanics, and toeing the line of the fundamental movement vs consistency tradeoff. 
 
-The art
+[The art](https://github.com/kwan22/consistency/blob/main/art.md)
 
-The science
+The science (WIP)
