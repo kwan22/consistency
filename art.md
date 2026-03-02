@@ -2,7 +2,7 @@
 
 <img src="./media/gdq_hearts.png" width="960"/>
 
-The following discusses various aspects of my personal approach to consistency. The overarching philosophy is that Celeste speedrunning is a performing art, which serves as a basis for my own principles on how to stay consistent.
+The following discusses various aspects of my personal approach to consistency. The overarching philosophy is that Celeste speedrunning is a performing art, which serves as a basis for my principles on how to build and maintain consistency.
 
 - [Strat throttling](#strat-throttling)
 - [Whack-a-mole](#whack-a-mole)
@@ -47,7 +47,7 @@ Experienced players understand the importance of practicing in smaller segments,
 Trying to grind out a strong IL time, unless you are doing it for the sake of it as an IL, is easy to get stuck for the wrong reasons. Why do you need to play the entirety of Summit for practice? Would you ever practice 1a Start - 4a Shrine as a single segment? Don't worry about getting a clean Summit time when practicing it as a segment: focus on if you are doing what you want to do! Achieving a segment goal time has little reflection on my confidence in that segment. I may never get a clean run that I would be satisfied with as an IL, but still have it sufficiently practiced for fullgame purposes, as long as I understand what I need to do. On the flip side, just because I got one clean run of an IL doesn't mean that everything within is guaranteed to be solved.
 
 ## Maintenance and oil checks
-<img src="./media/2a_intervention_ddj.png" width="960"/>
+<img src="./media/8c_tourney.png" width="960"/>
 
 >"Never assume you've learned anything" - [JM](https://pastebin.com/FLa4rh1H)
 
@@ -62,26 +62,26 @@ As much of a proponent I am for dropping hard strats, the decision to drop any s
 
 > "Planting seeds in the forest when your front yard is wilting." - secureaccount
 
-Another major pitfall I see is on optimization of death strats. I cannot understate the power of opting for re-entry where possible. Having to learn multiple strats for one room just adds mental burden and dilutes our practice. Why should you spend time practicing a situation you seldom find yourself in? Additionally, re-entering lets us get in another rep of the entry strat and probe if we indeed have a problem or if it was just a statistical anomaly. 
+Another major pitfall I see is on optimization of death strats. I cannot understate the power of opting for re-entry where possible. Having to learn multiple strats for one room just adds mental burden and dilutes our practice. Why should you spend time practicing a situation you seldom find yourself in? Additionally, re-entering lets us get in another rep of the entry strat and probe if we indeed have a problem or if it was just a statistical anomaly. It doesn't matter if re-entry is slow and maybe loses 2s. That's not the point: that's being concerned with the result and not the process. If you feel you have the capacity for learning optimized death strats and want to add them to your plan, then sure, go for it at your own risk. I would just warn you of how easy it is to hit diminishing returns with them and potential harm from splitting your attention. 
 
-"Re-entry is slow and loses 2s!", or "I hate deathlooping to the entry strat!" That's not the point: that's being concerned with the result and not the process. If you feel you have the capacity for learning optimized death strats and want to add them to your plan, then sure, go for it at your own risk. I would just warn you of how easy it is to hit diminishing returns with them. 
-
-"I'm always encountering the death cycle!" Well then that calls for the chopping block: fix it or drop it.
-
-In some cases, re-entry is not an option. For cases where I must have a death strat, I have 2 criteria
+In some cases, re-entry is not an option. For cases where I need/want a death strat, or backup strats in general, I have 2 criteria
 - Easy to remember
-- Easy to execute
-  
-The combination of these two means that I don't need to spend time practicing them and I can pull them up at any time. I also apply this philosophy to death strats where re-entry is possible (7a 1500m in-between room). Death strats that can transpose onto the entry strat are also nice (8a vertical) because they simplify the mental burden. **In general, keep your backups as simple as possible**: don't spend your energy practicing complicated and nuanced backups.
+- Easy to execute 
 
-Imagine having to memorize all the possible death strats in the final room of Resort ARB. There are 4 variations you would need to know: entry, death+2 berries, death+1 berry, and death+0 berries. Do you really want to spend the time and energy to learn all of them AND keep them all maintained? Are you going to put "3a final, death cycle with 1 berry" into your practice routine? What if there were THREE berries in ONE room? Or even more? Your time would be much better spent elsewhere. This is why level 1 habits and red-dot are so powerful: have a basic idea of how to move and dodge major hazards, and then just get the hell out of there. Don't dilute your practice on situations you don't see often. 
+The combination of these two means that I don't need to spend time practicing them and I can pull them up at any time. I also apply this philosophy to death strats where re-entry is possible. Death strats that can transpose onto the entry strat are also nice because they simplify the mental burden. **In general, keep your backups as simple as possible**: don't spend your energy practicing complicated and nuanced backups: that's diluting your practice on situations you shouldn't be seeing often. <br>
+<img src="./media/7a_1500m_short.png" width="480"/>
+<img src="./media/8a_vertical_backup.png" width="480"/> <br>
+
+Imagine having to memorize all the possible death strats in the final room of Resort ARB. There are 4 variations you would need to know: entry, death+2 berries, death+1 berry, and death+0 berries. Do you really want to spend the time and energy to learn all of them AND keep them all maintained? Are you going to put "3a final, death cycle with 1 berry" into your practice routine? What if there were THREE berries in ONE room? Or even more? Your time would be much better spent elsewhere. This is why [level 1 habits and red-dot are so powerful](https://github.com/kwan22/habits/blob/main/level1.md): have a basic idea of how to move and dodge major hazards, and then just get the hell out of there. <br>
+<img src="./media/3arb_final_1.png" width="480"/>
+<img src="./media/3arb_final_2.png" width="480"/><br>
 
 ## No reset runs
 <img src="./media/1xcity.png" width="960"/>
 
 >"An attempt isn't a failure or a success. It's just an expression of what your body knows." - [JM](https://pastebin.com/FLa4rh1H)
 
-A lot of this discussion culminates into why I almost exclusively do no-resets. The goal is to follow through on a performance and see if I am executing what I want to do. The no-resets diagnose of my performance and sheds light on what the problem spots are. The time will naturally follow as I improve my performance. My fullgame sessions look something like this
+A lot of this discussion culminates into why I almost exclusively do no-resets in my fullgame sessions. The goal is to follow through on a performance and see if I am executing what I want to do. The no-resets diagnose of my performance and sheds light on what the problem spots are. The time will naturally follow as I improve my performance. My fullgame sessions look something like this
 - quick oil check, 10 minutes max
 - send no resets for 1-3 hours
 - think about and write down any recurring patterns in my mistakes
@@ -101,16 +101,13 @@ Resetting for the goal of getting a better time or to adhere some pace benchmark
 1. You are gambling. In this case, consistency is not a value. None of this discussion holds any meaning if you are gambling. 
 2. You need an emotional reset. This is a complicated, highly personal matter with no one-size-fits-all answer.
    
-Sticking to the philosophy of speedrunning being a performing art helps me emotionally detach myself from the pace and removes any expectations I have about the run. I have no idea if the run is going to be good, or bad, or if I am going to play well or poorly. Instead I stay focused on the run as a reflection of myself. Have I actually learned everything I thought I did? Of all the problems that are happening, which ones feel like routine execution variance, and which ones do I feel like I don't know what is happening? No matter how good or bad the run is, it is a part of who I am, so I will accept everything it has to offer. I've found this to be far more instructive than resetting simply because the run is no longer PBable or the run is going poorly.
+Sticking to the philosophy of speedrunning being a performing art helps me emotionally detach myself from the pace and removes any expectations I have about the run. I have no idea if the run is going to be good, or bad, or if I am going to play well or poorly. Instead I stay focused on the run as a reflection of myself. Have I actually learned everything I thought I did? Of all the problems that are happening, which ones feel like routine execution variance, and which ones do I feel like I don't know what is happening? No matter how good or bad the run is, it is a part of who I am, so I will accept everything it has to offer. I've found this to be far more instructive than resetting simply because the run is no longer PBable or is otherwise suffering from large timelosses.
 
 In the game's story, Badeline introduces herself as "Part of you." In some sense, resetting runs to me has the same spirit as the Reflection storyline where Madelines tries to leave Badeline behind. It hides your flaws and protects your ego, but doesn't actually help you solve your problems. You can accomplish so much more by working together. <br>
 <img src="./media/6a_badeline_1.png" width="480"/>
 <img src="./media/6a_badeline_2.png" width="480"/> <br>
 <img src="./media/6a_badeline_3.png" width="480"/> 
 <img src="./media/6a_badeline_4.png" width="480"/> <br>
-
-Finally, an excerpt from my favorite manga, Fullmetal Alchemist. <br>
-<img src="./media/fma.png" width="480"/>
 
 ## Conclusions
 
@@ -122,3 +119,6 @@ To summarize the key points:
 - no resets are important as a candid self-evaluation
 
 This is just my personal flavor on approaching and maintaining consistency. Everyone has to find what works for themselves: I wouldn't unilaterally prescribe any one method for everyone. My hope is that you can find something instructive from my perspective and have some introspection on your own practice and fullgame routines. I don't always follow everything here religiously either. At the end of the day, the ultimate goal is to have fun and be proud of your accomplishments.
+
+Finally, an excerpt from my favorite manga, Fullmetal Alchemist. <br>
+<img src="./media/fma.png" width="480"/>
