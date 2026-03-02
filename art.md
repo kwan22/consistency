@@ -1,4 +1,4 @@
-# The art of consistency
+<img width="1259" height="366" alt="2a_intervention_ddj" src="https://github.com/user-attachments/assets/27c99792-6cc7-481b-93fd-ff82f8b53320" /># The art of consistency
 
 <img src="./media/gdq_hearts.png" width="960"/>
 
@@ -43,6 +43,8 @@ When reviewing your runs, you may look at your journal or Livesplit deltas and j
 Actually identifying the most problematic moles can be tricky since, unless you a dedicated coach to guide you, it is up to you to isolate the signal from the noise. Part of my approach to this is an emotional, vibes-based response. I will just feel a general fear or annoyance as a pattern of making a particular mistake begins to show up. It's really not that different from watching the moles come and go. A portion of my mindset during runs is dedicated to this surveillance. This is where, again, I find the low death, safe strat playstyle to be so much more tractable. It's just easier to identify where the real problem spots are when there aren't that many problems to begin with, and not get caught up in statistical anomalies. It's a concentrated mental capacity onto a focused space. **The whack-a-mole game is easier to solve when there aren't that many moles to begin with.**
 
 ## Practicing segments
+<img src="./media/7arb_2500m_1.png" width="960"/>
+
 >"it's easy to go wrong here, and one way i've gone wrong in the past is playing checkpoint and IL whack-a-mole, where i play a segment with the goal of getting a PB or "clean run", which usually takes a long time. this strategy is not inherently inefficient, but in the context of practicing for a fullgame run it's not ideal" - [WonderGinger](https://gist.github.com/WonderGinger/8df5904f296afb8d40f879767d0ebfe1)
 
 Experienced players understand the importance of practicing in smaller segments, whether it be rooms, checkpoints, or ILs. The pitfall I see too often is overvaluing the time and not the process. It may be fun to grind out ILs/checkpoints for a particular target time, but in the context of fullgame, my goal is seeing whether I am executing my plan or not. For this reason, I tend to choose segments that are not defined by the arbitrary boundaries of checkpoints and ILs, but on what I feel contains the elements that need the most practice. Checkpoint and IL times are more useful to me as standardized benchmarks for movement, not as indicators of readiness. 
@@ -50,6 +52,7 @@ Experienced players understand the importance of practicing in smaller segments,
 Trying to grind out a strong IL time, unless you are doing it for the sake of it as an IL, is easy to get stuck for the wrong reasons. Why do you need to play the entirety of Summit for practice? In the same vein, you should hold the standards of a "clean Summit" to the similar standards as you do would for a clean "1a Start - 4a Shrine." Speaking of, is that ever a segment you would practice? Don't worry about getting a clean Summit time when practicing it as a segment: focus on if you are doing what you want to do! Achieving a segment goal time has little reflection on my confidence in that segment. I may never get a clean run that I would be satisfied with as an IL, but still have it sufficiently practiced for fullgame purposes, as long as I understand what I need to do. On the flip side, just because I got one clean run of an IL doesn't mean that everything within is fullgame ready.
 
 ## Maintenance and oil checks
+<img src="./media/2a_intervention_ddj.png" width="960"/>
 
 >"Never assume you've learned anything" - [JM](https://pastebin.com/FLa4rh1H)
 
