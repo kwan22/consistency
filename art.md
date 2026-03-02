@@ -1,4 +1,4 @@
-<img width="1259" height="366" alt="2a_intervention_ddj" src="https://github.com/user-attachments/assets/27c99792-6cc7-481b-93fd-ff82f8b53320" /># The art of consistency
+# The art of consistency
 
 <img src="./media/gdq_hearts.png" width="960"/>
 
