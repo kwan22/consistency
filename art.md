@@ -16,7 +16,7 @@ The following discusses various aspects of my personal approach to consistency. 
 ## Strat throttling
 <img src="./media/secure_3a_heart.png" width="960"/>
 
-> "Just play Celeste" - yujene
+> "Just play Celeste" - [yujene](https://youtu.be/dMn6YJ-0fPs?si=AogDpwHAza9Q0MPt&t=2933)
 
 Strat selection is one of the major avenues of artistic self-expression in Celeste. There are so many strats that to choose, plus the varying amount of degrees of optimization, that give rise to a high granularity of speeds and accessiblity to gradual improvement. One of the age-old questions is how to choose new strats and going for risky vs safe strats. Everyone has different playstyles, each with their advantages and drawbacks. I won't rehash all the arguments here. It should be no surprise that I am biased towards safer strats, mainly because I think their accessibility makes them more suitable for building fundamentals and gradual improvement. 
 
