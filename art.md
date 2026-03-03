@@ -16,7 +16,7 @@ The following discusses various aspects of my personal approach to consistency. 
 ## Strat throttling
 <img src="./media/secure_3a_heart.png" width="960"/>
 
-> The current All Hearts world record, achieved in a tournament race, features a suboptimal route for the 3a heart that loses 10 seconds.
+> "Just play Celeste" - yujene
 
 Strat selection is one of the major avenues of artistic self-expression in Celeste. There are so many strats that to choose, plus the varying amount of degrees of optimization, that give rise to a high granularity of speeds and accessiblity to gradual improvement. One of the age-old questions is how to choose new strats and going for risky vs safe strats. Everyone has different playstyles, each with their advantages and drawbacks. I won't rehash all the arguments here. It should be no surprise that I am biased towards safer strats, mainly because I think their accessibility makes them more suitable for building fundamentals and gradual improvement. 
 
