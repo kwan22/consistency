@@ -83,9 +83,9 @@ Imagine having to memorize all the possible death strats in the final room of Re
 
 >"An attempt isn't a failure or a success. It's just an expression of what your body knows." - [JM](https://pastebin.com/FLa4rh1H)
 
-A lot of this discussion culminates into why I almost exclusively do no-resets in my fullgame sessions. The goal is to follow through on a performance and see if I am executing what I want to do. The no-resets diagnose of my performance and sheds light on what the problem spots are. The time will naturally follow as I improve my performance. My fullgame sessions look something like this
+A lot of this discussion culminates into why I almost exclusively do no-resets in my fullgame sessions. Generally, the basic reason for no-resets is to keep everything derusted and get your reps in on everything you need to perform on. My own additional goal is to follow through on my performance and see if I am executing what I want to do. The no-resets diagnose of my performance and sheds light on what the problem spots are. The time will naturally follow as I improve my performance. My fullgame sessions look something like this
 - quick oil check, 10 minutes max
-- send no resets, usually 1-2 hours
+- send no resets, 1-3 reps
 - think about and write down any recurring patterns in my mistakes
 - practice those at the end of the session if I have the time/energy, 1 hour max
   
@@ -100,7 +100,7 @@ It's important to not only send no resets runs, but also understand the objectiv
 </details>
 
 Resetting for the goal of getting a better time or to adhere some pace benchmark is fundamentally against the idea of the run being a performance. That said, there are two kinds of resets I can get behind:
-1. You are gambling. In this case, consistency is not a value. None of this discussion holds any meaning if you are gambling. 
+1. You are gambling. In this case, consistency is not a core value.
 2. You need an emotional reset. This is a complicated, highly personal matter with no one-size-fits-all answer.
    
 Sticking to the philosophy of speedrunning being a performing art helps me emotionally detach myself from the pace and removes any expectations I have about the run. I have no idea if the run is going to be good, or bad, or if I am going to play well or poorly. Instead I stay focused on the run as a reflection of myself. Have I actually learned everything I thought I did? Of all the problems that are happening, which ones feel like routine execution variance, and which ones do I feel like I don't know what is happening? No matter how good or bad the run is, it is a part of who I am, so I will accept everything it has to offer. I've found this to be far more instructive than resetting simply because the run is no longer PBable or is otherwise suffering from large timelosses.
