@@ -2,7 +2,7 @@
 
 # The art of consistency
 
-<img src="./media/v_kwan_49.png" width="360"/>
+<img src="./media/art/v_kwan_49.png" width="360"/>
 
 The following discusses various aspects of my personal approach to consistency. The overarching philosophy is that Celeste speedrunning is a performing art, which serves as a basis for my principles on how to build and maintain consistency.
 
@@ -14,7 +14,7 @@ The following discusses various aspects of my personal approach to consistency. 
 - [No reset runs](#no-reset-runs)
 
 ## Strat throttling
-<img src="./media/secure_3a_heart.png" width="960"/>
+<img src="./media/art/secure_3a_heart.png" width="960"/>
 
 > "Just play Celeste" - [yujene](https://youtu.be/dMn6YJ-0fPs?si=AogDpwHAza9Q0MPt&t=2933)
 
@@ -29,7 +29,7 @@ There's a lot of discussion on what the most efficient practice methods are. I d
 Low mental load is particularly amenable for those of us who have limited time availability on playing Celeste. I might not have time to be grinding out all the hard strats in the entire any% category when I have less than an hour of available playtime per day. It might take me weeks or months to learn hard strats, by which time I've forgotten what I learned at the start and I get stuck in an endless cycle of relearning and derusting. I don't have to let that stop me from playing the game: there is so much of the game I can improve on. Just play the game, build fundamentals, and I will improve over time. Hard strats are just easier to pick up with stronger fundamentals.
 
 ## Whack-a-mole
-<img src="./media/4a_snowball_final.png" width="960"/>
+<img src="./media/art/4a_snowball_final.png" width="960"/>
 
 >"Separate the results from the execution and the process" - [TGH](https://www.youtube.com/watch?v=XSDbB8dlrIE)
 
@@ -40,7 +40,7 @@ When reviewing your runs, you may look at your journal or Livesplit deltas and j
 Actually identifying the most problematic moles can be tricky since, unless you a dedicated coach to guide you, it is up to you to isolate the signal from the noise. Part of my approach to this is an emotional, vibes-based response. I will just feel a general fear or annoyance as a pattern of making a particular mistake begins to show up. It's basically just watching the moles come and go. A portion of my mindset during runs is dedicated to this surveillance. This is where, again, I find the low death (or more generally, low-mistake), safe strat playstyle to be so much more tractable. It's just easier to identify where the real problem spots are when there aren't that many problems to begin with, and not get caught up in statistical anomalies. It's a concentrated mental capacity onto a focused space. **The whack-a-mole game is easier to solve when there aren't that many moles to begin with.**
 
 ## Practicing segments
-<img src="./media/7arb_2500m_1.png" width="960"/>
+<img src="./media/art/7arb_2500m_1.png" width="960"/>
 
 >"it's easy to go wrong here, and one way i've gone wrong in the past is playing checkpoint and IL whack-a-mole, where i play a segment with the goal of getting a PB or "clean run", which usually takes a long time. this strategy is not inherently inefficient, but in the context of practicing for a fullgame run it's not ideal" - [WonderGinger](https://gist.github.com/WonderGinger/8df5904f296afb8d40f879767d0ebfe1)
 
@@ -49,7 +49,7 @@ Experienced players understand the importance of practicing in smaller segments,
 Trying to grind out a strong IL time, unless you are doing it for the sake of it as an IL, is easy to get stuck for the wrong reasons. Why do you need to play the entirety of Summit for practice? Would you ever practice 1a Start - 4a Shrine as a single segment? Don't worry about getting a clean Summit time when practicing it as a segment: focus on if you are doing what you want to do! Achieving a segment goal time has little reflection on my confidence in that segment. I may never get a clean run that I would be satisfied with as an IL, but still have it sufficiently practiced for fullgame purposes, as long as I understand what I need to do. On the flip side, just because I got one clean run of an IL doesn't mean that everything within is guaranteed to be solved.
 
 ## Maintenance and oil checks
-<img src="./media/8c_tourney.png" width="960"/>
+<img src="./media/art/8c_tourney.png" width="960"/>
 
 >"Never assume you've learned anything" - [JM](https://pastebin.com/FLa4rh1H)
 
@@ -60,7 +60,7 @@ Between runs or as part of warm-up at the start of a session, I like to perform 
 As much of a proponent I am for dropping hard strats, the decision to drop any strat should be done outside of actual fullgame runs. Dropping a strat mid-run because you're on a good pace and don't want to throw the run is being focused on the time and not the performance. Your fullgame runs should be a commitment of the plan you want to execute on, and confidence in your stratset is key. During runs, you may find it hard to hit certain strats while handling nerves on a good pace. Dropping a strat for nerve control is understandable: it's along the same lines as mental load management. Either way, you should commit to a decision and stick to it during fullgame.
 
 ## Death strats
-<img src="./media/3a_towels.png" width="960"/>
+<img src="./media/art/3a_towels.png" width="960"/>
 
 > "Planting seeds in the forest when your front yard is wilting." - secureaccount
 
@@ -71,15 +71,15 @@ In some cases, re-entry is not an option. For cases where I need/want a death st
 - Easy to execute 
 
 The combination of these two means that I don't need to spend time practicing them and I can pull them up at any time. I also apply this philosophy to death strats where re-entry is possible. Death strats that can transpose onto the entry strat are also nice because they simplify the mental burden. **In general, keep your backups as simple as possible**: don't spend your energy practicing complicated and nuanced backups: that's diluting your practice on situations you shouldn't be seeing often. <br>
-<img src="./media/7a_1500m_short.png" width="480"/>
-<img src="./media/8a_vertical_backup.png" width="480"/> <br>
+<img src="./media/art/7a_1500m_short.png" width="480"/>
+<img src="./media/art/8a_vertical_backup.png" width="480"/> <br>
 
 Imagine having to memorize all the possible death strats in the final room of Resort ARB. There are 4 variations you would need to know: entry, death+2 berries, death+1 berry, and death+0 berries. Do you really want to spend the time and energy to learn all of them AND keep them all maintained? Are you going to put "3a final, death cycle with 1 berry" into your practice routine? What if there were THREE berries in ONE room? Or even more? Your time would be much better spent elsewhere. This is why [level 1 habits and red-dot are so important](https://github.com/kwan22/habits/blob/main/level1.md): have a basic idea of how to move and dodge major hazards, and then just get the hell out of there. <br>
-<img src="./media/3arb_final_1.png" width="480"/>
-<img src="./media/3arb_final_2.png" width="480"/><br>
+<img src="./media/art/3arb_final_1.png" width="480"/>
+<img src="./media/art/3arb_final_2.png" width="480"/><br>
 
 ## No reset runs
-<img src="./media/1xcity.png" width="960"/>
+<img src="./media/art/1xcity.png" width="960"/>
 
 >"An attempt isn't a failure or a success. It's just an expression of what your body knows." - [JM](https://pastebin.com/FLa4rh1H)
 
@@ -94,7 +94,7 @@ It's important to not only send no resets runs, but also understand the objectiv
 <details>
   <summary> 1:1x city and a dream</summary>
   
-  <img src="./media/27any.jpg" width="960"/>
+  <img src="./media/art/27any.jpg" width="960"/>
   
   This is a bit of a meme about my first 27 any%, but also reflects my values. Why did I not reset here? Is 27 viable with a 1:1x city? The point is not about whether 27 is viable with a 1:1x city, or that I am 10 seconds behind what I am capable of in the first minute, or that I was able to make up the 10 seconds lost by locking in. The point is that you can make mistakes anywhere, but you don't need to let that deter you from following through on the motions. Do I think 1:1x City is "27 viable?" Not in the sense that a 27 runner should be capable of much better, but it doesn't matter if it happens in fullgame. It just means I made mistakes that happened to be in an arbitrarily short segment near the beginning of the run. I would be on the lookout if I started to repeatedly make those same mistakes in past or future runs, but not that I need to practice City as a whole or that I should be resetting to save 10s in earlygame and lose sight of the process.
 </details>
@@ -106,10 +106,10 @@ Resetting for the goal of getting a better time or to adhere some pace benchmark
 Sticking to the philosophy of speedrunning being a performing art helps me emotionally detach myself from the pace and removes any expectations I have about the run. I have no idea if the run is going to be good, or bad, or if I am going to play well or poorly. Instead I stay focused on the run as a reflection of myself. Have I actually learned everything I thought I did? Of all the problems that are happening, which ones feel like routine execution variance, and which ones do I feel like I don't know what is happening? No matter how good or bad the run is, it is a part of who I am, so I will accept everything it has to offer. I've found this to be far more instructive than resetting simply because the run is no longer PBable or is otherwise suffering from large timelosses.
 
 In the game's story, Badeline introduces herself as "Part of you." In some sense, resetting runs to me has the same spirit as the Reflection storyline where Madelines tries to leave Badeline behind. It hides your flaws and protects your ego, but doesn't actually help you solve your problems. You can accomplish so much more by working together. <br>
-<img src="./media/6a_badeline_1.png" width="480"/>
-<img src="./media/6a_badeline_2.png" width="480"/> <br>
-<img src="./media/6a_badeline_3.png" width="480"/> 
-<img src="./media/6a_badeline_4.png" width="480"/> <br>
+<img src="./media/art/6a_badeline_1.png" width="480"/>
+<img src="./media/art/6a_badeline_2.png" width="480"/> <br>
+<img src="./media/art/6a_badeline_3.png" width="480"/> 
+<img src="./media/art/6a_badeline_4.png" width="480"/> <br>
 
 ## Conclusions
 
@@ -123,4 +123,4 @@ To summarize the key points:
 This is just my personal flavor on approaching and maintaining consistency. Everyone has to find what works for themselves: I wouldn't unilaterally prescribe any one method for everyone. My hope is that you can find something instructive from my perspective and have some introspection on your own practice and fullgame routines. I don't always follow everything here religiously either. At the end of the day, the ultimate goal is to have fun and be proud of your accomplishments.
 
 Finally, an excerpt from my favorite manga, Fullmetal Alchemist. <br>
-<img src="./media/fma.png" width="480"/>
+<img src="./media/art/fma.png" width="480"/>
