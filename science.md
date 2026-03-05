@@ -19,12 +19,24 @@ Some frame windows can be frustrating to deal with if not all frames within the 
 - Divergent: small changes diverge into different outcomes
 
 ### Convergence and divergence
-Normalization is a common way to approach convergence, and the two often go hand-in-hand. Transitions are the ultimate example, setting Madeline to an exact directional position (x-pos for horizontal transitions, y-pos for vertical) and rounding off subpixels on both position and speed. Small differences in crossing a transition can converge onto the exact same game state. The normalizing properties of transitions enable many setups that would otherwise be nearly impossible to make consistent. Bubbles also behave similarly, normalizing both x and y position and speed.
+Normalization is a common way to approach convergence, and the two often go hand-in-hand. Transitions are the ultimate example, setting Madeline to exactly the boundary (x-pos for horizontal transitions, y-pos for vertical) and rounding off subpixels on both position and speed. Small differences in crossing a transition can converge onto the exact same game state. The normalizing properties of transitions enable many setups that would otherwise be nearly impossible to make consistent. Bubbles also behave similarly, normalizing both x and y position and speed.
 
-Convergence can still be achieved without a true normalization process, depending on the scope. Broadly, most continuous frame windows lends themselves to convergence, where each frame might be slightly different but sufficiently similar to make progress to the next sequence. Cornercorrection and floorsnapping often give sufficiently similar outcomes for many scenarios, but some exceptions exist due to particular gemoetries or subpixels. For example, cornercorrection is required to extend a 2-tile horizontal dash, while floorsnapping will fail to extend. Cornercorrection also does not round off subpixels, occasionally leading to some niche scenarios such as the 3a shaft demo in ARB. 
+Case study: hypering before transition (discretized hyper trajectory, 2a downright cb, 3b start 2, 6b falling super diags, 6b reprieve, 7a 500m cornerslip, 7a 2500m gem)
+
+Convergence can still be achieved without a true normalization process, depending on the scope. Broadly, most continuous frame windows lends themselves to convergence, where each frame might be slightly different but sufficiently similar to make progress to the next sequence. Cornercorrection and floorsnapping often give sufficiently similar game states for many scenarios, but some exceptions exist due to particular geometries or subpixels. For example, cornercorrection is required to extend a 2-tile horizontal dash, while floorsnapping will fail to extend. Cornercorrection also does not round off subpixels, occasionally leading to some niche scenarios such as the 3a shaft demo in ARB. 
 
 Half-gravity can expand convergence by extending the duration Madeline exists at a given y-position. This is typically used for line-ups with max-height jumps, e.g. 3a shaft demo and various other demos out of a max height hyper. On the other hand, half-gravity can be detrimental sometimes, by introducing deadframes on some strats, or more fundamentally, adding unnecessary airtime. [Avoiding half-gravity can also be convergent on jumps and wallbounces,](https://www.youtube.com/watch?v=82gpR9rozdE), where releasing jump on different frames gives the exact same vertical trajectory. A good deal of RTA movement optimization comes from putting yourself in a position to enjoy the luxury of a convergent jump release timing. 
 
-Divergence is frequently avoided but sometimes manageable, such as the aforementioned 5a archimedes. High-speed (grounded ultra) coyote often lends itself to divergence: the strat requires high-speed to enable longer-distance coyote, but the high speed inherently spreads out your possible trajectories (2a start under). In some cases, the different trajectories are reactable (5a rescue).
+Divergence is frequently avoided but sometimes manageable, such as the aforementioned 5a archimedes. High-speed (grounded ultra) coyote often lends itself to divergence: the strat requires high-speed to enable longer-distance coyote, but the high speed inherently spreads out your possible trajectories (2a start under). In some cases, the different trajectories are reactable (5a rescue). Releasing forward to slow down to create a larger framewindow for a wallbounce (or other similar actions) can be divergent: releasing forward at different times ends up with different viable timings for the updash. 
+
+Case study: 5a start forward wave
+
+### Buffering
+
+At first glance, buffering seems like the epitome of convergence: inputs of different timings come out at a unified timing. And in many ways, it is. The transition buffer is maybe the most common one, granting perfectly normalized movement. Even being slightly late on the transition buffer is frequently inconsequential, and in some cases, useful from a consistency perspective. 
+
+3a final example, first pillar wave
+
+7a 1500m arb winged
 
 ## Variable reduction
