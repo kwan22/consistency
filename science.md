@@ -29,10 +29,7 @@ Buffering is another common way to add convergence: inputs of different timings 
 
 DashCD setups: 7a 2500m arb, 6a hollows, 8a hotm-h, 5b
 
-
-
-7a 1500m arb winged
-
+wavedash for height setup: 5a heart, 8a itc hyper cb
 
 Half-gravity can expand convergence by extending the duration Madeline exists at a given y-position. This is typically used for line-ups with max-height jumps, e.g. 3a shaft demo and various other demos out of a max height hyper. On the other hand, half-gravity can be detrimental sometimes, by introducing deadframes on some strats, or more fundamentally, adding unnecessary airtime. [Avoiding half-gravity can also be convergent on jumps and wallbounces,](https://www.youtube.com/watch?v=82gpR9rozdE), where releasing jump on different frames gives the exact same vertical trajectory. A good deal of RTA movement optimization comes from putting yourself in a position to enjoy the luxury of a convergent jump release timing. 
 
@@ -52,11 +49,11 @@ Normalizing the trajectory to slow down to enlarge a frame window can be done in
 
 3a final transition hyper
 
+6b multiboost: convergent jump release on dash crystal freeze frame
+
 Dash attack leniency
 
 3a shaft
-
-6b multiboost
 
 7a flag 1
 
