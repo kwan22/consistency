@@ -27,7 +27,7 @@ Convergence can still be achieved without a true normalization process, dependin
 
 Buffering is another common way to add convergence: inputs of different timings generate the exact same result. While chains of consecutive buffers can quickly become complicated, a few isolated buffers showcase the concept of convergence quite well.
 
-DashCD setups: 7a 2500m arb, 6a hollows, 8a hotm-h, 5b
+DashCD setups: 7a 2500m arb, 6a hollows, 8a hotm-h, 5b heart
 
 wavedash for height setup: 5a heart, 8a itc hyper cb
 
@@ -48,6 +48,8 @@ Normalizing the trajectory to slow down to enlarge a frame window can be done in
 3a towels wallkick
 
 3a final transition hyper
+
+5a eyeball dashcd speed manip
 
 6b multiboost: convergent jump release on dash crystal freeze frame
 
