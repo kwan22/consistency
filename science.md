@@ -52,7 +52,7 @@ Half-gravity can expand convergence by extending the duration Madeline exists at
 
 wavedash for height setup: 5a heart, 8a itc hyper cb, wave vs hyper meme
 
-### Divergence
+## Divergence
 
 Divergence is frequently avoided but sometimes manageable, such as the aforementioned 5a archimedes. High-speed (grounded ultra) coyote often lends itself to divergence: the strat requires high-speed to enable longer-distance coyote, but the high speed inherently spreads out your possible trajectories (2a start under). In some cases, the different trajectories are reactable (5a rescue). In general, high-speed movement inherently lends itself quickly to divergence because each subsequent frame leads to a large change in game state by definition of high speed.
 
