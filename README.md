@@ -1,6 +1,6 @@
 # The art and science of consistency
 
-<img src = "./media/gdq_hearts.png" width = 960>
+<img src = "./media/art/gdq_hearts.png" width = 960>
 
 Two core aspects of Celeste speedrunning are movement and consistency, and the two are frequently in conflict with each other. Different players may value one over the other, but both are required for improvement. Plenty of resources exist that discuss and showcase the aspects of movement, whether it be guides on basic movement mechanics and macroscale strats (e.g. [AverageImposter](https://www.youtube.com/watch?v=-SQKKG7Dz5c&embeds_referring_euri=https%3A%2F%2Fwww.speedrun.com%2F), [Vapo](https://docs.google.com/spreadsheets/d/1HsFtpz_wfA4yrMuZOMX-f69O6ZEZph8db1ReKX8SNIY/edit?gid=0#gid=0)) or explanations of fundamental microscale optimizations and patterns (e.g. [Tiyo](https://youtu.be/DOCTFCWPW5I), [yujene](https://www.youtube.com/watch?v=82gpR9rozdE)). 
 
