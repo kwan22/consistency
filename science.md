@@ -21,7 +21,7 @@ Some frame windows can be frustrating to deal with if not all frames within the 
 - Convergent: small changes in the action converge to the same outcome
 - Divergent: small changes in the action diverge into different outcomes
   
-Changes in action generally refer to differences in timing or spacing. Convergence means the outcome is insensitive to small changes in the action: differences are either completely nonexistent or sufficiently negligible. This describes a more general concept of a frame window: the window defines how small those "small changes" need to be. Outside of the frame window, the outcome diverges into different possibilities.
+Changes in action generally refer to differences in timing or spacing. Convergence means the outcome is insensitive to small changes in the action: differences are sufficiently negligible, or in many cases, completely nonexistent. This describes a more general concept of a frame window: the window defines how small those "small changes" need to be. Outside of the frame window, the outcome diverges into different possibilities.
 
 ## Convergence
 Normalization is a common way to approach convergence, and the two often go hand-in-hand. Transitions are the perhaps the best example, setting Madeline's position to exactly on the boundary and rounding off subpixels on both position and speed. Small differences in crossing a transition can converge onto the exact same game state. The normalizing properties of transitions enable many setups that would otherwise be difficult to make consistent. Bubbles also behave similarly, normalizing both x and y position and speed.
