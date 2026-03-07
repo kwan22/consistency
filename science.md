@@ -33,7 +33,6 @@ Buffering is perhaps the epitome of convergence: inputs of different timings gen
 wavedash for height setup: 5a heart, 8a itc hyper cb, wave vs hyper meme
 
 ### The pre-transition hyper
-(discretized hyper trajectory, 2a downright cb, 3b start 2, 6b falling super diags, 6b reprieve, 7a 500m cornerslip, 7a 2500m gem)
 
 Hypering just before a transition is highly convergent across different starting x-positions because of the structure of the hyper trajectory and the properties of transitions. Some seemingly pixel-perfect or subpixel-precise strats involving a hyper before transition frequently have a pixel range that are a multiple of ~5 in which they work because this convergence.
 
