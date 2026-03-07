@@ -46,7 +46,9 @@ The plot below shows the possible hyper trajectories, y-position and x-speed (u)
 
   <img src="./media/science/pretrans_hyper.png" width="480"/>
 
-Many strats call for a jump release upon transition, which automatically converges y-speeds. Even for strats that do not release jump on transition, the y-speed will still be the same as long as jump timer is active until the next action. One caveat on the y-position is the possibility of y-subpixel offsets causing rounding differences, which shows up occasionally on a few strats but can be controlled with deliberate movement. A convenient way to count this in-game with TAS tools is to check the DashCD or jump timer when you cross transition. 
+  > In-game TAS tools can easily measure the hyper trajectory by seeing the DashCD or Jump timer values during transition.
+
+Many strats call for a jump release upon transition, which automatically converges y-speeds. Even for strats that do not release jump on transition, the y-speed will still be the same as long as jump timer is active until the next action. One caveat on the y-position is the possibility of y-subpixel offsets causing rounding differences, which shows up occasionally on a few strats but can be controlled with deliberate movement. 
 
 <details>
   <summary>Using calculus to compare to a pre-transition super</summary>
