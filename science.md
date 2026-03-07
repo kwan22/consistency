@@ -30,6 +30,8 @@ Convergence can still be achieved without a true normalization process, dependin
 ### Buffering
 Buffering is perhaps the epitome of convergence: inputs of different timings generate the exact same result. While chains of consecutive buffers can quickly become complicated and arguably divergent, isolated buffers showcase the concept of convergence quite well.
 
+7b 0m spring
+
 wavedash for height setup: 5a heart, 8a itc hyper cb, wave vs hyper meme
 
 ### The pre-transition hyper
