@@ -5,8 +5,9 @@
 <img src="./media/science/7b_1500m_1.png" width="960"/>
 
 The following discusses some common patterns that I use in my own speedruns. The discussion will be highly technical, including frame data, pixel/speed values, inner game mechanics, etc. to justify the logic. That said, the recurring themes are 
-1. maximizing use of the game's leniency mechanics,
-2. making small time sacrifices to relax precision and/or simplify inputs.
+1. Maximizing use of the game's leniency mechanics.
+2. Eliminating variables to reduce input complexity and remove failure modes.
+3. Making small time sacrifices to relax precision and/or simplify inputs.
 
 - [Leniency](#leniency)
 
@@ -28,7 +29,29 @@ Normalization is a common way to approach convergence, and the two often go hand
 Convergence can still be achieved without a true normalization process, depending on the scope. Broadly, most continuous frame windows lend themselves to convergence, where each frame might be slightly different but sufficiently similar to make progress to the next sequence. Cornercorrection and floorsnapping often give sufficiently similar game states for many scenarios, but some exceptions exist due to particular geometries or subpixels. For example, cornercorrection is required to extend a 2-tile horizontal dash, while floorsnapping will fail to extend. Cornercorrection also does not round off subpixels, occasionally leading to some niche scenarios such as the 3a shaft demo in ARB. 
 
 ### Buffering
-Buffering is perhaps the epitome of convergence: inputs of different timings generate the exact same result. While chains of consecutive buffers can quickly become complicated and arguably divergent, isolated buffers showcase the concept of convergence quite well. As mentioned earlier, transition buffers are an extremely common example
+Buffering is perhaps the epitome of convergence: inputs of different timings generate the exact same result. While chains of consecutive buffers can quickly become complicated and arguably divergent, a low density of buffers showcase the concept of convergence quite well. Common, visually obvious examples include transition buffers, cb and cornerkick setups, and pause-buffering as a whole. 
+
+DashCD is one of the less visually obvious mechanics but has incredible potential in creating buffer setups. Besides the strats the essentially require it, a lot of leniency on otherwise hard strats can be gained by putting yourself in a position to buffer out of DashCD. Setting up the positioning may cost a small amount of time, letting us play the speed vs precision tradeoff game. 
+  
+  <img src="./media/science/7arb_2500m_dashcd.webp" width="480"/> <img src="./media/science/7arb_2500m_dashcd_labeled.png" width="480"/> 
+
+  Normally with a neutral transition super, the updash on this wallbounce is a 3f window. By carefully positioning the rightdash in the previous room, this updash can instead be transformed into a buffer (5f). Furthermore, there is a 1-1 correspondence between each of the possible updashes and the rightdashes upon transition (blue bar). With dash speed moving at 4 px/frame and 3 possible rightdashes (DashCD frames upon transition), there are thus 4 px/frame x 3 frames = 12 pixels from which the rightdash can be started and the updash is bufferable. The pixel window can be converted into a frame window assuming we are walking thru the window: with walking speed at 1.5 px/frame, it's an 8f window to time the rightdash.  
+  
+  Each of the colored red/green/yellow boxes corresponds to a rightdash+buffered updash pair. Dashing in the leftside red box means the buffered updash comes out on the rightside red box, etc. By starting the rightdash in the 12px window, we remove the failure mode of updashing too early. The updash itself is bufferable, but depending on where the rightdash is, the updash may have extra leniency frames. For example, if rightdashing from the left red box, the updash may be from the right red box (5f buffer), or it can also be slightly late: 1f late updashes on the right green box, 2f late updashes on the right yellow box. Rightdashing from the left yellow box has no added leniency frames beyond the buffer, as the 1st possible updash is also the last one. [Link to stratpost](https://discord.com/channels/403698615446536203/617809769322774533/1086837734607441931).
+
+  <img src="./media/science/8a_hotmh_ultra.webp" width="480"/> 
+
+Coincidentally, the ultra of the coreblock in 8a-HOTM-H has almost exactly the same structure. It's a 3f window to downright after a buffered transition hyper to avoid negative liftboost. That 3f can then be transformed into a buffer out of DashCD by carefully starting the demo in a 12px window. I won't go thru all the details, but I will mention some nuances. The failure mode of not properly buffering the transition hyper is more relevant here compared to the 2500m ARB example above. The choice of demo vs downright also matters from a leniency perspective. Horizontal dashes move 4 px/frame, and a downright here would move ~3.4 px/frame. The higher speed from a horizontal dash effective expands the pixel range over which this concept works, i.e. the dash timing upon transition is less sensitive to a faster dash speed (see sensitivity analysis below for a more generalized form of this). [Link to stratpost](https://discord.com/channels/403698615446536203/617809769322774533/1380229565674164317).
+
+<img src="./media/science/5b_mm_final.webp" width="480"/> <img src="./media/science/6a_hollows_kevinslide.webp" width="480"/> 
+
+This is not limited to transition buffers: we can apply the same principle to other dash tech, for example an instant hyper before transition, as seen in [habits level 4](https://github.com/kwan22/habits/blob/main/level4.md#dashcd). These also remove the variable of timing the buffered jump out of transition. 
+
+<img src="./media/science/5a_eyeball_dashcd.webp" width="480"/> <img src="./media/science/5a_eyeball_dashcd_labeled.png" width="480"/> 
+
+A personal variation of mine is to use DashCD to control my speed entering the eyeball room of 5A. The room itself has many variations, and making the cycle requires good speed generation and preservation. Good speed generation means good Theo ultras, and good speed preservation, in practice, means fitting in has many bhops as possible. I particularly struggled with fitting in small bhops near the beginning, so instead I opted to line up my DashCD entering the eyeball room itself such that the first Theo ultra is as fast as possible given a buffered transition hyper into downright out of DashCD, and simplify the beginning of the room with just 1 big bhop (monkey brain hold jump) instead of 2 small bhops that can easily go wrong. In terms of speed generation, dashing from as far away as possible (entering with the lowest DashCD) leads to the least loss to air friction and consequently the fastest ultra upon a buffered downright. However in this case, the lip at the start of the eyeball room presents some complications. If DashCD is too low when entering eyeball room, there is not enough height+distance covered to avoid the lip with a buffered hyper+downright, resulting in a grounded ultra on the upper platform before Theo (sometimes it still works but I wouldn't count on it). 
+
+I settled with aiming for DashCD(5) when entering eyeball room: DashCD(4) creates more speed and is easier to make the fast cycle, DashCD(3) is too far and runs into the grounded ultra issue, and DashCD(6) works but is just a tad more difficult. Recall that each dash timing corresponds to a 4px range of the starting demo because of the 4px/frame speed of the horizontal demo. To translate these numbers into something more practical: I aim to be near the left edge of the platform (red dashed line). A nice feedback cue is if I see the 2nd dash silhouette (indicated by the blue arrow) appear before transition: this indicates DashCD(5) or less. If I don't see the 2nd dash silhouette appear during transition, I am more mentally prepared to have less speed on the first Theo ultra. 
 
 7b 0m spring
 
@@ -58,15 +81,17 @@ Many strats call for a jump release upon transition, which automatically converg
   
   <img src="./media/science/3b_start2_labeled.png" width="480"/> <br>
   The first cb in 3b Start-2 has a 25 pixel range to get a good cb because of this convergence. There are 5 possible hypers to cross the transition (blue) and get a good cb, spread out across 25 pixels of initial x-pos (x0, red). For the outcome of "good first cb", the pre-transition hyper is highly convergent across different initial starting positions. That said, the following upright cb being successful has some divergence from x0 because of the slightly different speeds mattering. In general, the longer a sequence is, the more opportunities there are for divergence to arise, as small differences in intial conditions propagate to increasingly larger changes in outcomes. Thankfully, Celeste provides many anchors for normalization, making chaining many short sequences amenable to convergence. [Link to stratpost](https://discord.com/channels/403698615446536203/617809769322774533/1232274832390098974).
+
+  check 4a start hyper cb data, after triplat
   
   <img src="./media/science/6b_reprieve_3_entry.webp" width="480"/> <br>
-  Fastfalling directly into the 1st bumper in 6b Reprieve-3 seems absolutely insane without the right setup. Fortunately, we have our friend, the convergent pre-transition hyper, to help us out. Incidentally, optimal movement at the end of Reprieve-2 sets this up perfectly: buffered right dash out of Badeline recoil sets us up on the left edge of the 5 pixel window of the winning hyper trajectory. That said, because the landing is on the left edge, there is some room to the right of the optimal landing that is still viable. For example, sliding forward slightly on landing via being late on buffering instant hyper (up to 3f) still gives the exact same hyper trajectory. Not that a speedrunner should be aiming for this, it is just a leniency that exists. The more speedrunner-relevant consequence is that differences in Badeline recoil between entry and death can be resolved by simply not fastfalling after the right dash, as not fastfalling lands us slightly further to the right but still within the 5px window. [Link to stratpost](https://discord.com/channels/403698615446536203/1137847274609848463/1137847278363738233). 
+  Fastfalling directly into the 1st bumper in 6b Reprieve-3 seems absolutely insane without the right setup. Fortunately, we have our friend, the convergent pre-transition hyper, to help us out. Incidentally, optimal movement at the end of Reprieve-2 sets this up perfectly: buffered rightdash out of Badeline recoil sets us up on the left edge of the 5 pixel window of the winning hyper trajectory. That said, because the landing is on the left edge, there is some room to the right of the optimal landing that is still viable. For example, sliding forward slightly on landing via being late on buffering instant hyper (up to 3f) still gives the exact same hyper trajectory. Not that a speedrunner should be aiming for this, it is just a leniency that exists. The more speedrunner-relevant consequence is that differences in Badeline recoil between entry and death can be resolved by simply not fastfalling after the rightdash, as not fastfalling lands us slightly further to the right but still within the 5px window. [Link to stratpost](https://discord.com/channels/403698615446536203/1137847274609848463/1137847278363738233). 
 
   <img src="./media/science/7a_500m_cornerslip.webp" width="480"/> <br>
   A personal variation I haven't seen anyone else do: I find a pre-transition hyper to be much more consistent in setting up the cornerslip than transition hyper. While transition hypers are well-known for their normalization properties, a major variable in using a transition hyper here is the jump release timing. Pre-transition hyper shifts the variance from jump release timing to hyper positioning, which as we've been saying, is highly convergent. More speed loss to air friction also may mean a larger window for the cornerslip itself. All this may be at the cost of a few frames compared to the transition hyper. In general, the transition hyper is amazing on horizontal convergence, but less so on vertical for short hypers, as each frame of jump release gives a different outcome (e.g. the landing position for the bhop on this strat). The pre-transition hyper suffers a small loss of horizontal convergence, but is far more vertically convergent for short hypers. The rest of the strat still has its difficulties, but I find this variation more accessible.
 
 <details>
-  <summary>Sensitivity comparison between hypers and supers (warning: calculus)</summary>
+  <summary>Sensitivity analysis: a comparison between hypers and supers (warning: calculus)</summary>
 
   In general, the sensitivity coefficient is expressed as a derivative of the outcome with respect to the input (action). With the power of calculus, we can quickly do this sensitivity analysis of the hyper trajectory (y and u) to initial starting position (x) without jumping through all the hoops of graphs and long-winded explanations. Let v = y-speed = dy/dt, u = x-speed = dx/dt
 
@@ -78,7 +103,7 @@ Many strats call for a jump release upon transition, which automatically converg
   du/dt is just air friction, which is a constant <br>
   du/dx ~ 1/u
 
-  Comparing hypers and supers, hypers have lower v and higher u, so it can be easily seen that dy/dx and du/dx are larger for supers compared to hypers, thus one can expect pre-transition supers to be more sensitive (less convergent) on starting x-position. The main missing piece of this analysis is the rounding and discretization that happens on transition that enables certain strats. There are a few spots where pre-transition supers enable certain strats, though these are less common than their hyper counterparts.
+  This is all just a concise, mathematical way of expressing all the numbers I was discussing earlier. Comparing hypers and supers, hypers have lower v and higher u, so it can be easily seen that dy/dx and du/dx are larger for supers compared to hypers, thus one can expect pre-transition supers to be more sensitive (less convergent) on starting x-position. The main missing piece of this analysis is the rounding and discretization that happens on transition that enables certain strats. There are a few spots where pre-transition supers enable certain strats, though these are less common than their hyper counterparts.
 
   <img src="./media/science/6b_falling_super_diags.webp" width="480"/>
   <img src="./media/science/7a_1500m_super.webp" width="480"/>
@@ -95,25 +120,17 @@ Half-gravity can expand convergence by extending the duration Madeline exists at
 
 Divergence is often difficult to deal with, but is sometimes manageable, such as the aforementioned 5a archimedes. High-speed (grounded ultra) coyote often lends itself to divergence: the strat requires high-speed to enable longer-distance coyote, but the high speed inherently spreads out your possible trajectories (2a start under). In some cases, the different trajectories are reactable (5a rescue). In general, high-speed movement inherently lends itself quickly to divergence because each subsequent frame leads to a large change in game state by definition of high speed.
 
-In the name of consistency, the general goal is to mitigate divergence as much as possible, usually by a setup that costs a small bit of time. One way to mitigate divergence is to slow down to expand a frame window. Releasing forward to slow down to create a larger framewindow for a wallbounce (or other similar actions) can itself be divergent though: releasing forward at different times ends up with different viable timings for the updash. However, there are many ways to normalize a trajectory to slow down for different objectives, thereby increasing a frame window. Many buffer setups work this way, though buffering is not the only means to this end.
+In the name of consistency, the general goal is to mitigate divergence as much as possible, usually by a setup that costs a small bit of time. One way to mitigate divergence is to slow down to expand a frame window. Releasing forward to slow down to create a larger framewindow for a wallbounce (or other similar actions) can itself be divergent though: releasing forward at different times ends up with different viable timings for the updash. However, there are many ways to slow down to increase a frame window in a more normalized manner. 
 
 Case study: 5a start forward wave
-
-5a eyeball dashcd speed manip
-
-DashCD setups: 7a 2500m arb, 6a hollows, 8a hotm-h, 5b heart
 
 1a zkad route wave?
 
 4a granny ultra
 
-3a hub2
-
 3a towels wallkick
 
 3a final transition hyper
-
-6b multiboost: convergent jump release on dash crystal freeze frame
 
 Dash attack leniency
 
@@ -121,6 +138,8 @@ Dash attack leniency
 
 7a flag 1
 
-Buffer chains, 7arb 1500m triple demo, yujene depths final spam
+6b multiboost: convergent jump release on dash crystal freeze frame
 
-## Variable reduction
+3a hub2
+
+Buffer chains, 7arb 1500m triple demo, yujene depths final spam
