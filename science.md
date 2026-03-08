@@ -32,7 +32,7 @@ Changes in action generally refer to differences in timing or spacing. These are
 
   <img src="./media/science/5a_archimedes_crop.png" width="480"/> 
 
->5a "Archimedes": the updash is a 4f window, but each frame requires a different timing on pressing right.
+>5a "Archimedes": the updash is a 4f window, but each frame requires a different follow-up.
 
 Normalization is a common way to approach convergence, and the two often go hand-in-hand. Transitions are the perhaps the best example, setting Madeline's position to exactly on the boundary and rounding off subpixels on both position and speed. Small differences in crossing a transition can converge onto the exact same game state. The normalizing properties of transitions enable many setups that would otherwise be difficult to make consistent. Bubbles also behave similarly, normalizing position and speed and having a well-determined trajectory.
 
