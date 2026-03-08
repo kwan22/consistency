@@ -2,12 +2,15 @@
 
 # The science of consistency
 
-<img src="./media/science/7b_1500m_1.png" width="960"/>
+<img src="./media/science/7b_1500m_1.png" width="480"/>
 
 The following discusses some common patterns that I use in my own speedruns. The discussion will be highly technical, including frame data, pixel/speed values, inner game mechanics, etc. to justify the logic. That said, the recurring themes are 
 1. Maximizing use of the game's leniency mechanics.
-2. Eliminating variables to reduce input complexity and remove failure modes.
-3. Making small time sacrifices to relax precision and/or simplify inputs.
+2. Understanding the variables that your objective is most sensitive to.
+3. Eliminating variables to reduce input complexity and remove failure modes.
+4. Making small time sacrifices to relax precision and/or simplify inputs.
+
+Many examples are provided and discussed in great technical detail. These details are provided for illustrative purposes on the kinds of patterns I like to look for and apply to my own gameplay.
 
 - [Leniency and convergence](#leniency-and-convergence)
 - [Buffering and DashCD](#buffering-and-dashcd)
@@ -35,7 +38,7 @@ Convergence can still be achieved without a true normalization process, dependin
 Buffering is perhaps the epitome of convergence: inputs of different timings generate the exact same result. While chains of consecutive buffers can quickly become complicated and arguably divergent, a low density of buffers showcase the concept of convergence quite well. Common, visually obvious examples include transition buffers, cb and cornerkick setups, and pause-buffering as a whole. 
 
 DashCD is one of the less visually obvious mechanics but has incredible potential in creating buffer setups. Besides the strats that essentially require it, a lot of leniency on otherwise hard strats can be gained by putting yourself in a position to buffer out of DashCD. Setting up the positioning may cost a small amount of time, opening an avenue to play the speed vs precision tradeoff game. 
-  
+
   <img src="./media/science/7arb_2500m_dashcd.webp" width="480"/> <img src="./media/science/7arb_2500m_dashcd_labeled.png" width="480"/> 
 
   Normally with a neutral transition super, the updash on this wallbounce is a 3f window. By carefully positioning the rightdash in the previous room, this updash can instead be transformed into a buffer (5f). Furthermore, there is a 1-1 correspondence between each of the possible updashes and the rightdashes upon transition (blue bar). With dash speed moving at 4 px/frame and 3 possible rightdashes (DashCD frames upon transition), there are thus 4 px/frame x 3 frames = 12 pixels from which the rightdash can be started and the updash is bufferable. The pixel window can be converted into a frame window assuming we are walking thru the window: with walking speed at 1.5 px/frame, it's an 8f window to time the rightdash.  
@@ -44,7 +47,7 @@ DashCD is one of the less visually obvious mechanics but has incredible potentia
 
   <img src="./media/science/8a_hotmh_ultra.webp" width="480"/> 
 
-Coincidentally, the ultra off the coreblock in 8a-HOTM-H has almost exactly the same structure. It's a 3f window to downright after a buffered transition hyper to avoid negative liftboost. That 3f can then be transformed into a buffer out of DashCD by carefully starting the demo in a 12px window. I won't go thru all the details, but I will mention some nuances. The failure mode of not properly buffering the transition hyper is more relevant here compared to the 2500m ARB example above. The choice of demo vs downright also matters from a leniency perspective. Horizontal dashes move 4 px/frame, and a downright here would move ~3.4 px/frame. The higher speed from a horizontal dash effective expands the pixel range over which this concept works, i.e. the dash timing upon transition is less sensitive to a faster dash speed (see sensitivity analysis below for a more generalized form of this). [Link to stratpost](https://discord.com/channels/403698615446536203/617809769322774533/1380229565674164317).
+Coincidentally, the ultra off the coreblock in 8a-HOTM-H has almost exactly the same structure as the 2500m ARB example above. It's a 3f window to downright after a buffered transition hyper to avoid negative liftboost. That 3f can then be transformed into a buffer out of DashCD by carefully starting the demo in a 12px window. I won't go thru all the details, but I will mention some nuances. The failure mode of not properly buffering the transition hyper is more relevant here compared to the 2500m ARB example above. The choice of demo vs downright also matters from a leniency perspective. Horizontal dashes move 4 px/frame, and a downright moves ~3.4 px/frame. The higher speed from a horizontal dash effectively expands the pixel range over which this concept works, i.e. the dash timing upon transition is less sensitive to starting position when the dash speed is faster (dt/dx = 1/u, see sensitivity analysis below for a more generalized form of this). [Link to stratpost](https://discord.com/channels/403698615446536203/617809769322774533/1380229565674164317).
 
 <img src="./media/science/5b_mm_final.webp" width="480"/> <img src="./media/science/6a_hollows_kevinslide.webp" width="480"/> 
 
@@ -117,7 +120,7 @@ Half-gravity can expand convergence by extending the duration Madeline exists at
 
 ## Mitigating divergence
 
-  <img src="./media/science/2a_start_under_composite.png" width="960"/>
+  <img src="./media/science/2a_start_under_composite.png" width="480"/>
 
 Divergence is often difficult to deal with, but is sometimes manageable. High-speed (grounded ultra) coyote often lends itself to divergence: the strat requires high-speed to enable longer-distance coyote, but the high speed inherently spreads out your possible trajectories. For the under strat in 2a-start, the grounded ultra travels at about 6.5 px/frame. In theory there are up to 3 possible coyote hyper frames that are viable for the under strat, but these are spread out over almost 20 pixels. The end result is that the frame window for the upright is directly dependent on which coyote frame was reached. The first possible coyote frame gives a 1f window for the upright, the 2nd a 2f, and the 3rd (last) frame a 3f window. 
 
@@ -127,17 +130,23 @@ Divergence is often difficult to deal with, but is sometimes manageable. High-sp
 
 In some cases, the different trajectories are reactable. For this high-speed strat in 5a Rescue, there are 4 viable coyote jump frames, but frames 1-2 and 3-4 require different responses. The major challenge here is reacting to which set you get. While you have over half a second to decide (during transition), it is certainly not easy to tell, especially with Madeline moving so fast and the 2nd/3rd frame perhaps looking similar to each other.
 
-In general, high-speed movement inherently lends itself quickly to divergence because each subsequent frame leads to a large change in game state by definition of high speed. In the name of consistency, the general goal is to mitigate divergence as much as possible, usually by a setup that costs a small bit of time. One way to mitigate divergence is to slow down to expand a frame window. Releasing forward to slow down to create a larger framewindow for a wallbounce (or other similar actions) can itself be divergent though: releasing forward at different times ends up with different viable timings for the updash. However, there are many ways to slow down to increase a frame window in a more normalized manner. 
+In general, high-speed movement inherently lends itself quickly to divergence because each subsequent frame leads to a large change in game state by definition of high speed. In the name of consistency, the general goal is to mitigate divergence as much as possible, usually by a setup that costs a small bit of time. One way to mitigate divergence is to slow down to expand a frame window. Releasing forward to slow down to create a larger framewindow, say for a wallbounce, can itself be divergent though: releasing forward at different times ends up with different viable timings for the updash. However, there are many ways to slow down to increase a frame window without increasing divergence. Below are several examples that I use.
+
+<img src="./media/science/1a_zkad_composite.png" width="960"/> 
+
+> Leniency of the ultra as a function of hyper position (blue) and nominal trajectories of the 5 extension frames of a demo (red) or downright (green) leading into the hyper and their corresponding frame window.
+
+  The spring skip sequence of Zkad route in 1a begins with an extended hyper into an unbuffered ultra. The leniency on the ultra is purely dependent on where the hyper is actually initiated (blue curve), and can be up to 3f. The fastest option is to demohyper after coming out of the hidden section, but this generally leaves getting a 3f ultra a 1f extension window (red points). Because the downright is slower, it has a higher chance of staying in the 3f zone for longer (and usually does). To put the plot above into words, for the 5f extension window, the nominal extension frame windows to get a 3f ultra are:
+- Demo: 1/2/3/2/1
+- Downright: 0/1/2/3/3
+  
+That is to say, a demohyper has a 1f extension window to hit the 3f zone, and downright has a 2f extension window. In this particular case, it is just kind of unlucky that the demohyper does not get a 2f extension for the 3f ultra. If we were to start from a random position within range and aiming to hit an extension window within this arbitrary pixel window (~6), a demohyper would have a 74% chance of having a 2f extension window for the 3f ultra, and a downright hyper would have an 88% chance. The whole idea of slowing down is to improve our odds of getting good frame data, so to speak. In this case, the means to slow down is consistent, unlike the earlier example about releasing forward to line up a wallbounce. 
 
 Case study: 5a start forward wave
 
-1a zkad route wave?
-
-4a granny ultra
-
-3a towels wallkick
-
 3a final transition hyper
+
+3a hub2
 
 Dash attack leniency
 
@@ -147,6 +156,5 @@ Dash attack leniency
 
 6b multiboost: convergent jump release on dash crystal freeze frame
 
-3a hub2
 
 Buffer chains, 7arb 1500m triple demo, yujene depths final spam
