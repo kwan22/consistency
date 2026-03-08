@@ -37,6 +37,8 @@ Normalization is a common way to approach convergence, and the two often go hand
 
 Convergence can still be achieved without a true normalization process, depending on the scope. Broadly, most continuous frame windows lend themselves to convergence, where each frame might be slightly different but sufficiently similar to make progress to the next sequence. Cornercorrection and floorsnapping often give sufficiently similar game states for many scenarios, but some exceptions exist due to particular geometries or subpixels. For example, cornercorrection is required to extend a 2-tile horizontal dash, while floorsnapping will fail to extend. Cornercorrection also does not round off subpixels, occasionally leading to some niche scenarios such as the 3a shaft demo in ARB. 
 
+---
+
 ## Buffering and DashCD
 Buffering is perhaps the epitome of convergence: inputs of different timings generate the exact same result. While chains of consecutive buffers can quickly become complicated and arguably divergent, sparse buffers showcase the concept of convergence quite well. Common, visually obvious examples include transition buffers, cb and cornerkick setups, and pause-buffering. 
 
@@ -45,7 +47,7 @@ DashCD is one of the less visually obvious mechanics but has incredible potentia
 ---
 
   <img src="./media/science/generic_wallbounce.png" width="480"/> <br>
-> Updashing for a wallbounce is approximately a 10px window. The faster you are moving, the less time you spend in that window, and the harder it is to hit. The plot shows the average frame window for hitting a wallbounce as a function of horizontal speed. Colored regions indicate nominal values for movement options.
+> The faster you are moving, the less time you spend in a spatial window, and more precise it becomes to act within that spatial window. The plot shows the average frame window for hitting a wallbounce as a function of horizontal speed. Colored regions indicate nominal values for typical movement options.
 
   Normally with a neutral transition super, the updash on this wallbounce in the berry route of 2500m is a 3f window. By carefully positioning the rightdash in the previous room, this updash can instead be transformed into a buffer (5f). Furthermore, there is a 1-1 correspondence between each of the possible updashes and the rightdashes upon transition (blue bar). With dash speed moving at 4 px/frame and 3 possible rightdashes (DashCD frames upon transition), there are thus 4 px/frame x 3 frames = 12 pixels from which the rightdash can be started and the updash is bufferable. The pixel window can be converted into a frame window assuming we are walking thru the window: with walking speed at 1.5 px/frame, it's an 8f window to time the rightdash. <br>
   <img src="./media/science/7arb_2500m_dashcd.webp" width="480"/> <img src="./media/science/7arb_2500m_dashcd_labeled.png" width="480"/> 
@@ -79,6 +81,7 @@ Wavedashes present a way to control the timing of a hyper. As much as wavedash.p
 <img src="./media/science/5a_fastheart.webp" width="480"/> <img src="./media/science/8a_itc_berry_wavecb.webp" width="480"/> <br>
 > Using a wave makes these hypers bufferable and perfectly convergent. If they were to start from the ground, they would be frame-perfect ([5a](https://discord.com/channels/403698615446536203/617809769322774533/1300619075344535604)), or have otherwise terrible and divergent frame data ([8arb](https://discord.com/channels/403698615446536203/617809769322774533/1229338086454988860)).
 
+---
 
 ## Pre-transition hyper
 
@@ -120,9 +123,9 @@ Many strats call for a jump release upon transition, which automatically converg
 <details>
   <summary>Sensitivity analysis: a comparison between hypers and supers</summary>
 
-  In general, the sensitivity coefficient is expressed as a derivative of the outcome with respect to the input (action). We can perform sensitivity analysis of the hyper trajectory (y and u) to initial starting position (x) without jumping through all the hoops of graphs and long-winded explanations. Let v = y-speed = dy/dt, u = x-speed = dx/dt
+  In general, the sensitivity coefficient is expressed as a derivative of the outcome with respect to the input. High sensitivity = high divergence = bad. We can perform sensitivity analysis of the hyper trajectory (y and u) to initial starting position (x) without jumping through all the hoops of graphs and long-winded explanations. Let v = y-speed = dy/dt, u = x-speed = dx/dt. The sensitivity coefficients dy/dx and du/dx are thus
 
-  dy/dx = dy/dt  * dt/dx <br>
+  dy/dx = dy/dt * dt/dx <br>
   dy/dt = v, dt/dx = 1/u <br>
   dy/dx = v/u
 
@@ -130,10 +133,14 @@ Many strats call for a jump release upon transition, which automatically converg
   du/dt is air friction, which is a constant <br>
   du/dx ~ 1/u
 
-  This is all just a concise, mathematical way of expressing all the numbers I was discussing earlier. Comparing hypers and supers, hypers have lower v and higher u, so it can be seen that dy/dx and du/dx are larger for supers compared to hypers. Thus, one can expect pre-transition supers to be more sensitive (less convergent) on starting x-position. The main missing piece of this analysis is the rounding and discretization that happens on transition that enables certain strats, but this reflects the overall trend. There are a few spots where pre-transition supers enable certain strats, though these are less common than their hyper counterparts, mainly due to level layouts generally being more conducive to hypers over supers. <br>
+  This is all just a concise, mathematical way of expressing all the numbers I was discussing earlier. Comparing hypers and supers, hypers have lower v and higher u, so dy/dx and du/dx are larger for supers compared to hypers. One can expect pre-transition supers to be more sensitive (less convergent) on starting x-position. The main missing piece of this analysis is the rounding and discretization that happens on transition that enables certain strats, but this reflects the overall trend. There are a few spots where pre-transition supers enable certain strats, though these are less common than their hyper counterparts, mainly due to level layouts generally being more conducive to hypers over supers. <br>
   <img src="./media/science/6b_falling_super_diags.webp" width="480"/> <img src="./media/science/7a_1500m_super.webp" width="480"/>
+
+  The outcome of the pre-transition hyper is really the timing upon hitting transition (t) which uniquely determines y and u, and the input is the spacing from transition (x). Notice that the dt/dx term appears in both dy/dx and du/dx. This is distinctly different than the wallbounce vs horizontal speed example earlier. In the wallbounce vs speed example, the outcome is position (x), and the input is the timing of the updash (t), so the sensitivity coefficient is dx/dt = u: faster speed = more sensitive to timing = bad. It's important to understand what your outcomes and inputs are when looking at a sensitivity analysis.
   
 </details>
+
+---
 
 ## Half-gravity
 
@@ -152,6 +159,8 @@ The movement in this 3b start room hinges heavily on convergence. The first down
 7a updraft flag17
 
 7b 0m spring
+
+---
 
 ## Mitigating divergence
 
