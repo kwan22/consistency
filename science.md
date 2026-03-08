@@ -5,8 +5,9 @@
 <img src="./media/science/7b_1500m_1.png" width="960"/>
 
 The following discusses some common patterns that I use in my own speedruns. The discussion will be highly technical, including frame data, pixel/speed values, inner game mechanics, etc. to justify the logic. That said, the recurring themes are 
-1. maximizing use of the game's leniency mechanics,
-2. making small time sacrifices to relax precision and/or simplify inputs.
+1. Maximizing use of the game's leniency mechanics.
+2. Eliminating variables to reduce input complexity and remove failure modes.
+3. Making small time sacrifices to relax precision and/or simplify inputs.
 
 - [Leniency](#leniency)
 
@@ -34,9 +35,9 @@ DashCD is one of the less visually obvious mechanics but has incredible potentia
   
   <img src="./media/science/7arb_2500m_dashcd.webp" width="480"/> <img src="./media/science/7arb_2500m_dashcd_labeled.png" width="480"/> 
 
-  Normally with a neutral transition super, the updash on this wallbounce is a 3f window. By carefully positioning the rightdash in the previous room, this updash can instead be transformed into a buffer (5f). Furthermore, there is a 1-1 correspondence between each of the possible updashes and the rightdashes upon transition (blue bar). With dash speed moving at 4 px/frame and 3 possible rightdashes (DashCD frames upon transition), there are thus 4 px/frame x 3 frames = 12 pixels from which the rightdash can be started and the updash is bufferable. Each of the colored red/green/yellow boxes corresponds to a rightdash+buffered updash pair. Dashing in the leftside red box means the buffered updash comes out on the rightside red box, etc. By starting the rightdash in the 12px window, we remove the failure mode of updashing too early. 
+  Normally with a neutral transition super, the updash on this wallbounce is a 3f window. By carefully positioning the rightdash in the previous room, this updash can instead be transformed into a buffer (5f). Furthermore, there is a 1-1 correspondence between each of the possible updashes and the rightdashes upon transition (blue bar). With dash speed moving at 4 px/frame and 3 possible rightdashes (DashCD frames upon transition), there are thus 4 px/frame x 3 frames = 12 pixels from which the rightdash can be started and the updash is bufferable. The pixel window can be converted into a frame window assuming we are walking thru the window: with walking speed at 1.5 px/frame, it's an 8f window to time the rightdash.  
   
-  The pixel window can be converted into a frame window assuming we are walking thru the window: with walking speed at 1.5 px/frame, it's an 8f window to time the rightdash. That said, from a leniency perspective, I consider it best to aim for the middle of the window for the rightdash, not just to maximize the margin on both sides, but to give even more leniency on the updash itself. If we get the middle window of the updash, that corresponds to buffering on the middle of the 3f, meaning there is 1 more frame after the buffer window that is still viable. Of course, the leftmost viable rightdash would give 2 more frames after buffer timing to still hit the updash, but that would lose margin on the rightdash positioning itself. In actual runs, I just look at the red dot (shoutouts to habits) on the ceiling and aim the rightdash to be under and very slightly to the right of it. [Link to stratpost](https://discord.com/channels/403698615446536203/617809769322774533/1086837734607441931).
+  Each of the colored red/green/yellow boxes corresponds to a rightdash+buffered updash pair. Dashing in the leftside red box means the buffered updash comes out on the rightside red box, etc. By starting the rightdash in the 12px window, we remove the failure mode of updashing too early. The updash itself is bufferable, but depending on where the rightdash is, the updash may have extra leniency frames. For example, if rightdashing from the left red box, the updash may be from the right red box (5f buffer), or it can also be slightly late: 1f late updashes on the right green box, 2f late updashes on the right yellow box. Rightdashing from the left yellow box has no added leniency frames beyond the buffer, as the 1st possible updash is also the last one. [Link to stratpost](https://discord.com/channels/403698615446536203/617809769322774533/1086837734607441931).
 
   <img src="./media/science/8a_hotmh_ultra.webp" width="480"/> 
 
@@ -140,5 +141,3 @@ Dash attack leniency
 3a hub2
 
 Buffer chains, 7arb 1500m triple demo, yujene depths final spam
-
-## Variable reduction
