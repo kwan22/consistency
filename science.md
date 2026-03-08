@@ -150,7 +150,10 @@ In some cases, the different trajectories are reactable. For this high-speed str
 
 In general, high-speed movement inherently lends itself quickly to divergence because each subsequent frame leads to a large change in game state by definition of high speed. In the name of consistency, the general goal is to mitigate divergence as much as possible, usually by a setup that costs a small bit of time. One way to mitigate divergence is to slow down to expand a frame window. Releasing forward to slow down to create a larger framewindow, say for a wallbounce, can itself be divergent though: releasing forward at different times ends up with different viable timings for the updash. However, there are many ways to slow down to increase a frame window without increasing divergence. Below are several examples that I use.
 
-### 1a Crossing, Zkad route
+ <img src="./media/science/generic_wallbounce.png" width="480"/> <br>
+ > Average frame window for an updash to wallbounce as a function of horizontal speed passing the wall. Colored regions indicate nominal speeds from different movement options.
+
+---
 
   The spring skip sequence of Zkad route in 1a begins with an extended hyper into an unbuffered ultra. The leniency on the ultra is purely dependent on where the hyper is actually initiated (blue curve), and can be up to 3f. The fastest option is to demohyper after coming out of the hidden section, but this generally leaves getting a 3f ultra a 1f extension window (red points, assuming optimal demohyper). Because the downright is slower, it has a higher chance of staying in the 6px window that gives a 3f ultra for longer (and usually does). To put the plot below into words, for the 5f extension window, the nominal extension frame windows to get a 3f ultra are:
 - Demo: 1/2/3/2/1
