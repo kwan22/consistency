@@ -77,7 +77,7 @@ I settled with aiming for DashCD(5) when entering eyeball room: DashCD(4) create
 
 <img src="./media/science/wavedash_meme.png" width="480"/> 
 
-Wavedashes present a way to control the timing of a hyper. As much as wavedash.ppt is criticized for being wrong, there is a useful consequence of starting the downdiagonal from midair: the hyper cannot come out until Madeline reach the ground. This means with a right positioning, we can design the hyper such that a buffered wave gives us a particular extension frame, or more generally, DashCD. This can be used to normalize trajectories. Incidentally, wavedashing on a max height jump gives DashCD(1) on the hyper, meaning in principle we can access any DashCD by jumping from flat ground. <br>
+Wavedashes present a way to control the timing of a hyper. As much as wavedash.ppt is criticized for being wrong, there is a useful consequence of starting the downdiagonal from midair: the hyper cannot come out until Madeline reach the ground. This means with a right positioning, we can design the hyper such that a buffered wave gives us a particular extension frame, or more generally, DashCD. This can be used to normalize trajectories. Incidentally, wavedashing on a max height jump gives DashCD(1) on the hyper, meaning in principle we can access any DashCD with a buffered wave by jumping from flat ground. <br>
 <img src="./media/science/5a_fastheart.webp" width="480"/> <img src="./media/science/8a_itc_berry_wavecb.webp" width="480"/> <br>
 > Using a wave makes these hypers bufferable and perfectly convergent. If they were to start from the ground, they would be frame-perfect ([5a](https://discord.com/channels/403698615446536203/617809769322774533/1300619075344535604)), or have otherwise terrible and divergent frame data ([8arb](https://discord.com/channels/403698615446536203/617809769322774533/1229338086454988860)).
 
@@ -117,7 +117,7 @@ Transitions as a mechanic introduce a **spatial convergence** of trajectories, w
 
 ---
 
-  I personally find a pre-transition hyper to be much more consistent in setting up the cornerslip than transition hyper. While transition hypers are well-known for their normalization properties, a major variable in using a transition hyper here is the jump release timing. Pre-transition hyper shifts the variance from jump release timing to hyper positioning, which as we've been saying, is highly convergent. More speed loss to air friction also may mean a larger window for the cornerslip itself. All this may be at the cost of a few frames compared to the transition hyper. In general, the transition hyper is amazing on horizontal convergence, but less so on vertical for short hypers, as each frame of jump release gives a different outcome (e.g. the landing position for the bhop on this strat). The pre-transition hyper suffers a small loss of horizontal convergence, but is far more vertically convergent for short hypers. The rest of the strat still has its difficulties, but I find this variation more accessible. <br>
+  I find a pre-transition hyper to be much more consistent in setting up the cornerslip than transition hyper. While transition hypers are well-known for their normalization properties, a major variable in using a transition hyper here is the jump release timing. Pre-transition hyper shifts the variance from jump release timing to hyper positioning, which I can take a moment to aim for if I so choose. More speed loss to air friction also may mean a larger window for the cornerslip itself. All this may be at the cost of a few frames compared to the transition hyper. In general, the transition hyper is amazing on horizontal convergence, but less so on vertical where a short hyper is required, as each frame of jump release gives a different outcome (e.g. the landing position for the bhop on this strat). The pre-transition hyper suffers a small loss of horizontal convergence, but is far more vertically convergent for short hypers. The rest of the strat still has its difficulties, but I find this variation more accessible. <br>
   <img src="./media/science/7a_500m_cornerslip.webp" width="480"/> 
 
 ---
@@ -155,8 +155,6 @@ The movement in this 3b start room hinges heavily on convergence. The first down
 <img src="./media/science/3b_start_jumprelease.webp" width="480"/>
 
 ## ForceMove
-
-3a start post triplat
 
 7a updraft flag17
 
