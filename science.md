@@ -107,7 +107,7 @@ Transitions as a mechanic introduce a **spatial convergence** of trajectories, w
 
 ---
 
-  The beginning movement to set up the downright cb in 2a-Intervention can be convergent across initial starting hyper positions. A 10 px window indicates that there are 2 viable hyper trajectories. Incidentally, one of the hyper trajectories is more forgiving than the other, but both are sufficient to set up the rest of the strat with reasonable leniency. [Link to stratpost](https://discord.com/channels/403698615446536203/617809769322774533/1162859316479537265). <br>
+  The movement to consistently set up the downright cb in Intervention can be traced all the way back to the end of the previous room. There are 2 viable hyper trajectories on transition, thus a 10px window for the exiting hyper. Incidentally, one of the hyper trajectories is more forgiving than the other, but both are sufficient to set up the rest of the strat with reasonable leniency. [Link to stratpost](https://discord.com/channels/403698615446536203/617809769322774533/1162859316479537265). <br>
   <img src="./media/science/2a_drcb.png" width="960"/>
 
 ---
