@@ -17,6 +17,8 @@ Many examples are provided and discussed in great technical detail. These detail
 - [Pre-transition hyper](#Pre-transition-hyper)
 - [Half gravity](#half-gravity)
 - [Mitigating divergence](#mitigating-divergence)
+- [Dash attack leniency](#dash-attack-leniency)
+- [Buffer chains](#buffer-chains)
 
 ## Leniency and convergence
 
@@ -77,9 +79,9 @@ I settled with aiming for DashCD(5) when entering eyeball room: DashCD(4) create
 
 <img src="./media/science/wavedash_meme.png" width="480"/> 
 
-Wavedashes present a way to control the timing of a hyper. As much as wavedash.ppt is criticized for being wrong, there is a useful consequence of starting the downdiagonal from midair: the hyper cannot come out until Madeline reach the ground. This means with a right positioning, we can design the hyper such that a buffered wave gives us a particular extension frame, or more generally, DashCD. This can be used to normalize trajectories. Incidentally, wavedashing on a max height jump gives DashCD(1) on the hyper, meaning in principle we can access any DashCD with a buffered wave by jumping from flat ground. <br>
+Wavedashes present a way to control the timing of a hyper. As much as wavedash.ppt is criticized for being wrong, there is a useful consequence of starting the downdiagonal from midair: the hyper cannot come out until Madeline reaches the ground. This means with some careful positioning, we can design the a buffered wave to give us a particular extension frame, or more generally, DashCD. This can be used to normalize trajectories. Incidentally, wavedashing on a max height jump gives DashCD(1) on the hyper, meaning in principle we can access any DashCD with a buffered wave by jumping from flat ground. <br>
 <img src="./media/science/5a_fastheart.webp" width="480"/> <img src="./media/science/8a_itc_berry_wavecb.webp" width="480"/> <br>
-> Using a wave makes these hypers bufferable and perfectly convergent. If they were to start from the ground, they would be frame-perfect ([5a](https://discord.com/channels/403698615446536203/617809769322774533/1300619075344535604)), or have otherwise terrible and divergent frame data ([8arb](https://discord.com/channels/403698615446536203/617809769322774533/1229338086454988860)).
+> Using a wave makes these hypers bufferable and perfectly convergent. If they were to start from the ground, they would be frame-perfect ([5a](https://discord.com/channels/403698615446536203/617809769322774533/1300619075344535604)), or have otherwise terrible frame data ([8arb](https://discord.com/channels/403698615446536203/617809769322774533/1229338086454988860)).
 
 ---
 
@@ -123,7 +125,7 @@ Transitions as a mechanic introduce a **spatial convergence** of trajectories, w
 ---
 
 <details>
-  <summary>Sensitivity analysis: a comparison between hypers and supers</summary>
+  <summary>Sensitivity analysis</summary>
 
   In general, the sensitivity coefficient is expressed as a derivative of the outcome with respect to the input. High sensitivity = high divergence = bad. We can perform sensitivity analysis of the hyper trajectory (y and u) to initial starting position (x) without jumping through all the hoops of graphs and long-winded explanations. Let v = y-speed = dy/dt, u = x-speed = dx/dt. The sensitivity coefficients dy/dx and du/dx are thus
 
@@ -147,7 +149,7 @@ Transitions as a mechanic introduce a **spatial convergence** of trajectories, w
 ## Half-gravity
 
   <img src="./media/science/3a_demo.png" width="480"/>  <img src="./media/science/7b_heart_demo_crop.png" width="480"/> <br>
-  > Half-gravity can be either helpful or harmful for precise vertical alignment: retaining it is usually simple but avoiding it can be convergent.
+  > Half-gravity can be either helpful or harmful for precise vertical positioning.
 
 Half-gravity can expand convergence by extending the duration Madeline exists at a given y-position. This typically manifests in line-ups with max-height jumps, e.g. 3a shaft demo and a whole class of demos out of a max height hyper. Certain actions and interactions apply autojump as well, that act as if we are holding jump to give us half-grav whether we want to or not. Fundamentally, half-gravity can improve frame-windows by keeping us in the same y-position for an extended period of time. On the other hand, half-gravity can be detrimental sometimes, by introducing deadframes on some strats, or more fundamentally, adding unnecessary airtime. [Avoiding half-gravity can also be convergent](https://www.youtube.com/watch?v=82gpR9rozdE), where releasing jump on different frames gives the exact same trajectory if timed correctly. A good deal of RTA movement optimization comes from putting yourself in a position to enjoy the luxury of a convergent jump release timing. For a speedrunner's perspective, the main takeaway is "just hold jump" to use half-gravity, or "find the 6f+ jump release window" to avoid half-gravity. 
 
@@ -156,18 +158,28 @@ The movement in this 3b start room hinges heavily on convergence. The first down
 
 ## ForceMove
 
-7a updraft flag17
+The main feature of ForceMove is that we lose horizontal aerial control and, barring an interruption like a dash, we are "forced" to travel along a specified horizontal trajectory. Typical sources of ForceMove are wallkicks (10f) and springs (18f). The first notable consequence for wallkicks is that holding into and holding away from a wall for a walljump are equivalent: it can be helpful to preferentially hold in towards walls by default for wallkicks to avoid accidental wallboosts, drifting away from walls before getting the wallkick, or to not lose horizontal speed when aiming to buffer a wallkick while approaching said wall (e.g. the 3b start example above). 
 
-7b 0m spring
+Because the horizontal trajectory is forced, it is also normalized horizontally (wallkick leniency can add variance but is usually negligible outside of a few specific strats). There are many situations where once we enter ForceMove state, we can simply ride the ForceMove and focus our attention elsewhere, frequently a dash in a different direction. As a bonus, the risk of misdash can be mitigated by preloading the direction we need to dash in long before we actually dash in that direction. Increased air friction from releasing forward is also frequently irrelevant (e.g. if bottleneck is vertical), and the horizontal deceleration can help with precise horizontal positioning. 
+
+Some strats rely on the properties of ForceMove to be set up precise positioning. <br>
+<img src="./media/science/3a_towels_wallkick.webp" width="480"/> <img src="./media/science/3a_shaft_demo_8f.webp" width="480"/>
+
+Some spots where I let ForceMove carry me to reduce misdash risk and/or make a horizontal positioning easier at virtually no timeloss. <br>
+  <img src="./media/science/7a_flag10_forcemove.webp" width="480"/>  <img src="./media/science/7a_flag4_wallkick.webp" width="480"/> <br>
+  <img src="./media/science/7b_0m_forcemove.webp" width="480"/>  <img src="./media/science/8b_forcemove.webp" width="480"/>
+
+A max height jump and max height wallkick makes the first horizontal demo on 7a Flag 17 much more lenient. In this instance, going neutral during ForceMove from the wallkick eliminates the possibility of being too far and crashing into the ceiling spinners. Acting at the peak of each jump gives a consistent, sufficiently converged starting point for the first upright dash. The demo usually ends up being a 5f window. All this is at the cost of a fraction of the timesave compared to doing an upright instead of horizontal. <br> 
+<img src="./media/science/7a_flag17_demo1.webp" width="480"/>
 
 ---
 
 ## Mitigating divergence
 
-Divergence is often difficult to deal with. High-speed (grounded ultra) coyote often lends itself to divergence: the strat requires high-speed to enable longer-distance coyote, but the high speed inherently spreads out your possible trajectories. For the under strat in 2a-start, the grounded ultra travels at about 6.5 px/frame. In theory there are up to 3 possible coyote hyper frames that are viable for the under strat, but these are spread out over almost 20 pixels. The end result is that the frame window for the upright is directly dependent on which coyote frame was reached. The first possible coyote frame gives a 1f window for the upright, the 2nd a 2f, and the 3rd (last) frame a 3f window. <br>
+Divergence usually manifests as a small/discontinuous frame window, or one where different sections of a frame window require different follow-ups. These are often difficult to deal with. High-speed (grounded ultra) coyote often lends itself to divergence: the strat requires high-speed to enable longer-distance coyote, but the high speed inherently spreads out your possible trajectories. For the under strat in 2a-start, the grounded ultra travels at about 6.5 px/frame. In theory there are up to 3 possible coyote hyper frames that are viable for the under strat, but these are spread out over almost 20 pixels. The end result is that the frame window for the upright is directly dependent on which coyote frame was reached. The first possible coyote frame gives a 1f window for the upright, the 2nd a 2f, and the 3rd (last) frame a 3f window. <br>
   <img src="./media/science/2a_start_under_composite.png" width="480"/>
 
-In some cases, the different trajectories are reactable. For this high-speed strat in 5a Rescue, there are 4 viable coyote jump frames, but frames 1-2 and 3-4 require different responses. The major challenge here is reacting to which set you get. While you have over half a second to decide (during transition), it is certainly not easy to tell, especially with Madeline moving so fast and the 2nd/3rd frame perhaps looking similar to each other. <br>
+In some cases, the divergence is acceptable and reactable. For this high-speed strat in 5a Rescue, there are 4 viable coyote jump frames, but frames 1-2 and 3-4 require different responses. The major challenge here is reacting to which set you get. While you have over half a second to decide (during transition), it is certainly not easy to tell, especially with Madeline moving so fast and the 2nd/3rd frame looking similar to each other. <br>
   <img src="./media/science/5a_rescue_fast1.webp" width="480"/>   <img src="./media/science/5a_rescue_fast1_labeled.png" width="480"/> <br>
   <img src="./media/science/5a_rescue_fast2.webp" width="480"/>   <img src="./media/science/5a_rescue_fast2_labeled.png" width="480"/>
 
@@ -179,11 +191,10 @@ The goal is to mitigate divergence as much as possible, usually by a setup that 
 - Demo: 1/2/3/2/1
 - Downright: 0/1/2/3/3
 
-<img src="./media/science/1a_zkad_composite.png" width="960"/> 
-
+<img src="./media/science/1a_zkad_composite.png" width="960"/> <br>
 > Leniency of the ultra as a function of hyper position (blue) and nominal trajectories of the 5 extension frames of a demo (red) or downright (green) leading into the hyper and their corresponding frame window.
   
-That is to say, a demohyper has a 1f extension window to hit the 3f zone, and downright has a 2f extension window. In this particular case, it is just kind of unlucky that the demohyper does not get a 2f extension for the 3f ultra. If we were to start from a random position within range and aiming to hit an extension window within this arbitrary pixel window (~6), a demohyper would have a 74% chance of having a 2f extension window for the 3f ultra, and a downright hyper would have an 88% chance. The whole idea of slowing down is to improve our odds of getting good frame data, so to speak. In this case, the method to slow down is consistent, unlike the earlier example about releasing forward to line up a wallbounce. 
+A demohyper has a 1f extension window to hit the 3f zone, and downright has a 2f extension window. In this particular case, it is just kind of unlucky that the demohyper does not get a 2f extension for the 3f ultra. If we were to start from a random position within range and aiming to hit an extension window within this arbitrary pixel window (~6), a demohyper would have a 74% chance of having a 2f extension window for the 3f ultra, and a downright hyper would have an 88% chance. The whole idea of slowing down is to improve our odds of getting good frame data, so to speak. In this case, the method to slow down is consistent, unlike the earlier example about releasing forward to line up a wallbounce. 
 
 ---
 
@@ -193,7 +204,9 @@ Case study: 5a start forward wave
 
 3a hub2
 
-Dash attack leniency
+## Dash attack leniency
+
+lakeskip
 
 3a shaft
 
@@ -201,5 +214,10 @@ Dash attack leniency
 
 6b multiboost: convergent jump release on dash crystal freeze frame
 
+## Buffer chains
 
-Buffer chains, 7arb 1500m triple demo, yujene depths final spam
+4arb slip n slide
+
+7arb 1500m triple demo
+
+yujene depths final spam
