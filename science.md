@@ -203,7 +203,7 @@ A demohyper has a 1f extension window to hit the 3f zone, and downright has a 2f
 Using a transition hyper to normalize the entry to the final room of 3a loses 0.1 but makes the wavedash off the first pillar much more lenient. Typical movement involves a grounded ultra after transition, which virtually always results in a 3f window to downright onto the 1st pillar. With the transition hyper, the downright can be up to 8f, though not all 8f are equal. Being slightly late on buffering the transition hyper is also inconsequential. <br>
 <img src="./media/science/3a_suite_final_entry.webp" width="480"/> <br>
 
-3a hub2
+5a fast dcb setup
 
 ## Dash attack leniency
 
