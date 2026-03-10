@@ -16,7 +16,7 @@ Many examples are provided and discussed in great technical detail. These detail
 - [Buffering and DashCD](#buffering-and-dashcd)
 - [Pre-transition hyper](#Pre-transition-hyper)
 - [Half gravity](#half-gravity)
-- [Mitigating divergence](#mitigating-divergence)
+- [Slowing down in my speedruns?](#slowing-down-in-my-speedruns)
 - [Dash attack leniency](#dash-attack-leniency)
 - [Buffer chains](#buffer-chains)
 
@@ -174,7 +174,7 @@ A max height jump and max height wallkick makes the first horizontal demo on 7a 
 
 ---
 
-## Mitigating divergence
+## Slowing down in my speedruns?
 
 Divergence usually manifests as a small/discontinuous frame window, or one where different sections of a frame window require different follow-ups. These are often difficult to deal with. High-speed (grounded ultra) coyote often lends itself to divergence: the strat requires high-speed to enable longer-distance coyote, but the high speed inherently spreads out your possible trajectories. For the under strat in 2a-start, the grounded ultra travels at about 6.5 px/frame. In theory there are up to 3 possible coyote hyper frames that are viable for the under strat, but these are spread out over almost 20 pixels. The end result is that the frame window for the upright is directly dependent on which coyote frame was reached. The first possible coyote frame gives a 1f window for the upright, the 2nd a 2f, and the 3rd (last) frame a 3f window. <br>
   <img src="./media/science/2a_start_under_composite.png" width="480"/>
@@ -192,9 +192,9 @@ The goal is to mitigate divergence as much as possible, usually by a setup that 
 - Downright: 0/1/2/3/3
 
 <img src="./media/science/1a_zkad_composite.png" width="960"/> <br>
-> Leniency of the ultra as a function of hyper position (blue) and nominal trajectories of the 5 extension frames of a demo (red) or downright (green) leading into the hyper and their corresponding frame window.
+> Leniency of the ultra as a function of hyper position (blue line) and nominal trajectories of the 5 extension frames of a demo (red points) or downright (green points) leading into the hyper and their corresponding frame window. The pixel ranges from where a hyper gives a 1, 2, and 3f window on the ultra are highlighted on the right as orange, yellow, and green boxes, respectively.
   
-A demohyper has a 1f extension window to hit the 3f zone, and downright has a 2f extension window. In this particular case, it is just kind of unlucky that the demohyper does not get a 2f extension for the 3f ultra. If we were to start from a random position within range and aiming to hit an extension window within this arbitrary pixel window (~6), a demohyper would have a 74% chance of having a 2f extension window for the 3f ultra, and a downright hyper would have an 88% chance. The whole idea of slowing down is to improve our odds of getting good frame data, so to speak. In this case, the method to slow down is consistent, unlike the earlier example about releasing forward to line up a wallbounce. 
+A demohyper has a 1f extension window to hit the 3f zone, and downright has a 2f extension window. In this particular case, it is just kind of unlucky that the demohyper does not get a 2f extension for the 3f ultra. If we were to start from a random position within range and aiming to hit an extension window within this arbitrary pixel window (~6), a demohyper would have a 74% chance of having a 2f extension window for the 3f ultra, and a downright hyper would have an 88% chance. The whole idea of slowing down is to improve our odds of getting good frame data, so to speak. In this case, the method to slow down to improve leniency is consistent as long as the downright starts from a consistent spot.
 
 ---
 
