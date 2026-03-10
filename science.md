@@ -125,7 +125,7 @@ Transitions as a mechanic introduce a **spatial convergence** of trajectories, w
 ---
 
 <details>
-  <summary>Sensitivity analysis: a comparison between hypers and supers</summary>
+  <summary>Sensitivity analysis</summary>
 
   In general, the sensitivity coefficient is expressed as a derivative of the outcome with respect to the input. High sensitivity = high divergence = bad. We can perform sensitivity analysis of the hyper trajectory (y and u) to initial starting position (x) without jumping through all the hoops of graphs and long-winded explanations. Let v = y-speed = dy/dt, u = x-speed = dx/dt. The sensitivity coefficients dy/dx and du/dx are thus
 
@@ -149,7 +149,7 @@ Transitions as a mechanic introduce a **spatial convergence** of trajectories, w
 ## Half-gravity
 
   <img src="./media/science/3a_demo.png" width="480"/>  <img src="./media/science/7b_heart_demo_crop.png" width="480"/> <br>
-  > Half-gravity can be either helpful or harmful for precise vertical alignment.
+  > Half-gravity can be either helpful or harmful for precise vertical positioning.
 
 Half-gravity can expand convergence by extending the duration Madeline exists at a given y-position. This typically manifests in line-ups with max-height jumps, e.g. 3a shaft demo and a whole class of demos out of a max height hyper. Certain actions and interactions apply autojump as well, that act as if we are holding jump to give us half-grav whether we want to or not. Fundamentally, half-gravity can improve frame-windows by keeping us in the same y-position for an extended period of time. On the other hand, half-gravity can be detrimental sometimes, by introducing deadframes on some strats, or more fundamentally, adding unnecessary airtime. [Avoiding half-gravity can also be convergent](https://www.youtube.com/watch?v=82gpR9rozdE), where releasing jump on different frames gives the exact same trajectory if timed correctly. A good deal of RTA movement optimization comes from putting yourself in a position to enjoy the luxury of a convergent jump release timing. For a speedrunner's perspective, the main takeaway is "just hold jump" to use half-gravity, or "find the 6f+ jump release window" to avoid half-gravity. 
 
@@ -160,12 +160,12 @@ The movement in this 3b start room hinges heavily on convergence. The first down
 
 The main feature of ForceMove is that we lose horizontal aerial control and, barring an interruption like a dash, we are "forced" to travel along a specified horizontal trajectory. Typical sources of ForceMove are wallkicks (10f) and springs (18f). The first notable consequence for wallkicks is that holding into and holding away from a wall for a walljump are equivalent: it can be helpful to preferentially hold in towards walls by default for wallkicks to avoid accidental wallboosts, drifting away from walls before getting the wallkick, or to not lose horizontal speed when aiming to buffer a wallkick while approaching said wall (e.g. the 3b start example above). 
 
-Because the horizontal trajectory is forced, it is also normalized horizontally (wallkick leniency can add variance but is usually negligible outside of a few specific strats). There are many situations where once we enter ForceMove state, we can simply ride the ForceMove and focus our attention elsewhere, frequently a dash in a different direction. As a bonus, the risk of misdash can be mitigated by preloading the direction we need to dash in long before we actually dash in that direction. Increased air friction from releasing forward is also frequently irrelevant (e.g. if bottleneck is vertical), and the horizontal deceleration can help with precise horizontal alignment. 
+Because the horizontal trajectory is forced, it is also normalized horizontally (wallkick leniency can add variance but is usually negligible outside of a few specific strats). There are many situations where once we enter ForceMove state, we can simply ride the ForceMove and focus our attention elsewhere, frequently a dash in a different direction. As a bonus, the risk of misdash can be mitigated by preloading the direction we need to dash in long before we actually dash in that direction. Increased air friction from releasing forward is also frequently irrelevant (e.g. if bottleneck is vertical), and the horizontal deceleration can help with precise horizontal positioning. 
 
-Some strats rely on the properties of ForceMove to be extremely forgiving. <br>
+Some strats rely on the properties of ForceMove to be set up precise positioning. <br>
 <img src="./media/science/3a_towels_wallkick.webp" width="480"/> <img src="./media/science/3a_shaft_demo_8f.webp" width="480"/>
 
-Some spots where I let ForceMove carry me to reduce misdash risk and/or make a horizontal alignment easier at virtually no timeloss. <br>
+Some spots where I let ForceMove carry me to reduce misdash risk and/or make a horizontal positioning easier at virtually no timeloss. <br>
   <img src="./media/science/7a_flag10_forcemove.webp" width="480"/>  <img src="./media/science/7a_flag4_wallkick.webp" width="480"/> <br>
   <img src="./media/science/7b_0m_forcemove.webp" width="480"/>  <img src="./media/science/8b_forcemove.webp" width="480"/>
 
