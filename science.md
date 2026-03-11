@@ -16,7 +16,7 @@ Many examples are provided and discussed in great technical detail. These detail
 - [Buffering and DashCD](#buffering-and-dashcd)
 - [Pre-transition hyper](#Pre-transition-hyper)
 - [Half gravity](#half-gravity)
-- [Slowing down in my speedruns?](#slowing-down-in-my-speedruns)
+- [Cornercorrection lineups](#cornercorrection-lineups)
 - [Dash attack leniency](#dash-attack-leniency)
 - [Buffer chains](#buffer-chains)
 
@@ -190,14 +190,23 @@ A max height jump and max height wallkick makes the first horizontal demo on 7a 
 
 ## Cornercorrection lineups
 
-For ground jumps there are 3 convergent vertical trajectories: full jump (jump held the whole time), [12f jump](https://www.youtube.com/watch?v=82gpR9rozdE), and full hyper. These are extremely common actions and provide various options for lining up for cornercorrection/floorsnapping, showcasing the speed vs precision tradeoff quite nicely. The plots below the vertical trajectories of these jumps, focusing on their alignment with 1-, 2-, and 3-tile height as canonical examples. Of the two collision correction mechanics, cornercorrection is mainly useful for 2-tile extensions and other precise positioning setups as x-pos is converged and y-subpixels are retained. Floorsnapping is less useful and is generally harder to intentionally use because of its smaller pixel window, but has some niche applications such as (3arb jasig)[https://discord.com/channels/403698615446536203/617809769322774533/1354968751262535691]. In general, when arbitrarily passing over a floor at max jump speed (105), there is a 78% chance that cornercorrection is a 2f and 12% chance a 3f. 1-tile height alignment happens to enjoy the luxury of a 3f window for cornercorrection, improving accessibility of some setups like (burgyscience)[https://discord.com/channels/403698615446536203/617809769322774533/1092191710504828979]. Combined cornercorrection/floorsnap leniency for alignment at 105 speed is virtually always a 4f, barring some shenanigans like floating point precision. <br>
+For ground jumps there are 3 convergent vertical trajectories: full jump (jump held the whole time), [12f jump](https://www.youtube.com/watch?v=82gpR9rozdE), and full hyper. These are extremely common actions and provide various options for lining up for cornercorrection/floorsnapping, showcasing the speed vs precision tradeoff quite nicely. The plots below the vertical trajectories of these jumps, focusing on their alignment with 1-, 2-, and 3-tile height as canonical examples. Of the two collision correction mechanics, cornercorrection is mainly useful for 2-tile extensions and other precise positioning setups as x-pos is converged and y-subpixels are retained. Floorsnapping is less useful and is generally harder to intentionally use because of its smaller pixel window, but has some niche applications. In general, when arbitrarily passing over a floor at max jump speed (105), there is a 78% chance that cornercorrection is a 2f and 12% chance a 3f. 1-tile height alignment happens to enjoy the luxury of a 3f window for cornercorrection, improving accessibility of some setups like [burgyscience](https://discord.com/channels/403698615446536203/617809769322774533/1092191710504828979). Combined cornercorrection/floorsnap leniency for alignment at 105 speed is virtually always a 4f, barring some shenanigans like floating point precision. <br>
   <img src="./media/science/jump_trajectory.png" width="480"/>   <img src="./media/science/jump_1tile.png" width="480"/> <br> 
-  <img src="./media/science/jump_2tile.png" width="480"/>  <img src="./media/science/jump_3tile.png" width="480"/>
-Despite 1-tile alignment from jumping being a 4f, I find it more difficult than the 2-tile alignment primarily due to it empirically being "jump and then very quickly but also not too quickly dash", i.e. frame consecutive jump+dash fails. One way to get around this is to use a super and take advantage of DashCD: the 1st 4f of extension allow a buffered dash to line up with a 1-tile because DashCD nullifies the deadframe as long as you don't get 5th frame extension. <br>
+  <img src="./media/science/jump_2tile.png" width="480"/>  <img src="./media/science/jump_3tile.png" width="480"/> <br>
+  > Vertical trajectories of a full jump (blue), 12f jump (light blue), and a hyper (orange), accompanied by zoom-ins around a 1-, 2-, and 3-tile elevation gain on the upswing. Green regions show zones of cornercorrection and floorsnapping. Black dashed lines show the position of 1, 2, or 3 tiles, on/above being floorsnapping and below being cornercorrection. Zoomed in plots are rounded to the nearest y-px to highlight Madeline's rendered hitbox position. <br>
+Despite 1-tile alignment from jumping being a 4f, I find it more difficult than the 2-tile alignment primarily due to it empirically being "jump and then very quickly but also not too quickly dash", i.e. frame consecutive jump+dash fails. One way to get around this is to use a super and take advantage of DashCD: the 1st 4f of extension allow a buffered dash to line up with a 1-tile because DashCD nullifies the deadframe as long as you don't get 5th frame extension. This simply moves the 4f to a more comfy spot at the cost of a buffer and potentially a small amount of timeloss. <br>
   <img src="./media/science/2a_jump_1tile.webp" width="480"/>   <img src="./media/science/5b_jump_1tile.webp" width="480"/> <br> 
+Cornercorrection significantly increases the required precision due to loss of floorsnap leniency. This is where I preferentially use hypers for some required cornercorrects such as 2-tile extension. The slower vertical speed of hypers makes the vertical positioning easier. In some cases, it may help with making horizontal progress as well. <br>
+  <img src="./media/science/2a_hyper_1tile.webp" width="480"/>   <img src="./media/science/3a_hyper_1tile.webp" width="480"/> <br> 
+In a similar vein, max height hypers always cornercorrect at 2-tile height. The tradeoff for vertical speed and precision is quite clear, with hypers having much more lenient frame windows but losing ~4f on average for a 1-tile alignment and ~10f for a 2-tile alignment, measured from the middle of their respective frame windows.
 
+3-tile alignment tells an interesting story. Cornercorrection on the upswing is still a 2f despite a small loss of speed due to gravity. Both full and 12f jump give good frame data for 3-tile alignment, but full jump actually has 4 deadframes at the very top. 12f jump gives a continuous 15f window for alignment, as well as an 8f continuous window for floorsnap, where full jump would have a double 3f. This type of trajectory and ensuing frame pattern shows up in both [3arb jasig](https://discord.com/channels/403698615446536203/617809769322774533/1354968751262535691) and [7b heart demo](https://discord.com/channels/403698615446536203/617809769322774533/1353209624232464395). It can be argued from a consistency perspective, releasing jump is preferred for 3-tile alignment to remove deadframes. Even releasing jump 1 or 2 frames earlier than 12f still gives a massive, continuous window for a 3-tile alignment. 
 
-> Vertical trajectories of a full jump (blue), 12f jump (light blue), and a hyper (orange), accompanied by zoom-ins around a 1-, 2-, and 3-tile elevation gain on the upswing. Green regions show zones of cornercorrection and floorsnapping. Black dashed lines show the position of 1, 2, or 3 tiles, on/above being floorsnapping and below being cornercorrection. Zoomed in plots are rounded to the nearest y-px to highlight Madeline's rendered hitbox position. <br>
+Below is a summary of the frame data for these various types of jumps and canonical alignments. Exact frame data for specific geometries and movement options is largely case-by-case, but these examples should highlight the common patterns. <br>
+  <img src="./media/science/tile_alignment_framedata.png" width="480"/>
+
+  <img src="./media/science/3a_suite_final_cj.webp" width="480"/> <br>
+  >After the super, it is optimal to do 2 climbjumps to maintain maximum jump speed, and the demohyper is a 4f as mentioned above, but is more of a visual "aim and fire" and not necessarily consistent relative to your own button presses. 1 climbjump is an alternative that loses a few frames but still works, reduces input density, usually increases the frame window, and significantly reduces the risk of overshooting the demohyper at the end of a very long room.
 
 ## Dash attack leniency
 
@@ -210,8 +219,6 @@ lakeskip
 6b multiboost: convergent jump release on dash crystal freeze frame
 
 ## Buffer chains
-
-4arb slip n slide
 
 7arb 1500m triple demo
 
