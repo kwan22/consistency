@@ -225,11 +225,10 @@ Regaining aerial control in this context means that wallbounces can gain some ex
 The 2nd wallbounce on Flag 2 and the lava wallbounce in 8arb HOTM can be made easier with dash attack leniency. That said, I aim to have my horizontal trajectory as normalized as possible before attempting these precise wallbounces. In both of these cases, I aim the previous wallbounces to be flush/cornercorrect on the wall to normalize horizontal trajectory so the updash alignment is the exact same timing every single time. I also aim the 1st wallbounce in the 8arb example to be low so I don't vertically overshoot the lava during dash attack leniency. <br>
   <img src="./media/science/7a_flag2_dashattack.webp" width="480"/>  <img src="./media/science/8arb_hotm_dashattack.webp" width="480"/> <br>
 
-With the right vertical positioning, using dash-attack leniency to hold towards the wall adds 1f of leniency (3f at best to 4f at best) to the updash on lakeskip. The updash can be unintuitively far away from the wall because of the combination of dash attack leniency and wallbounce leniency. Fortuitously, holding towards the wall is optimal immediately after the wallbounce anyway. <br>
+With the right vertical positioning, using dash-attack leniency to hold towards the wall adds 1f of leniency (3f at best to 4f at best) to the updash on lakeskip. The updash can be unintuitively far away from the wall because of the combination of dash attack leniency and wallbounce leniency. Holding towards the wall immediately after the wallbounce happens to be optimal in this case. <br>
   <img src="./media/science/6a_lakeskip.webp" width="480"/>  <img src="./media/science/6a_lakeskip.png" width="480"/>
 
-
-
+The massive loss of vertical speed opens up some setups enable a larger frame window to fire a wallbounce within a precise y-pos. Getting clean landing in 3a shaft-3 requires a wallbounce at the top ~5px of the 1-tile thick platform. The grounded ultra setup not only gives a consistent horizontal position for the updash, but also puts us in a vertical position such that dash attack leniency gives us a large and consistent (5-6f depending on cornercorrection) frame window to hit this clean landing. Otherwise, passing through this window at max dash speed gives a 1-2f for clean landing.
 y compression: 3a shaft, 7a flag 1
 
 ## Buffer chains
