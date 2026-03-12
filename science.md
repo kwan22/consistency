@@ -183,8 +183,8 @@ Some spots where I let ForceMove carry me to reduce misdash risk and/or make a h
   <img src="./media/science/7a_flag10_forcemove.webp" width="480"/>  <img src="./media/science/7a_flag5,4.webp" width="480"/> <br>
   <img src="./media/science/7b_0m_forcemove.webp" width="480"/>  <img src="./media/science/8b_forcemove.webp" width="480"/>
 
-ForceMove is useful to not lose horizontal speed while approaching a wall for a wallkick.<br>
-  <img src="./media/science/7arb_0m_wallkick.webp" width="480"/> <img src="./media/science/7arb_2500m_wallkick.webp" width="480"/>
+ForceMove is useful to not need to change directions for a wallkick.<br>
+  <img src="./media/science/3arb_shaft_2berry_wallkick.webp" width="480"/> <img src="./media/science/7arb_2500m_wallkick.webp" width="480"/>
 
 A max height jump and max height wallkick makes the first horizontal demo on 7a Flag 17 much more lenient. In this instance, going neutral during ForceMove from the wallkick eliminates the possibility of being too far and crashing into the ceiling spinners. Acting at the peak of each jump gives a consistent, sufficiently converged starting point for the first upright dash. The demo usually ends up being a 5f window. All this is at the cost of a fraction of the timesave compared to doing an upright instead of horizontal. <br> 
 <img src="./media/science/7a_flag17_demo1.webp" width="480"/>
