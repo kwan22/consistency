@@ -224,7 +224,7 @@ Regaining aerial control in this context means that wallbounces can gain some ex
 The 2nd wallbounce on Flag 2 and the lava wallbounce in 8arb HOTM can be made easier with dash attack leniency. That said, I aim to have my horizontal trajectory as normalized as possible before attempting these precise wallbounces. In both of these cases, I aim the previous wallbounces to be flush/cornercorrect on the wall to normalize horizontal trajectory. I also aim the 1st wallbounce in the 8arb example to be low so I don't verticallyu overshoot the lava during dash attack leniency. <br>
   <img src="./media/science/7a_flag2_dashattack.webp" width="480"/>  <img src="./media/science/8arb_hotm_dashattack.webp" width="480"/> <br>
 
-Lakeskip deserves special mention because of how well-known of a strat it is. With the right vertical positioning, using dash-attack leniency to hold towards the wall adds 1f of leniency (3f at best to 4f at best) to the updash. Fortuitously, holding towards the wall is optimal immediately after the wallbounce anyway. <br>
+Lakeskip deserves special mention because of how well-known of a strat it is. With the right vertical positioning, using dash-attack leniency to hold towards the wall adds 1f of leniency (3f at best to 4f at best) to the updash. This means the updash can be unintuitively far away from the wall, since the combination of dash attack leniency and wallbounce leniency lets the updash start from up to about a full tile away from the wall. Fortuitously, holding towards the wall is optimal immediately after the wallbounce anyway. <br>
   <img src="./media/science/6a_lakeskip.webp" width="480"/>  <img src="./media/science/6a_lakeskip.png" width="480"/>
 
 y compression: 3a shaft, 7a flag 1
