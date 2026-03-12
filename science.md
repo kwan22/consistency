@@ -216,16 +216,27 @@ Below is a summary of the frame data for these various types of jumps and canoni
 
 ## Dash attack leniency
 
-lakeskip
+The key properties of dash attack of interest here are
+1. regain aerial control
+2. massive loss of vertical speed
+Regaining aerial control in this context means that wallbounces can gain some extra leniency away from the wall. In the 6 frames of dash attack leniency, Madeline can move up to 2.7px horizontally, theoretically adding that much leniency, room layout allowing. That said, it is not always easy or ideal to take advantage of this leniency. For example, holding in toward a wall means the wallbounce will experience increased air friction until away is held, which can be helpful or harmful depending on context. 
 
-3a shaft
+The 2nd wallbounce on Flag 2 and the lava wallbounce in 8arb HOTM can be made easier with dash attack leniency. That said, I aim to have my horizontal trajectory as normalized as possible before attempting these precise wallbounces. In both of these cases, I aim the previous wallbounces to be flush/cornercorrect on the wall to normalize horizontal trajectory. I also aim the 1st wallbounce in the 8arb example to be low so I don't verticallyu overshoot the lava during dash attack leniency. <br>
+  <img src="./media/science/7a_flag2_dashattack.webp" width="480"/>  <img src="./media/science/8arb_hotm_dashattack.webp" width="480"/> <br>
 
-7a flag 1
+Lakeskip deserves special mention because of how well-known of a strat it is. With the right vertical positioning, using dash-attack leniency to hold towards the wall adds 1f of leniency (3f at best to 4f at best) to the updash. Fortuitously, holding towards the wall is optimal immediately after the wallbounce anyway. <br>
+  <img src="./media/science/6a_lakeskip.webp" width="480"/>  <img src="./media/science/6a_lakeskip.png" width="480"/>
 
-6b multiboost: convergent jump release on dash crystal freeze frame
+y compression: 3a shaft, 7a flag 1
 
 ## Buffer chains
 
 7arb 1500m triple demo
 
 yujene depths final spam
+
+## Miscellaneous
+
+zkad route
+
+6b multiboost
