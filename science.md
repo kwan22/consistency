@@ -2,7 +2,7 @@
 
 # The science of consistency
 
-<img src="./media/science/7b_1500m_1.png" width="480"/>
+<img src="./media/science/is_this_timeloss.png" width="480"/>
 
 The following discusses some common patterns that I use in my own speedruns. The discussion will be highly technical, including frame data, pixel/speed values, inner game mechanics, etc. to justify the logic. That said, the recurring themes are 
 1. Maximizing use of the game's leniency mechanics.
@@ -172,16 +172,19 @@ The movement in this 3b start room hinges heavily on convergence. The first down
 
 ## ForceMove
 
-The main feature of ForceMove is that we lose horizontal aerial control and, barring an interruption like a dash, we are "forced" to travel along a specified horizontal trajectory. Typical sources of ForceMove are wallkicks (10f) and springs (18f). The first notable consequence for wallkicks is that holding into and holding away from a wall for a walljump are equivalent: it can be helpful to preferentially hold in towards walls by default for wallkicks to generally just remove the variable of needing to switch directions in the first place (e.g. the 3b start example above). 
+The main feature of ForceMove is that we lose horizontal aerial control and, barring an interruption like a dash, we are "forced" to travel along a specified horizontal trajectory. Typical sources of ForceMove are wallkicks (10f) and springs (18f). The first notable consequence for wallkicks is that holding into and holding away from a wall for a walljump are equivalent: it can be helpful to preferentially hold in towards walls by default for wallkicks to generally just remove the variable of needing to switch directions in the first place. 
 
-Because the horizontal trajectory is forced, it is also normalized horizontally (wallkick leniency can add variance but is usually negligible outside of a few specific strats). There are many situations where once we enter ForceMove state, we can simply ride the ForceMove and focus our attention elsewhere, frequently a dash in a different direction. As a bonus, the risk of misdash can be mitigated by preloading the direction we need to dash in long before we actually dash in that direction. Increased air friction from releasing forward is also frequently irrelevant (e.g. if bottleneck is vertical), and the horizontal deceleration can help with precise horizontal positioning. 
+Because the horizontal trajectory is forced, it is also normalized horizontally. There are many situations where once we enter ForceMove state, we can simply ride the ForceMove and focus our attention elsewhere, frequently a dash in a different direction. As a bonus, the risk of misdash can be mitigated by preloading the direction we need to dash in long before we actually dash in that direction. Increased air friction from releasing forward is also frequently irrelevant (e.g. if bottleneck is vertical), and the horizontal deceleration can help with precise horizontal positioning. 
 
 Some strats rely on the properties of ForceMove to be set up precise positioning. <br>
-<img src="./media/science/3a_towels_wallkick.webp" width="480"/> <img src="./media/science/3a_shaft_demo_8f.webp" width="480"/>
+  <img src="./media/science/3a_towels_wallkick.webp" width="480"/> <img src="./media/science/3a_shaft_demo_8f.webp" width="480"/>
 
 Some spots where I let ForceMove carry me to reduce misdash risk and/or make a horizontal positioning easier at virtually no timeloss. <br>
   <img src="./media/science/7a_flag10_forcemove.webp" width="480"/>  <img src="./media/science/7a_flag5,4.webp" width="480"/> <br>
   <img src="./media/science/7b_0m_forcemove.webp" width="480"/>  <img src="./media/science/8b_forcemove.webp" width="480"/>
+
+ForceMove is useful to not lose horizontal speed while approaching a wall for a wallkick.<br>
+  <img src="./media/science/7arb_0m_wallkick.webp" width="480"/> <img src="./media/science/7arb_2500m_wallkick.webp" width="480"/>
 
 A max height jump and max height wallkick makes the first horizontal demo on 7a Flag 17 much more lenient. In this instance, going neutral during ForceMove from the wallkick eliminates the possibility of being too far and crashing into the ceiling spinners. Acting at the peak of each jump gives a consistent, sufficiently converged starting point for the first upright dash. The demo usually ends up being a 5f window. All this is at the cost of a fraction of the timesave compared to doing an upright instead of horizontal. <br> 
 <img src="./media/science/7a_flag17_demo1.webp" width="480"/>
@@ -195,8 +198,10 @@ For ground jumps there are 3 convergent vertical trajectories: full jump (jump h
   <img src="./media/science/jump_2tile.png" width="480"/>  <img src="./media/science/jump_3tile.png" width="480"/> <br>
   > Vertical trajectories of a full jump (blue), 12f jump (light blue), and a hyper (orange), accompanied by zoom-ins around a 1-, 2-, and 3-tile elevation gain on the upswing. Green regions show zones of cornercorrection and floorsnapping. Black dashed lines show the position of 1, 2, or 3 tiles, on/above being floorsnapping and below being cornercorrection. Zoomed in plots are rounded to the nearest y-px to highlight Madeline's rendered hitbox position. <br>
   
-Despite 1-tile alignment from jumping being a 4f, I find it more difficult than the 2-tile alignment primarily due to it empirically being "jump and then very quickly but also not too quickly dash", i.e. frame consecutive jump+dash fails. One way to get around this is to use a super and take advantage of DashCD: the 1st 4f of extension allow a buffered dash to line up with a 1-tile because DashCD nullifies the deadframe as long as you don't get 5th frame extension. This simply moves the 4f to a more comfy spot at the cost of a buffer and potentially a small amount of timeloss. <br>
+Despite 1-tile alignment from jumping being a 4f, I find it more difficult than the 2-tile alignment primarily due to it empirically being "jump and then very quickly but also not too quickly dash", i.e. frame consecutive jump+dash fails. One way to get around the frame-consecutive failure mode is to use a super and take advantage of DashCD: the 1st 4f of extension allow a buffered dash to line up with a 1-tile because DashCD nullifies the "deadframe" as long as you don't get 5th frame extension. This simply moves the 4f to a more comfy spot at the cost of a buffer and potentially a small amount of timeloss. The same principle applies to a 1-tile cornercorrect alignment, though this method would need the middle 3f extension. Again, still a 3f, just moved to a different place. <br>
   <img src="./media/science/2a_jump_1tile.webp" width="480"/>   <img src="./media/science/5b_jump_1tile.webp" width="480"/> <br> 
+  > Sometimes the target extension frame gains buffer leniency. Sound familiar?
+
 Cornercorrection significantly increases the required precision due to loss of floorsnap leniency. This is where I preferentially use hypers for some required cornercorrects such as 2-tile extension. The slower vertical speed of hypers makes the vertical positioning easier. In some cases, it may help with making horizontal progress as well. <br>
   <img src="./media/science/2a_hyper_1tile.webp" width="480"/>   <img src="./media/science/3a_hyper_1tile.webp" width="480"/> <br> 
 In a similar vein, max height hypers always cornercorrect at 2-tile height. The tradeoff for vertical speed and precision is quite clear, with hypers having much more lenient frame windows but losing ~4f on average for a 1-tile alignment and ~10f for a 2-tile alignment, measured from the middle of their respective frame windows.
