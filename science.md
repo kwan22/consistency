@@ -249,6 +249,11 @@ Images show the first possible updash frame for the 2nd 7a Flag 2 and the 8arb H
 With the right vertical positioning, using dash-attack leniency to hold towards the wall adds 1f of leniency (3f at best to 4f at best) to the updash on lakeskip. The updash can be unintuitively far away from the wall because of the combination of dash attack leniency and wallbounce leniency. Holding towards the wall immediately after the wallbounce happens to be optimal in this case. <br>
   <img src="./media/science/6a_lakeskip.webp" width="480"/>  <img src="./media/science/6a_lakeskip.png" width="480"/> <br>
 
+One caveat to be careful about is brushing against the wall, which immediately removes dash attack. For this transition wallbounce in 7arb 1500m towards the winged berry, I prefer to hold left shortly after hitting the wallbounce. In principle, holding left the whole time for the transition wallbounce is fine, but being slightly late on the transition buffer while holding left will cause the transition wallbounce to fail. The wallbounce being neutral for a few frames has essentially no impact on the room. The image shows the first frame I started holding left in this run. <br>
+  <img src="./media/science/7arb_1500m_winged.webp" width="480"/>  <img src="./media/science/7arb_1500m_winged.png" width="480"/> 
+
+---
+
 The massive loss of vertical speed opens up some setups enable a larger frame window to fire a wallbounce within a precise y-pos. Firing a wallbounce during dash attack leniency significantly reduces the sensitivity of the wallbounce trajectory to jump timing. Once again, another instance of a speed vs precision tradeoff. <br>
   <img src="./media/science/dash_ypos.png" width="480"/> <br>
 Getting clean landing in 3a shaft-3 requires a wallbounce at the top ~5px of the 1-tile thick platform. The grounded ultra setup not only gives a consistent horizontal position for the updash, but also puts us in a vertical position such that dash attack leniency gives us a large and consistent (5-6f depending on cornercorrection) frame window to hit this clean landing. Otherwise, passing through this spatial window at max dash speed gives a 1-2f window on the jump input for clean landing. <br>
