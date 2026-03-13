@@ -232,9 +232,18 @@ Images show the first possible updash frame for the 2nd 7a Flag 2 and the 8arb H
 With the right vertical positioning, using dash-attack leniency to hold towards the wall adds 1f of leniency (3f at best to 4f at best) to the updash on lakeskip. The updash can be unintuitively far away from the wall because of the combination of dash attack leniency and wallbounce leniency. Holding towards the wall immediately after the wallbounce happens to be optimal in this case. <br>
   <img src="./media/science/6a_lakeskip.webp" width="480"/>  <img src="./media/science/6a_lakeskip.png" width="480"/> <br>
 
-The massive loss of vertical speed opens up some setups enable a larger frame window to fire a wallbounce within a precise y-pos. Getting clean landing in 3a shaft-3 requires a wallbounce at the top ~5px of the 1-tile thick platform. The grounded ultra setup not only gives a consistent horizontal position for the updash, but also puts us in a vertical position such that dash attack leniency gives us a large and consistent (5-6f depending on cornercorrection) frame window to hit this clean landing. Otherwise, passing through this window at max dash speed gives a 1-2f for clean landing.
+The massive loss of vertical speed opens up some setups enable a larger frame window to fire a wallbounce within a precise y-pos. Firing a wallbounce during dash attack leniency significantly reduces the sensitivity of the wallbounce trajectory to jump timing. Once again, another instance of a speed vs precision tradeoff. <br>
+  <img src="./media/science/dash_ypos.png" width="480"/> <br>
+Getting clean landing in 3a shaft-3 requires a wallbounce at the top ~5px of the 1-tile thick platform. The grounded ultra setup not only gives a consistent horizontal position for the updash, but also puts us in a vertical position such that dash attack leniency gives us a large and consistent (5-6f depending on cornercorrection) frame window to hit this clean landing. Otherwise, passing through this spatial window at max dash speed gives a 1-2f window on the jump input for clean landing. <br>
+  <img src="./media/science/3a_shaft_dashattack.webp" width="480"/> <br>
+I apply a similar principle to a section of 7a Flag 1. It is optimal to super when dashing left towards the wall to resolve the vertical bottleneck. I opt to start the updash from the ground level and wallbouncing during dash attack. This makes lining up the following cornercorrected super more normalized with larger frame windows, shown below. <br>
+  <img src="./media/science/7a_flag1_dashattack.webp" width="480"/>  <img src="./media/science/7a_flag1_dashattack_window.png" height="270"/> <br>
+> Nominal frame data for the right dash as a function of prior wallbounce timing when starting the updash from the ground. Frame 0 is the last frame of dash, frames 1-6 are dash attack leninecy.
 
-y compression: 3a shaft, 7a flag 1
+The exact frame data here depends on subpixels so only nominal values are given, but regardless, the windows will be large. Furthermore, the timings are commonly performed timings: dash attack leniency and peak wallbounce height timings are commonly used in many places so I am very used to them and they take no additional brain space. By comparison, with the optimal super before the updash to save 0.1-0.2, the frame data becomes some combination of:
+- tighter: most likley a faster y-speed while aiming the right dash
+- more arbitrary: either jump on some arbitrary mid-late extension frame to line up the wallbounce peak height, or right dash at some arbitrary position along the wallbounce trajectory
+- less normalized: add variables in the extension timing of the super and subsequent updash
 
 ## Buffer chains
 
@@ -247,3 +256,9 @@ yujene depths final spam
 zkad route
 
 6b multiboost
+
+## Conclusions
+
+what does this all mean
+
+how did i find all this frame data: just slow down and see what happens
