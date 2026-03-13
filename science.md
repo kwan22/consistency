@@ -99,6 +99,23 @@ Wavedashes present a way to control the timing of a hyper. As much as wavedash.p
 
 ---
 
+### Buffer chains
+  <img src="./media/science/just_spam_meme.png" height="270"/>  <img src="./media/science/just_spam_yujene.webp" width="480"/> <br>
+> "It's free time save, just buffer" - too many people to count
+
+Much of Celeste's high input density and high-speed movement comes down to learning the muscle memory for movement sequences, where you may learn the timing of one input relative to a previous one. One of the challenges is chaining many consecutive buffers. A fundamental property of buffering is that the action does not occur at the same time as the input. This can add variance to timings that we are used to. A canonical example would be buffering extended hyper when landing without a dash. 
+
+The normal way to learn extended hyper timing is a muscle memory of the 10-14f rhythm between dash and jump. This is perhaps the most important arbitrary timing to learn in the game and is a must-know for reaching intermediate - advanced levels of play. When buffering the dash is thrown into the mix, our beloved timing gets a little befuddled. Buffering the dash means the jump input is no longer always 10-14f timing: for example, it could be a 14-18f timing. <br>
+<img src="./media/science/buffer_extension.png" width="960"/>
+>Frame structure for buffering extended hyper. The dash can be input anywhere between -4 and 0 and it comes out on 0. The jump timing is always a 5f window, but it's timing relative to your button press has variance.
+
+Empirically, the typical way to handle this is just "jump a bit later than usual." As you stack more consecutive buffers there becomes increasingly more "wiggle room" for input timings relative to a previous input. In many cases of high-density, multi-buffer sequences, I often find muscle memory to quickly fall apart, and need visual cues to reliably anchor my timing.
+
+<img src="./media/science/7arb_1500m_tripledemo.webp" width="480"/> <br>
+> A fully buffered strat, but terribly unintuitive for muscle memory, being not only a long buffer sequence but also various extra freeze frames thrown in between. I heavily rely for visual cues in the background textures to help me guide my dash timings.
+
+---
+
 ## Pre-transition hyper
 
 Hypering just before a transition is highly convergent across different starting x-positions because of the structure of the hyper trajectory and the properties of transitions. Some seemingly pixel-perfect or subpixel-precise strats involving a hyper before transition frequently have a pixel range that are a multiple of 5 in which they work because this convergence.
@@ -244,12 +261,6 @@ The exact frame data here depends on subpixels so only nominal values are given,
 - tighter: most likley a faster y-speed while aiming the right dash
 - more arbitrary: either jump on some arbitrary mid-late extension frame to line up the wallbounce peak height, or right dash at some arbitrary position along the wallbounce trajectory
 - less normalized: add variables in the extension timing of the super and subsequent updash
-
-## Buffer chains
-
-7arb 1500m triple demo
-
-yujene depths final spam
 
 ## Miscellaneous
 
