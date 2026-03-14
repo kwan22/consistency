@@ -264,6 +264,8 @@ One caveat to be careful about is colliding with a wall, which immediately remov
 
 The massive loss of vertical speed opens up some setups enable a larger frame window to fire a wallbounce within a precise y-pos. Firing a wallbounce during dash attack leniency significantly reduces the sensitivity of the wallbounce trajectory to jump timing. Once again, another instance of a speed vs precision tradeoff. <br>
   <img src="./media/science/dash_ypos.png" width="480"/> <br>
+  > The elevation gain of an updash as a function of time.
+
 Getting clean landing in 3a shaft-3 requires a wallbounce at the top ~5px of the 1-tile thick platform. The grounded ultra setup not only gives a consistent horizontal position for the updash, but also puts us in a vertical position such that dash attack leniency gives us a large and consistent (5-6f depending on cornercorrection) frame window to hit this clean landing. Otherwise, passing through this spatial window at max dash speed gives a 1-2f window on the jump input for clean landing. <br>
   <img src="./media/science/3a_shaft_dashattack.webp" width="480"/> <br>
 I apply a similar principle to a section of 7a Flag 1. It is optimal to super when dashing left towards the wall to resolve the vertical bottleneck. I opt to start the updash from the ground level and wallbouncing during dash attack. This makes lining up the following cornercorrected super more normalized with larger frame windows, shown below. <br>
