@@ -70,8 +70,6 @@ In some cases, the divergence may be acceptable if it is reactable. For this hig
   
   Each of the colored red/green/yellow boxes corresponds to a rightdash+buffered updash pair. Dashing in the leftside red box means the buffered updash comes out on the rightside red box, etc. By starting the rightdash in the 12px window, we remove the failure mode of updashing too early. The updash itself is bufferable, but depending on where the rightdash is, the updash may have extra leniency frames. For example, if rightdashing from the left red box, the updash may be from the right red box (5f buffer), or it can also be slightly late: 1f late updashes on the right green box, 2f late updashes on the right yellow box. Rightdashing from the left yellow box has no added leniency frames beyond the buffer, as the 1st possible updash is also the last one. [Link to stratpost](https://discord.com/channels/403698615446536203/617809769322774533/1086837734607441931).
 
-The key takeaway from this strat is that a 3f is transformed into a ~6f with a setup that loses a few frames. 
-
 ---
 
   Coincidentally, the ultra off the coreblock in 8a-HOTM-H has almost exactly the same structure as the 2500m ARB example above. It's a 3f window to downright after a buffered transition hyper to avoid negative liftboost. That 3f can then be transformed into a buffer out of DashCD by carefully starting the demo in a 12px window. I won't rehash all the details as it's similar to above, but I will mention some nuances. The failure mode of not properly buffering the transition hyper is more relevant here compared to the 2500m ARB example above. The choice of demo vs downright also matters from a leniency perspective. Horizontal dashes move 4 px/frame, and a downright moves ~3.4 px/frame. The higher speed from a horizontal dash effectively expands the pixel range over which this concept works, i.e. the dash timing upon transition is less sensitive to starting position when the dash speed is faster (see sensitivity analysis below for a more generalized form of this). [Link to stratpost](https://discord.com/channels/403698615446536203/617809769322774533/1380229565674164317). <br>
@@ -117,7 +115,6 @@ The same principle applies to other dash tech. These downrights can be made much
 
 A similar story can be said for instant hypers. Jump can be pressed on frames 0-4 for an instant hyper, which empirically translates to "instantly", hence the name. One technique to mitigate the variance in jump timing is to stagger jump presses. This is mainly useful for when jump can be held for a long time, as tight jump releases are just extra complicated if you are staggering jumps. Personally I'll use a dashjump + jump combo in some instances where it is crucial to buffer instant hyper. In these situations, I'll pad a tiny bit of delay between dashjump and jump. When the dash is properly buffered, a jump portion of dashjump doesn't actually do anything because it is lost to freezeframes. It simply serves to save me if I didn't actually buffer the dash and put too much delay between dash and my regular jump. It is a similar principle to staggering jumps on diagonal demo cornerkicks that are notorious for having variable timing because of the crouch state dynamics. In principle, one could roll a whole series of jumps as even more insurance, but not all of us have that luxury and would probably be too mentally taxing to do for every instant hyper. <br>
   <img src="./media/science/5a_depths_instahyper.webp" width="480"/>  <img src="./media/science/7a_1500m_instahyper.webp" width="480"/> 
-
 
 ---
 
@@ -274,12 +271,10 @@ I apply a similar principle to a section of 7a Flag 1. It is optimal to super wh
 > Nominal frame data for the right dash as a function of prior wallbounce timing when starting the updash from the ground. Frame 0 is the last frame of dash, frames 1-6 are dash attack leninecy.
 
 The exact frame data here depends on subpixels so only nominal values are given, but regardless, the windows will be large. Furthermore, the timings are commonly performed timings: dash attack leniency and peak wallbounce height timings are commonly used in many places so I am very used to them and they take no additional brain space. By comparison, with the optimal super before the updash to save 0.1-0.2, the frame data becomes some combination of:
-- tighter: most likley a faster y-speed while aiming the right dash
+- tighter: most likely a faster y-speed while aiming the right dash
 - more arbitrary: either jump on some arbitrary mid-late extension frame to line up the wallbounce peak height, or right dash at some arbitrary position along the wallbounce trajectory
 - less normalized: add variables in the extension timing of the super and subsequent updash
 
 ## Conclusions
 
-what does this all mean
-
-how did i find all this frame data: just slow down and see what happens
+Many examples showcased various leniency mechanics enabling highly consistent movement. Others showed ways to improve leniency usually by making a small sacrifice in movement and/or some setup to remove variables and input complexity. The examples showcased are by no means optimal strats: I intentionally tank timeloss on many conventional strats just to ease precision. Despite all the numbers and frame data, I only use those to guide me when finding ways to simplify otherwise difficult movement and make a decision on what I want to put into my plan. Celeste offers so many ways to play the speed vs precision tradeoff game that allows runners to take different paths to the same goal as an avenue of self expression. These show some of the ways that I express myself.
