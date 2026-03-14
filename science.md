@@ -51,7 +51,8 @@ Divergence usually manifests as a small and/or discontinuous frame window, or on
 
 In some cases, the divergence may be acceptable if it is reactable. For this high-speed strat in 5a Rescue, there are 4 viable coyote jump frames, but frames 1-2 and 3-4 require different responses. The major challenge here is reacting to which set you get. While you have over half a second to decide during transition, it is certainly not easy to tell, especially with Madeline moving so fast, and the 2nd/3rd frame looking similar to each other. <br>
   <img src="./media/science/5a_rescue_fast1.webp" width="480"/>   <img src="./media/science/5a_rescue_fast1_labeled.png" width="480"/> <br>
-  <img src="./media/science/5a_rescue_fast2.webp" width="480"/>   <img src="./media/science/5a_rescue_fast2_labeled.png" width="480"/>
+  <img src="./media/science/5a_rescue_fast2.webp" width="480"/>   <img src="./media/science/5a_rescue_fast2_labeled.png" width="480"/> <br>
+  > A puff of smoke indicates where the coyote jump occured, serving as a visual cue for making a split-second decision.
 
 ---
 
