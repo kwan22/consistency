@@ -12,6 +12,8 @@ The following discusses some common patterns that I use in my own speedruns. The
 
 Many examples are provided and discussed in great technical detail. These details are provided to illustrate the kinds of patterns I like to look for and apply to my own gameplay.
 
+The technical details will go beyond basic knowledge of Celeste speedrunning mechanics and discuss some of the game's inner workings. For those less familiar, you may want to have the TAS [tech](https://docs.google.com/document/d/1RVXyO7AZB-r7X3FxkxrBob775qWdhfOyBEOGGbnTgws/edit?tab=t.0#heading=h.yyzcmogdk15a) and [reference](https://docs.google.com/document/d/1z4caXIKvoEX-0gK3ApuJaJmDpy8NYAe62Dqt7Xxa9Tk/edit?tab=t.0#heading=h.vr60wzpdjz6c) on hand.
+
 - [Leniency and convergence](#leniency-and-convergence)
 - [Buffering and DashCD](#buffering-and-dashcd)
 - [Transitions](#transitions)
@@ -75,14 +77,14 @@ The key takeaway from this strat is that a 3f is transformed into a ~6f with a s
   Coincidentally, the ultra off the coreblock in 8a-HOTM-H has almost exactly the same structure as the 2500m ARB example above. It's a 3f window to downright after a buffered transition hyper to avoid negative liftboost. That 3f can then be transformed into a buffer out of DashCD by carefully starting the demo in a 12px window. I won't rehash all the details as it's similar to above, but I will mention some nuances. The failure mode of not properly buffering the transition hyper is more relevant here compared to the 2500m ARB example above. The choice of demo vs downright also matters from a leniency perspective. Horizontal dashes move 4 px/frame, and a downright moves ~3.4 px/frame. The higher speed from a horizontal dash effectively expands the pixel range over which this concept works, i.e. the dash timing upon transition is less sensitive to starting position when the dash speed is faster (see sensitivity analysis below for a more generalized form of this). [Link to stratpost](https://discord.com/channels/403698615446536203/617809769322774533/1380229565674164317). <br>
   <img src="./media/science/8a_hotmh_ultra.webp" width="480"/> 
 
-<img src="./media/science/5b_mm_final.webp" width="480"/> <img src="./media/science/6a_hollows_kevinslide.webp" width="480"/> 
-
-> The same principle applies to other dash tech. These downrights can be made much more lenient by starting the instant hyper before transition from the right spot.
+The same principle applies to other dash tech. These downrights can be made much more lenient by starting the instant hyper before transition from the right spot. <br>
+<img src="./media/science/5b_mm_final.webp" width="480"/> <img src="./media/science/6a_hollows_kevinslide.webp" width="480"/> <br>
+> For these particular strats, hold jump until the buffered dash out of DashCD.
 
 ---
 
 <img src="./media/science/dashcd_gultra.png" width="480"/> <br>
-> Speed of a buffered grounded ultra as a function of jump timing on a hyper. DashCD 1-5 is extension timing, over which there is a range of 20 speed. That is half the difference between a good and bad cb, usually not too consequential but can propagate to large differences when carrying that speed over great distances like in the eyeball room.
+> Speed of a buffered grounded ultra as a function of jump timing on a hyper. DashCD 1-5 is extension timing, over which there is a range of 20 px/s on the buffered grounded ultra. That is half the difference between a good and bad cb, usually inconsequential and compensated by the hyper itself moving faster than the dash during DashCD, but can propagate to noticeable differences when carrying that speed over great distances like in the eyeball room.
 
   Controlling DashCD is useful to control speed on a grounded ultra. I use DashCD to control my speed at the start of the eyeball room of 5A. The most normalized entry for the eyeball room is to transition hyper and buffer a downright, but the speed of the buffered downright and ensuing Theo ultra depend on how much DashCD remains upon entering the room. Making the cycle requires good speed generation and preservation. Good speed generation means good Theo ultras, and good speed preservation, in practice, means fitting in has many bhops as possible. I particularly struggled with fitting in small bhops near the beginning, so instead I opted to line up my DashCD entering the eyeball room itself such that the first Theo ultra is as fast as possible given a buffered transition hyper into downright out of DashCD, and simplify the beginning of the room with just 1 big bhop instead of 2 small bhops that can easily go wrong. In terms of speed generation, dashing from as far away as possible (entering with the lowest DashCD) leads to the least loss to air friction and consequently the fastest ultra upon a buffered downright. However in this case, the lip at the start of the eyeball room presents some complications. If DashCD is too low when entering eyeball room, there is not enough height+distance covered to avoid the lip with a buffered hyper+downright, resulting in a grounded ultra on the upper platform before Theo (sometimes it still works but I wouldn't count on it). <br>
 <img src="./media/science/5a_eyeball_dashcd.webp" width="480"/> <img src="./media/science/5a_eyeball_dashcd_labeled.png" width="480"/> 
@@ -106,12 +108,16 @@ The key takeaway from this strat is that a 3f is transformed into a ~6f with a s
 
   The normal way to learn extended hyper timing is a muscle memory of the 10-14f rhythm between dash and jump. Nobody is counting 10-14f in their head, we just feel it out after having hit and missed it many times over. This is perhaps the most important arbitrary timing to learn in the game and mastery of it is a must for reaching advanced levels of play. When buffering the dash is thrown into the mix, our beloved timing gets a little befuddled. Buffering the dash means the jump input is no longer always 10-14f timing: for example, it could be a 14-18f timing, depending on where in the buffer window the dash was input. <br>
 <img src="./media/science/buffer_extension.png" width="960"/>
->Frame structure for buffering extended hyper. The dash can be input anywhere from -4 to 0 and it comes out on 0. The jump timing is always the same 5f window with respect to the dash coming out, but its timing relative to your button press has variance.
+>Frame structure of a dash and ensuing jump. The dash can be input anywhere from -4 to 0 and it comes out on 0. The jump timing for instant and extended hypers is always the same 5f window with respect to the dash coming out, but its timing relative to your button press has variance. 
 
   Empirically, the typical way to handle this is just "jump a bit later than usual." As you stack more consecutive buffers there becomes increasingly more "wiggle room" for input timings relative to a previous input. In many cases of high-density, multi-buffer sequences, I often find muscle memory to quickly fall apart, and need visual cues to reliably anchor my timing.
 
 <img src="./media/science/7arb_1500m_tripledemo.webp" width="480"/> <br>
 > A fully buffered strat, but terribly unintuitive for muscle memory, being not only a long buffer sequence but also various extra freeze frames thrown in between. I heavily rely for visual cues in the background textures to help me guide my dash timings.
+
+A similar story can be said for instant hypers. Jump can be pressed on frames 0-4 for an instant hyper, which empirically translates to "instantly", hence the name. One technique to mitigate the variance in jump timing is to stagger jump presses. This is mainly useful for when jump can be held for a long time, as tight jump releases are just extra complicated if you are staggering jumps. Personally I'll use a dashjump + jump combo in some instances where it is crucial to buffer instant hyper. In these situations, I'll pad a tiny bit of delay between dashjump and jump. When the dash is properly buffered, a jump portion of dashjump doesn't actually do anything because it is lost to freezeframes. It simply serves to save me if I didn't actually buffer the dash and put too much delay between dash and my regular jump. It is a similar principle to staggering jumps on diagonal demo cornerkicks that are notorious for having variable timing because of the crouch state dynamics. In principle, one could roll a whole series of jumps as even more insurance, but not all of us have that luxury and would probably be too mentally taxing to do for every instant hyper. <br>
+  <img src="./media/science/5a_depths_instahyper.webp" width="480"/>  <img src="./media/science/7a_1500m_instahyper.webp" width="480"/> 
+
 
 ---
 
@@ -226,9 +232,9 @@ Requiring cornercorrection significantly increases the required precision due to
   <img src="./media/science/2a_hyper_1tile.webp" width="480"/>   <img src="./media/science/3a_hyper_1tile.webp" width="480"/> <br> 
 In a similar vein, max height hypers always cornercorrect at 2-tile height. The tradeoff for vertical speed and precision is quite clear, with hypers having much more lenient frame windows but losing ~4f on average for a 1-tile alignment and ~10f for a 2-tile alignment, measured from the middle of their respective frame windows.
 
-3-tile alignment tells an interesting story. Cornercorrection on the upswing is still a 2f despite a small loss of speed due to gravity. Both full and 12f jump give good frame data for 3-tile alignment, but full jump actually has 4 deadframes at the very top. 12f jump gives a continuous 15f window for alignment, as well as an 8f continuous window for floorsnap, where full jump would have a double 3f. This type of trajectory and ensuing frame pattern shows up in both [3arb jasig](https://discord.com/channels/403698615446536203/617809769322774533/1354968751262535691) and [7b heart demo](https://discord.com/channels/403698615446536203/617809769322774533/1353209624232464395). It can be argued that from a consistency perspective, releasing jump is preferred for 3-tile alignment to remove deadframes despite adding another variable in jump release timing, as even releasing jump up to 3 frames earlier than 12f still gives a massive, continuous window for a 3-tile alignment. 
+3-tile alignment tells an interesting story. Cornercorrection on the upswing is still a 2f despite a small loss of speed due to gravity. Both full and 12f jump give good frame data for 3-tile alignment, but full jump actually has 4 deadframes at the very top. 12f jump gives a continuous 15f window for alignment, as well as an 8f continuous window for floorsnap, where full jump would have a double 3f. This type of trajectory and ensuing frame pattern shows up in both [3arb jasig](https://discord.com/channels/403698615446536203/617809769322774533/1354968751262535691) and [7b heart demo](https://discord.com/channels/403698615446536203/617809769322774533/1353209624232464395). It can be argued that releasing jump is preferred for 3-tile alignment to remove deadframes despite adding another variable in jump release timing, as even a 9f jump still gives a massive, continuous window for a 3-tile alignment. 
 
-Below is a summary of the nominal frame data for these various types of jumps and canonical alignments. Exact frame data for specific geometries and movement options is largely case-by-case: these examples aim to highlight the common patterns. <br>
+Below is a summary of the nominal frame data for these various types of jumps and canonical alignments. Exact frame data for specific geometries and movement options is largely case-by-case: these examples aim to highlight some common patterns. <br>
   <img src="./media/science/tile_alignment_framedata.png" width="480"/>
 
   <img src="./media/science/3a_suite_final_cj.webp" width="480"/> <br>
@@ -239,7 +245,9 @@ Below is a summary of the nominal frame data for these various types of jumps an
 The key properties of dash attack of interest here are
 1. regain aerial control
 2. massive loss of vertical speed
-   
+
+### Aerial control 
+
 Regaining aerial control in this context means that wallbounces can gain some extra leniency away from the wall. In the 6 frames of dash attack leniency, Madeline can move up to 2.7px horizontally, theoretically adding that much leniency, room layout allowing. That said, it is not always easy or ideal to take advantage of this leniency. For example, holding in toward a wall means the wallbounce will experience increased air friction until away is held, which can be helpful or harmful depending on context. 
 
 The 2nd wallbounce on Flag 2 and the lava wallbounce in 8arb HOTM can be made easier with dash attack leniency. That said, I aim to have my horizontal trajectory as normalized as possible before attempting these precise wallbounces. In both of these cases, I aim the previous wallbounces to be flush/cornercorrect on the wall to normalize horizontal trajectory so the updash alignment is the exact same timing every single time. In these cases, having the first wallbounce flush against the wall reduces the horizontal distance, and thus total time traveled and total speed gained from acceleration. The lineup may or may not be optimal from a movement perspective, but what I am actually interested here is the normalization and the (potentially) increased frame window for the updash due to low horizontal speed. I also aim the 1st wallbounce in the 8arb example to be low so I don't vertically overshoot the lava during dash attack leniency. <br>
@@ -250,10 +258,12 @@ Images show the first possible updash frame for the 2nd 7a Flag 2 and the 8arb H
 With the right vertical positioning, using dash-attack leniency to hold towards the wall adds 1f of leniency (3f at best to 4f at best) to the updash on lakeskip. The updash can be unintuitively far away from the wall because of the combination of dash attack leniency and wallbounce leniency. Holding towards the wall immediately after the wallbounce happens to be optimal in this case. <br>
   <img src="./media/science/6a_lakeskip.webp" width="480"/>  <img src="./media/science/6a_lakeskip.png" width="480"/> <br>
 
-One caveat to be careful about is brushing against the wall, which immediately removes dash attack. For this transition wallbounce in 7arb 1500m towards the winged berry, I prefer to hold left shortly after hitting the wallbounce. In principle, holding left the whole time for the transition wallbounce is fine, but being slightly late on the transition buffer while holding left will cause the transition wallbounce to fail. The wallbounce being neutral for a few frames has essentially no impact on the room. The image shows the first frame I started holding left in this run. <br>
+One caveat to be careful about is colliding with a wall, which immediately removes dash attack. For this transition wallbounce in 7arb 1500m towards the winged berry, I wait to hold left until shortly after hitting the wallbounce. In principle, holding left the whole time for the transition wallbounce is fine, but being slightly late on the transition buffer while holding left will cause the transition wallbounce to fail. The wallbounce being neutral for a few frames has essentially no impact on the room. The image shows the first frame I started holding left in this run. <br>
   <img src="./media/science/7arb_1500m_winged.webp" width="480"/>  <img src="./media/science/7arb_1500m_winged.png" width="480"/> 
 
 ---
+
+### Vertical speed loss
 
 The massive loss of vertical speed opens up some setups enable a larger frame window to fire a wallbounce within a precise y-pos. Firing a wallbounce during dash attack leniency significantly reduces the sensitivity of the wallbounce trajectory to jump timing. Once again, another instance of a speed vs precision tradeoff. <br>
   <img src="./media/science/dash_ypos.png" width="480"/> <br>
@@ -267,12 +277,6 @@ The exact frame data here depends on subpixels so only nominal values are given,
 - tighter: most likley a faster y-speed while aiming the right dash
 - more arbitrary: either jump on some arbitrary mid-late extension frame to line up the wallbounce peak height, or right dash at some arbitrary position along the wallbounce trajectory
 - less normalized: add variables in the extension timing of the super and subsequent updash
-
-## Miscellaneous
-
-zkad route
-
-6b multiboost
 
 ## Conclusions
 
