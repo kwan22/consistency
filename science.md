@@ -257,7 +257,7 @@ In a similar vein, max height hypers always cornercorrect at 2-tile height. The 
 
 ## Dash attack leniency
 
-The key properties of dash attack leniency of interest here are
+Dash attack leniency here refers to the 6 frames after a dash ends while still retaining some properties of a dash. The key properties of interest here are
 1. regain aerial control
 2. loss of vertical speed
 
