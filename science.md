@@ -4,15 +4,13 @@
 
 <img src="./media/science/is_this_timeloss.png" width="480"/>
 
-  The following discusses some common patterns that I use in my own speedruns. The discussion will be highly technical, including frame data, pixel/speed values, inner game mechanics, etc. to justify the logic. That said, the recurring themes are 
+  The following discusses some common patterns that I use in my own speedruns. The recurring themes are 
 1. Maximizing use of the game's leniency mechanics.
 2. Understanding the variables that your objective is most sensitive to.
 3. Eliminating variables to reduce input complexity and remove failure modes.
 4. Making small time sacrifices to relax precision and simplify inputs.
 
-Many examples are provided and discussed in great technical detail. These details are provided to illustrate the kinds of patterns I like to look for and apply to my own gameplay.
-
-The technical details will go beyond basic knowledge of Celeste speedrunning mechanics and discuss some of the game's inner workings. For those less familiar, you may want to have the TAS [tech](https://docs.google.com/document/d/1RVXyO7AZB-r7X3FxkxrBob775qWdhfOyBEOGGbnTgws/edit?tab=t.0#heading=h.yyzcmogdk15a) and [reference](https://docs.google.com/document/d/1z4caXIKvoEX-0gK3ApuJaJmDpy8NYAe62Dqt7Xxa9Tk/edit?tab=t.0#heading=h.vr60wzpdjz6c) on hand.
+Many examples are provided and discussed in great technical detail, including frame data, pixel and speed values, and inner game mechanics that go beyond basic speedrunning knowledge. For those less familiar, you may want to have the TAS [tech](https://docs.google.com/document/d/1RVXyO7AZB-r7X3FxkxrBob775qWdhfOyBEOGGbnTgws/edit?tab=t.0#heading=h.yyzcmogdk15a) and [reference](https://docs.google.com/document/d/1z4caXIKvoEX-0gK3ApuJaJmDpy8NYAe62Dqt7Xxa9Tk/edit?tab=t.0#heading=h.vr60wzpdjz6c) on hand. These details are provided to justify the logic and illustrate the concepts and patterns I like to look for and apply to my own gameplay. The overall goal is to understand the themes mentioned above.
 
 - [Leniency and convergence](#leniency-and-convergence)
 - [Buffering and DashCD](#buffering-and-dashcd)
