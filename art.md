@@ -2,7 +2,7 @@
 
 # The art of consistency
 
-<img src="./media/art/kaxy_kwan_gsa2.png" width="960"/>
+<img src="./media/art/strawberry_showdown_ss.png" width="960"/>
 
 The following discusses various aspects of my personal approach to consistency. The overarching philosophy is that Celeste speedrunning is a performing art, which serves as a basis for my principles on how to build and maintain consistency.
 
