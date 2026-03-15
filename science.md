@@ -294,7 +294,7 @@ I apply a similar principle to a section of 7a Flag 1. It is optimal to super wh
   <img src="./media/science/7a_flag1_dashattack.webp" width="480"/>  <img src="./media/science/7a_flag1_dashattack_window.png" height="270"/> <br>
 > Nominal frame data for the right dash as a function of prior wallbounce timing when starting the updash from the ground. Frame 0 is the last frame of dash, frames 1-6 are dash attack leninecy.
 
-The exact frame data here depends on subpixels so only nominal values are given, but regardless, the windows will be large. Furthermore, the timings are commonly performed timings: dash attack leniency and peak wallbounce height timings are commonly used in many places. I am well-veresed in them and they take no additional brain space. By comparison, with the optimal super before the updash to save 0.1-0.2, the frame data becomes some combination of:
+The exact frame data here depends on subpixels so only nominal values are given, but regardless, the windows will be large. Furthermore, the timings are commonly performed timings: dash attack leniency and peak wallbounce height timings are commonly used in many places. I am well-versed in them and they take no additional brain space. By comparison, with the optimal super before the updash to save 0.1-0.2, the frame data becomes some combination of:
 - tighter: most likely a faster y-speed while aiming the right dash
 - more arbitrary: either jump on some arbitrary mid-late extension frame to line up the wallbounce peak height, or right dash at some arbitrary position along the wallbounce trajectory
 - less normalized: add variables in the extension timing of the super and subsequent updash
