@@ -11,3 +11,5 @@ Celeste is the first game I've ever really speedrun. I didn't even have the inte
 [The art](https://github.com/kwan22/consistency/blob/main/art.md)
 
 [The science](https://github.com/kwan22/consistency/blob/main/science.md)
+
+tl;dr a peek into my brain :)
