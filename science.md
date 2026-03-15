@@ -304,7 +304,4 @@ Many examples showcased various leniency mechanics enabling highly consistent mo
 
 Runners need not understand all the underlying technical details: I only use yjese to guide me when finding ways to simplify otherwise difficult movement and make a decision on what I want to put into my plan. What's important is in finding the actions that your outcome is most sensitive to, and how to tune your actions to put yourself in a more favorable position. Celeste's physics and leniency mechanics enable many situations where small changes in actions lead to small or even no differences in outcome. 
 
-  <img src="./media/science/srh_jimmy_pillars_crop.png" width="480"/> <br>
-> It's not always easy to identify what the important variables are.
-
 Celeste offers so many ways to play the speed vs precision tradeoff game that allows runners to take different paths to the same goal as an avenue of self expression. These show some of the ways that I express myself. These drive my opinion on Celeste speedrunning being such a performing art. The goal is to carry out a plan of your choosing to the best of your ability, allowing yourself some margin for error to deliver the same performance.
