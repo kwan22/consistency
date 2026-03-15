@@ -72,6 +72,7 @@ In some cases, re-entry is not an option. For cases where I need/want a death st
 
 The combination of these two means that I don't need to spend time practicing them and I can pull them up at any time. I also apply this philosophy to death strats where re-entry is possible. Death strats that can transpose onto the entry strat are also nice because they simplify the mental burden. **In general, keep your backups as simple as possible**: don't spend your energy practicing complicated and nuanced backups: that's diluting your practice on situations you shouldn't be seeing often. <br>
 <img src="./media/art/7a_1500m_short.png" width="480"/> <img src="./media/art/8a_vertical_backup.png" width="480"/> <br>
+> Some examples where the death strat is easy to remember and execute (7a 1500m) or it can transpose onto the entry cycle (8a HOTM)
 
 Imagine having to memorize all the possible death strats in the final room of Resort ARB. There are 4 variations you would need to know: entry, death+2 berries, death+1 berry, and death+0 berries. Do you really want to spend the time and energy to learn all of them AND keep them all maintained? Are you going to put "3a final, death cycle with 1 berry" into your practice routine? What if there were THREE berries in ONE room? Or even more? Your time would be much better spent elsewhere. This is why [level 1 habits and red-dot are so important](https://github.com/kwan22/habits/blob/main/level1.md): have a basic idea of how to move and dodge major hazards, and then just get the hell out of there. <br>
 <img src="./media/art/3arb_final_1.png" width="480"/> <img src="./media/art/3arb_final_2.png" width="480"/><br>
@@ -79,6 +80,7 @@ Imagine having to memorize all the possible death strats in the final room of Re
 
 ## No reset runs
 <img src="./media/art/1xcity.png" width="960"/>
+> A snapshot from my first 27 any% that lost 12s in city
 
 >"An attempt isn't a failure or a success. It's just an expression of what your body knows." - [JM](https://pastebin.com/FLa4rh1H)
 
@@ -93,7 +95,8 @@ It's important to not only send no resets runs, but also understand the objectiv
 <details>
   <summary> 1:1x city and a dream</summary>
   
-  <img src="./media/art/27any.jpg" width="960"/>
+  <img src="./media/art/27any.jpg" width="960"/> <br>
+  > Journal of my first 27 any%
   
   This is a bit of a meme about my first 27 any%, but also reflects my values. Why did I not reset here? Is 27 viable with a 1:1x city? The point is not about whether 27 is viable with a 1:1x city, or that I am 10 seconds behind what I am capable of in the first minute, or that I was able to make up the 10 seconds lost by locking in. The point is that you can make mistakes anywhere, but you don't need to let that deter you from following through on the motions. Do I think 1:1x City is "27 viable?" Not in the sense that a 27 runner should be capable of much better, but it doesn't matter if it happens in fullgame. It just means I made mistakes that happened to be in an arbitrarily short segment near the beginning of the run. I would be on the lookout if I started to repeatedly make those same mistakes in past or future runs, but not that I need to practice City as a whole or that I should be resetting to save 10s in earlygame and lose sight of the process.
 </details>
