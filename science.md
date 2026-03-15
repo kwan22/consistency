@@ -12,6 +12,8 @@
 
 Many examples are provided and discussed in great technical detail, including frame data, pixel and speed values, and inner game mechanics that go beyond basic speedrunning knowledge. For those less familiar, you may want to have the TAS [tech](https://docs.google.com/document/d/1RVXyO7AZB-r7X3FxkxrBob775qWdhfOyBEOGGbnTgws/edit?tab=t.0#heading=h.yyzcmogdk15a) and [reference](https://docs.google.com/document/d/1z4caXIKvoEX-0gK3ApuJaJmDpy8NYAe62Dqt7Xxa9Tk/edit?tab=t.0#heading=h.vr60wzpdjz6c) on hand. These details are provided to justify the logic and illustrate the concepts and patterns I like to look for and apply to my own gameplay. The overall goal is to understand the themes mentioned above.
 
+## Table of contents
+
 - [Leniency and convergence](#leniency-and-convergence)
 - [Buffering and DashCD](#buffering-and-dashcd)
 - [Transitions](#transitions)
