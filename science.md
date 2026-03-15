@@ -160,7 +160,7 @@ This is a similar principle to staggering jumps on diagonal demo cornerkicks tha
 
   The [setup](https://discord.com/channels/403698615446536203/617809769322774533/1162859316479537265) for the downright cb in Intervention can be traced all the way back to the end of the previous room. There are 2 viable hyper trajectories on transition, thus a 10px window for the exiting hyper. Incidentally, one of the hyper trajectories is more forgiving than the other, but both are sufficient to set up the rest of the strat with reasonable leniency. <br>
   <img src="./media/science/2a_drcb.png" width="960"/>
-  > Because the setup starts from the previous room, so far there is no known normalized way of setting up the downright cb from entry.
+  > Because the setup starts from the previous room, so far there is no known normalized way of quickly setting up the downright cb from entry.
 
 ---
 
