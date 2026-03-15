@@ -16,8 +16,7 @@ The following discusses various aspects of my personal approach to consistency. 
 - [No reset runs](#no-reset-runs)
 
 ## Strat throttling
-<img src="./media/art/secure_3a_heart.png" width="960"/>
-
+<img src="./media/art/secure_3a_heart.png" width="960"/> <br>
 > "Just play Celeste" - [yujene](https://youtu.be/dMn6YJ-0fPs?si=AogDpwHAza9Q0MPt&t=2933)
 
 Strat selection is one of the major avenues of artistic self-expression in Celeste. There are so many strats that to choose, plus the varying amount of degrees of optimization, that give rise to a high granularity of speeds and accessiblity to gradual improvement. One of the age-old questions is how to choose new strats and going for risky vs safe strats. Everyone has different playstyles, each with their advantages and drawbacks. I won't rehash all the arguments here. It should be no surprise that I am biased towards safer strats, mainly because I think their accessibility makes them more suitable for building fundamentals and gradual improvement. 
@@ -31,8 +30,7 @@ There's a lot of discussion on what the most efficient practice methods are. I d
 Low mental load is particularly amenable for those of us who have limited time availability on playing Celeste. I might not have time to be grinding out all the hard strats in the entire any% category when I have less than an hour of available playtime per day. It might take me weeks or months to learn hard strats, by which time I've forgotten what I learned at the start and I get stuck in an endless cycle of relearning and derusting. I don't have to let that stop me from playing the game: there is so much of the game I can improve on. Just play the game, build fundamentals, and I will improve over time. Hard strats are just easier to pick up with stronger fundamentals.
 
 ## Whack-a-mole
-<img src="./media/art/tiyo_kwan_arb.png" width="960"/>
-
+<img src="./media/art/tiyo_kwan_arb.png" width="960"/> <br>
 >"Separate the results from the execution and the process" - [TGH](https://www.youtube.com/watch?v=XSDbB8dlrIE)
 
 A common misconception among newer players is that avoiding deaths should be a goal of going fast (so common that there's a [video about "the worst speedrunning advice ever"](https://www.youtube.com/watch?v=hveNNVUBU68)). The short of it is that lowering death count should be a side effect, not a primary goal. I apply this philosophy to the time as well: lowering time should be a side effect of my gameplay. This comes back to my take on Celeste speedrunning being a performing art: my focus is on whether I am executing my plan or not, not whether I am dying a lot or losing a lot of time. When I am in the fullgame phase, the time, just like deaths, simply becomes a consequence of my actions, not a benchmark to achieve. The goal of "saving time" is only considered when I am in the learning process and designing what plan I want to execute on.
@@ -42,8 +40,7 @@ When reviewing your runs, you may look at your journal or Livesplit deltas and j
 Actually identifying the most problematic moles can be tricky since, unless you a dedicated coach to guide you, it is up to you to isolate the signal from the noise. Part of my approach to this is an emotional, vibes-based response. I will just feel a general fear or annoyance as a pattern of making a particular mistake begins to show up. It's basically just watching the moles come and go. A portion of my mindset during runs is dedicated to this surveillance. This is where, again, I find the low death (or more generally, low-mistake), safe strat playstyle to be so much more tractable. It's just easier to identify where the real problem spots are when there aren't that many problems to begin with, and not get caught up in statistical anomalies. It's a concentrated mental capacity onto a focused space. **The whack-a-mole game is easier to solve when there aren't that many moles to begin with.**
 
 ## Practicing segments
-<img src="./media/art/wonder_kwan_arb.png" width="960"/>
-
+<img src="./media/art/wonder_kwan_arb.png" width="960"/> <br>
 >"it's easy to go wrong here, and one way i've gone wrong in the past is playing checkpoint and IL whack-a-mole, where i play a segment with the goal of getting a PB or "clean run", which usually takes a long time. this strategy is not inherently inefficient, but in the context of practicing for a fullgame run it's not ideal" - [WonderGinger](https://gist.github.com/WonderGinger/8df5904f296afb8d40f879767d0ebfe1)
 
 Experienced players understand the importance of practicing in smaller segments, whether it be rooms, checkpoints, or ILs. The pitfall I see too often is overvaluing the result and not the process. It may be fun to grind out ILs/checkpoints for a particular target time, but in the context of fullgame, my goal is seeing whether I am executing my plan or not. For this reason, I tend to choose segments that are not defined by the arbitrary boundaries of checkpoints and ILs, but on what I feel contains the elements that need the most practice. Attaining a certain checkpoint or IL time are more useful to me as standardized benchmarks for movement, not as indicators of readiness. 
@@ -51,8 +48,7 @@ Experienced players understand the importance of practicing in smaller segments,
 Trying to grind out a strong IL time, unless you are doing it for the sake of it as an IL, is easy to get stuck for the wrong reasons. Why do you need to play the entirety of Summit for practice? Would you ever practice 1a Start - 4a Shrine as a single segment? Don't worry about getting a clean Summit time when practicing it as a segment: focus on if you are doing what you want to do! Achieving a segment goal time has little reflection on my confidence in that segment. I may never get a clean run that I would be satisfied with as an IL, but still have it sufficiently practiced for fullgame purposes, as long as I understand what I need to do. On the flip side, just because I got one clean run of an IL doesn't mean that everything within is guaranteed to be solved.
 
 ## Maintenance and oil checks
-<img src="./media/art/8c_tourney.png" width="960"/>
-
+<img src="./media/art/8c_tourney.png" width="960"/> <br>
 >"Never assume you've learned anything" - [JM](https://pastebin.com/FLa4rh1H)
 
 In principle, once I identify a problem strat (I call this putting it on the chopping block), there are only 2 options: fix it or drop it. Unfortunately I cannot say too much on how to choose, this is a conversation you have to candidly have with yourself. Maybe you can try to look at average return on timesave, maybe there's some missing sauce you're not aware of, maybe you can send it to the lab and check what the science says, but in general I would recommend to just feel it out, ask for help if you're not sure about sauce, and make a judgment call. There is no right answer, but I will say that it is so common to find improvement by dropping problematic strats. **Dropping a strat doesn't mean giving up, it just means you need to focus your attention elsewhere.** Have an easier strat as a placeholder: you can always come back and revisit at any time. I've lost count of the amount of times I've been able to easily pick up a strat that I used to struggle with just by becoming better at the game, despite never practicing the harder strat in the time between. 
@@ -62,8 +58,7 @@ Between runs or as part of warm-up at the start of a session, I like to perform 
 As much of a proponent I am for dropping hard strats, the decision to drop any strat should be done outside of actual fullgame runs. Dropping a strat mid-run because you're on a good pace and don't want to throw the run is being focused on the time and not the performance. Your fullgame runs should be a commitment of the plan you want to execute on, and confidence in your stratset is key. During runs, you may find it hard to hit certain strats while handling nerves on a good pace. Dropping a strat for nerve control is understandable: it's along the same lines as mental load management. Either way, you should commit to a decision and stick to it during fullgame.
 
 ## Death strats
-<img src="./media/art/3a_towels.png" width="960"/>
-
+<img src="./media/art/3a_towels.png" width="960"/> <br>
 > "Planting seeds in the forest when your front yard is wilting." - secureaccount
 
 Another major pitfall I see is on optimization of death strats. I cannot understate the power of opting for re-entry where possible. Having to learn multiple strats for one room just adds mental burden and dilutes our practice. Why should you spend time practicing a situation you seldom find yourself in? Additionally, re-entering lets us get in another rep of the entry strat and probe if we indeed have a problem or if it was just a statistical anomaly. It doesn't matter if re-entry is slow and maybe loses 2s. That's not the point: that's being concerned with the result and not the process. Why did you mess up the entry strat in the first place? It's a perfect time to check the mole. If you feel you have the capacity for learning optimized death strats and want to add them to your plan, then sure, go for it at your own risk. I would just warn you of how easy it is to hit diminishing returns with them and even potential harm from them occupying unnecessary mental real estate. 
@@ -81,9 +76,7 @@ Imagine having to memorize all the possible death strats in the final room of Re
 > Some snapshots from my first 48 ARB
 
 ## No reset runs
-<img src="./media/art/1xcity.png" width="960"/>
-> A snapshot from my first 27 any% that lost 12s in city
-
+<img src="./media/art/1xcity.png" width="960"/> <br>
 >"An attempt isn't a failure or a success. It's just an expression of what your body knows." - [JM](https://pastebin.com/FLa4rh1H)
 
 A lot of this discussion culminates into why I almost exclusively do no-resets in my fullgame sessions. Generally, the basic reason for no-resets is to keep everything derusted and get your reps in on everything you need to perform on. My own additional goal is to follow through on my performance and see if I am executing what I want to do. The no-resets diagnose of my performance and sheds light on what the problem spots are. The time will naturally follow as I improve my performance. My fullgame sessions look something like this
