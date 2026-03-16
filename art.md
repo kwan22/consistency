@@ -14,6 +14,7 @@ The following discusses various aspects of my personal approach to consistency. 
 - [Maintenance and oil checks](#maintenance-and-oil-checks)
 - [Death strats](#death-strats)
 - [No reset runs](#no-reset-runs)
+- [Conclusions](#conclusions)
 
 ## Strat throttling
 <img src="./media/art/secure_3a_heart.png" width="960"/> <br>
