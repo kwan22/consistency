@@ -222,7 +222,7 @@ This is a similar principle to staggering jumps on diagonal demo cornerkicks tha
 
 ## ForceMove
 
-  The main feature of ForceMove is that we lose horizontal aerial control and, barring an interruption like a dash, we are "forced" to travel along a specified horizontal trajectory. Typical sources of ForceMove are wallkicks (10f) and springs (18f). The first notable consequence for wallkicks is that holding into and holding away from a wall for a walljump are equivalent: it can be helpful to preferentially hold in towards walls by default for wallkicks to generally just remove the variable of needing to switch directions in the first place. 
+  The main feature of ForceMove is that we lose horizontal aerial control and, barring an interruption like a dash, we are "forced" to travel along a specified horizontal trajectory. Typical sources of ForceMove are wallkicks (11f) and springs (19f). The first notable consequence for wallkicks is that holding into and holding away from a wall for a walljump are equivalent: it can be helpful to preferentially hold in towards walls by default for wallkicks to generally just remove the variable of needing to switch directions in the first place. 
 
   Because the horizontal trajectory is forced, it is also normalized horizontally. There are many situations where once we enter ForceMove state, we can simply ride the ForceMove and focus our attention elsewhere, frequently a dash in a different direction. As a bonus, the risk of misdash can be mitigated by preloading the direction we need to dash in long before we actually dash in that direction. Increased air friction from releasing forward is also frequently irrelevant (e.g. if bottleneck is vertical), and the horizontal deceleration can help with precise horizontal positioning. 
 
@@ -236,7 +236,6 @@ Some spots where I let ForceMove carry me to reduce misdash risk and/or make a h
 ForceMove is useful to not need to change directions for a wallkick.<br>
   <img src="./media/science/2arb_awake_wallkick.webp" width="480"/> <img src="./media/science/3arb_shaft_2berry_wallkick.webp" width="480"/> <br>
   <img src="./media/science/7arb_2500m_wallkick.webp" width="480"/> <img src="./media/science/8a_hotm_wallkick.webp" width="480"/> 
-
 
   A max height jump and max height wallkick makes the first horizontal demo on 7a Flag 17 much more lenient. In this instance, going neutral during ForceMove from the wallkick eliminates the possibility of being too far and crashing into the ceiling spinners. Acting at the peak of each jump gives a consistent, sufficiently converged starting point for the first upright dash. The demo usually ends up being a 5f window. Waiting for peak height loses time to optimal movement but is still appreciably faster than doing a 2nd upright. <br> 
 <img src="./media/science/7a_flag17_demo1.webp" width="480"/>
