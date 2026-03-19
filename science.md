@@ -43,7 +43,7 @@ Changes in action generally refer to differences in timing or positioning. These
 
   Using a transition hyper to normalize the entry to the final room of 3a loses 0.1 but makes the wavedash off the first pillar much more lenient. Typical movement involves a grounded ultra after transition, which virtually always results in a 3f window to downright onto the 1st pillar (assuming jump is held the whole time). With the transition hyper, the downright can be up to 7f, though not all 7f are equal. Being slightly late on buffering the transition hyper is also inconsequential. Besides frame windows, the major draw of the transition hyper is that the trajectory is the exact same every time: the timing for the wave is always the exact same timing, and there are no inputs in between to add complexity. <br>
 <img src="./media/science/3a_suite_final_entry.webp" width="480"/> <br>
-> The downwards trajectory of the transition hyper as Madeline approaches the first pillar also helps make the wavedash more lenient. Releasing jump on the grounded ultra entry can theoretically replicate this concept, but this adds another variable.
+> Both the slower horizontal trajectory and the downwards trajectory of the transition hyper as Madeline approaches the first pillar also helps make the wavedash more lenient, as landing a wavedash on a platform requires starting the downright within a diagonal pixel window. Releasing jump on the grounded ultra entry can theoretically replicate this concept, but this adds another variable.
 
 ---
 
