@@ -119,6 +119,9 @@ The same principle applies to other dash tech. These downrights can be made much
 <img src="./media/science/5a_fastheart.webp" width="480"/> <img src="./media/science/8a_itc_berry_wavecb.webp" width="480"/> <br>
 > Using a wave makes these hypers bufferable and perfectly convergent. If they were to start from the ground, they would be frame-perfect ([5a](https://discord.com/channels/403698615446536203/617809769322774533/1300619075344535604)), or have otherwise terrible frame data ([8arb](https://discord.com/channels/403698615446536203/617809769322774533/1229338086454988860)).
 
+
+fwfw + search arb examples
+
 ---
 
 ### Buffer chains
