@@ -6,9 +6,9 @@
 
   The following discusses some common patterns that I look for in my own speedruns. It is not a recommendation for faster strats: many examples shown are intentionally slower than conventional strats. The recurring themes are 
 1. Maximizing use of the game's leniency mechanics.
-2. Understanding the variables that your objective is most sensitive to.
+2. Understanding the actions/variables that your objectives are most sensitive to.
 3. Eliminating variables to reduce input complexity and remove failure modes.
-4. Making small time sacrifices to relax precision and simplify inputs.
+4. Making small time sacrifices to relax precision, simplify inputs, and/or reduce sensitivity.
 
 Many examples are provided and discussed in great technical detail, including frame data, pixel and speed values, and inner game mechanics that go beyond basic speedrunning knowledge. For those less familiar, you may want to have the TAS [tech](https://docs.google.com/document/d/1RVXyO7AZB-r7X3FxkxrBob775qWdhfOyBEOGGbnTgws/edit?tab=t.0#heading=h.yyzcmogdk15a) and [reference](https://docs.google.com/document/d/1z4caXIKvoEX-0gK3ApuJaJmDpy8NYAe62Dqt7Xxa9Tk/edit?tab=t.0#heading=h.vr60wzpdjz6c) on hand. These details are provided to justify the logic and illustrate the concepts. The overall goal is to understand the themes mentioned above.
 
@@ -356,6 +356,10 @@ The exact frame data here depends on subpixels so only nominal values are given,
 
 Many examples showcased various leniency mechanics enabling highly consistent movement. Others showed ways to improve leniency usually by making a small sacrifice in movement and/or some setup to remove variables and input complexity. The examples showcased are by no means optimal strats: I intentionally tank timeloss on many conventional strats just to ease precision. 
 
-The core of science is understanding cause and effect. Runners need not understand all the frame data or underlying technical details: I only use these to guide me when finding ways to simplify otherwise difficult movement and make decisions on what I want to put into my plan. What's important is finding the actions that your outcome is most sensitive to, and how to tune your actions to put yourself in a favorable position to get the outcome you want. Celeste's physics and leniency mechanics enable many situations where small changes in actions lead to small or even no differences in outcome. 
+The core of science is understanding cause and effect. A core theme of my playstyle is understanding the variables (causes) that your outcome (effect) is most sensitive to, and how to tune your actions to put yourself in a favorable position to get the outcome you want. Reducing sensitivity of my desired outcome to those critical variables is a key theme of my playstyle. In many cases, these can be achieved at little to no timeloss if it done with convergence. Some variables can be removed entirely in some situations. Celeste's physics and leniency mechanics enable many situations where small changes in actions frequently lead to small or even no differences in outcome. 
+
+Runners need not understand all the frame data or underlying technical details, but I do find it helpful to understand the science of strats, at least to the extent of understanding how failure modes can happen. That way, when something goes wrong, I know how to adjust, and which variables I need to pay the most attention to. I may even design some setup to make that variable easier to deal with at the cost of a small bit of time, as reflected in the history of my Celestecord stratposts. Whether or not you understood all the technical details of this document, I hope it's clear that these are the overall themes of what I am trying to accomplish.
 
 Celeste offers so many ways to play the speed vs precision tradeoff game that allows runners to take different paths to the same goal as an avenue of self expression. These show some of the ways that I express myself and drive my opinion on Celeste speedrunning being a performing art. The goal is to carry out a well-defined plan, allowing yourself an error margin of your choice at each step along the way.
+
+[back to top](#the-science-of-consistency)
