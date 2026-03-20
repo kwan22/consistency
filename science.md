@@ -96,7 +96,7 @@ The same principle applies to other dash tech. These downrights can be made much
   Controlling extension timing is important for achieving different kinds of trajectories. In general, for a short-range horizontal speed burst (e.g. hyper bhop), it's fastest to jump early in the extension to reach hyper-speed earlier. For carrying speed over longer distances (e.g. ultras), jumping later on extension is faster due to keeping a higher speed from less air friction losses, propagating to a larger 1.2x multiplier on ultras as well.
 
 <img src="./media/science/2a_awake_ultra_comparison.webp" width="480"/> <img src="./media/science/2a_awake_ultra_comparison.png" width="480"/> <br>
-> Comparison of a canonical ultra: composed of an extended hyper into a buffered downdiagonal. The upper animation/image shows a 1st frame extension, and the lower animation/image shows a last frame extension. The 1st frame extension gets the earlier speed burst and is initially faster, but last frame extension retains higher speed over longer distances.
+> Comparison of a canonical ultra, composed of an extended hyper into a buffered downdiagonal with sufficient elevation drop. The upper animation/image shows a 1st frame extension, and the lower animation/image shows a last frame extension. The 1st frame extension gets the earlier speed burst and is initially faster (red lines), but last frame extension retains higher speed over longer distances (green lines).
   
   Differences in extension timing may not always be relevant in terms of determing success vs failure of a strat, and are generally more important for intrinsic movement optimization. However, some strats are more sensitive to these small differences in speed. In these cases, I may take effort to target a particular extension frame I want if I feel that achieving success is sensitive enough to those speed differences to warrant it. For example, in the 2nd long room of 1500m, I try to be mindful of aiming for later extensions to generate higher speeds, making it easier to make the cycle I want. <br>
 <img src="./media/science/7a_1500m_2ndlong_ultra.png" width="480"/> <br>
@@ -119,8 +119,12 @@ The same principle applies to other dash tech. These downrights can be made much
 <img src="./media/science/5a_fastheart.webp" width="480"/> <img src="./media/science/8a_itc_berry_wavecb.webp" width="480"/> <br>
 > Using a wave makes these hypers bufferable and perfectly convergent. If they were to start from the ground, they would be frame-perfect ([5a](https://discord.com/channels/403698615446536203/617809769322774533/1300619075344535604)), or have otherwise terrible frame data ([8arb](https://discord.com/channels/403698615446536203/617809769322774533/1229338086454988860)).
 
+<img src="./media/science/fw_fw_entry.webp" width="480"/> <br>
+> The cue I pay attention to is the height to start the wavedash to help me buffer a faster cutscene ultra. Carrying good speed from this cutscene ultra at the start of FWFW propagates a long way and can be helpful to make a cycle later in the room.
 
-fwfw + search arb examples
+Another niche but interesting use case is to use a wavedash to add buffer leniency to the 2f demo setups out of hypers through spinners. These demos are normally lined up with jumping on the first 2 frames of extension, and then buffering a horizontal demo. By starting the downright from a particular height to add buffer leniency, the 2f becomes a 5-6f, at least for height alignment. In these cases, converging the vertical trajectory is the appeal, and aligning the horizontal trajectory (or other factors) frequently becomes the difficulty bottleneck. For example, in the 5arb Search example below, the initial downright dash for the wavedash is nominally a 4f because the horizontal positioning the hyper is important as well. <br>
+<img src="./media/science/5arb_search_demo_setup.webp" width="480"/> <br>
+> Shoutouts to Preimi for pioneering this idea and applying it to not only [5arb](https://discord.com/channels/403698615446536203/1137847168850477146/1137847184616861757) but also [3a cassette](https://discord.com/channels/403698615446536203/1137847192028201030/1137847207035404308) and [7arb](https://discord.com/channels/403698615446536203/1137847217282093087/1137847240455639040).
 
 ---
 
