@@ -137,6 +137,6 @@ The exact frame data here depends on subpixels so only nominal values are given,
 
 ---
 
-[Prevoius: transitions](https://github.com/kwan22/consistency/blob/main/science2_transitions.md)
+[Previous: transitions](https://github.com/kwan22/consistency/blob/main/science2_transitions.md)
 
 [back to top](#other-movement-mechanics)
