@@ -2,6 +2,8 @@
 
 # Transitions
 
+  <img src="./media/science/3a_start_winged_entry.png" width="960"/> <br>
+
 Summary: transitions can converge slightly different trajectories onto the exact same one. These are showcased very well with a hyper shortly before transition, and frequently followed by releasing jump during transition. Sensitivity of a hyper's trajectory to jump timing release can be significantly dampened to a pre-transition hyper.
 
 Buffering transition movement (e.g. transition hyper) is well-known for being an excellent normalizer: these are so common and I discussed them briefly already, so I won't go over them again here. Hypering just before a transition seems like it adds variance depending on the starting x-position, but it turns out that it is still highly convergent across different starting x-positions because of the structure of the hyper trajectory and the properties of transitions. Some seemingly pixel-perfect or subpixel-precise strats involving a hyper before transition frequently have a pixel range that are a multiple of 5 in which they work because this convergence.
