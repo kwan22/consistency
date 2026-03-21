@@ -1,6 +1,9 @@
 [back to science](https://github.com/kwan22/consistency/blob/main/science.md)
 
 # Buffering and DashCD
+
+  <img src="./media/science/4a_granny_ultra.png" width="960"/> <br>
+
   Buffering is perhaps the epitome of convergence: inputs of different timings generate the exact same result. While chains of consecutive buffers can quickly become complicated and arguably divergent from a human perspective (more about this later), sparse buffers showcase the concept of convergence quite well. Common, visually obvious examples include transition buffers, cb and cornerkick setups, and pause-buffering. 
 
   DashCD is one of the less visually obvious mechanics but has incredible potential in creating buffer setups. Besides the strats that essentially require it, a lot of leniency on otherwise hard strats can be gained by putting yourself in a position to buffer out of DashCD. Setting up the positioning may cost a small amount of time, opening an avenue to play the speed vs precision tradeoff game. In other cases, carefully designing the buffer leniency enables us to mitigate divergence in situations where small differences in extension timing can have significant impact. Below are some examples where understanding DashCD is useful.
