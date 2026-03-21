@@ -1,5 +1,3 @@
-[back to main](https://github.com/kwan22/consistency/blob/main/README.md)
-
 [back to science](https://github.com/kwan22/consistency/blob/main/science.md)
 
 # Buffering and DashCD
