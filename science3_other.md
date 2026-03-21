@@ -2,7 +2,9 @@
 
 # Other movement mechanics
 
-Various other features of Madeline's movement options that can be leveraged for consistency.
+<img src="./media/science/8arb_fireskip.png" width="960"/>
+
+Various other features of Madeline's movement mechanics that can be leveraged for consistency.
 
 # Table of contents
 
@@ -64,7 +66,7 @@ Turnarounds over (moving) blocks are notoriously divergent because of how sensit
 
 ## Cornercorrection
 
-Summary: some examples and patterns to think about when looking to make midair dash tech more consistent.
+Summary: some examples and patterns to think about when looking to make midair supers and hypers more consistent.
 
   For ground jumps there are 3 convergent vertical trajectories: full jump (jump held the whole time), [12f jump](https://www.youtube.com/watch?v=82gpR9rozdE), and full hyper. These are extremely common actions and provide various options for lining up for cornercorrection/floorsnapping, showcasing the speed vs precision tradeoff quite nicely. The plots below the vertical trajectories of these jumps, focusing on their alignment with 1-, 2-, and 3-tile height as canonical examples. Of the two collision correction mechanics, cornercorrection by itself is mainly useful for 2-tile extensions and other precise positioning setups as x-pos is perfectly normalized. Floorsnapping by itself is less useful and is generally harder to intentionally use because of its smaller pixel window, but has some niche applications. In general, when arbitrarily passing over a floor at max jump speed (105), there is a 78% chance that cornercorrection is a 2f and 12% chance a 3f. 1-tile height alignment happens to enjoy the luxury of a 3f window for cornercorrection, improving accessibility of some setups like [burgyscience](https://discord.com/channels/403698615446536203/617809769322774533/1092191710504828979). Combined cornercorrection/floorsnap leniency for alignment at max jump speed is virtually always a 4f, barring some shenanigans like floating point precision. <br>
   <img src="./media/science/jump_trajectory.png" width="480"/>   <img src="./media/science/jump_1tile.png" width="480"/> <br> 
