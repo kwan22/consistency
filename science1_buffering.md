@@ -38,7 +38,6 @@ Summary: some precise (1-3f window) inputs are transformed into a 5f or larger w
 
 The same principle applies to other dash tech. These downrights can be made much more lenient by starting the instant hyper before transition from the right spot. <br>
 <img src="./media/science/5b_mm_final.webp" width="480"/> <img src="./media/science/6a_hollows_kevinslide.webp" width="480"/> <br>
-> For these particular strats, hold jump until the buffered dash out of DashCD.
 
 ---
 
