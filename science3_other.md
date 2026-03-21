@@ -135,4 +135,8 @@ The exact frame data here depends on subpixels so only nominal values are given,
 - more arbitrary: either jump on some arbitrary mid-late extension frame to line up the wallbounce peak height, or right dash at some arbitrary position along the wallbounce trajectory
 - less normalized: add variables in the extension timing of the super and subsequent updash
 
+---
+
+[Prevoius: transitions](https://github.com/kwan22/consistency/blob/main/science2_transitions.md)
+
 [back to top](#other-movement-mechanics)
