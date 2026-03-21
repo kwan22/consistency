@@ -8,9 +8,9 @@
 
 - [Introduction](#introduction)
 - [Leniency and convergence](#leniency-and-convergence)
-- [Buffering and DashCD](https://github.com/kwan22/consistency/blob/main/science1.md)
-- [Transitions](https://github.com/kwan22/consistency/blob/main/science2.md)
-- [Other movement mechanics](https://github.com/kwan22/consistency/blob/main/science3.md)
+- [Buffering and DashCD](https://github.com/kwan22/consistency/blob/main/science1_buffering.md)
+- [Transitions](https://github.com/kwan22/consistency/blob/main/science2_transitions.md)
+- [Other movement mechanics](https://github.com/kwan22/consistency/blob/main/science3_other.md)
 
 ## Introduction
 
@@ -21,12 +21,6 @@
 4. Making small time sacrifices to relax precision, simplify inputs, and/or reduce sensitivity.
 
 Many examples are provided and discussed in great technical detail, including frame data, pixel and speed values, and inner game mechanics that go beyond basic speedrunning knowledge. For those less familiar, you may want to have the TAS [tech](https://docs.google.com/document/d/1RVXyO7AZB-r7X3FxkxrBob775qWdhfOyBEOGGbnTgws/edit?tab=t.0#heading=h.yyzcmogdk15a) and [reference](https://docs.google.com/document/d/1z4caXIKvoEX-0gK3ApuJaJmDpy8NYAe62Dqt7Xxa9Tk/edit?tab=t.0#heading=h.vr60wzpdjz6c) on hand. These details are provided to justify the logic and illustrate the concepts. The overall goal is to understand the themes mentioned above. A summary of each section is provided immediately under its header.
-
-The core of science is understanding cause and effect. A core theme of my playstyle is understanding the variables (causes) that your outcome (effect) is most sensitive to, and how to tune your actions to put yourself in a favorable position to get the outcome you want. Reducing sensitivity of my desired outcome to those critical variables is a key theme. In many cases, these can be achieved at little to no timeloss if it done with convergence. Some variables can be removed entirely in some situations, making the problem more tractable. Celeste's physics and leniency mechanics enable many situations where small changes in actions frequently lead to small or even no differences in outcome. 
-
-Runners need not understand all the frame data or underlying technical details, but I do find it helpful to understand the science of strats, at least to the extent of understanding how failure modes can happen. That way, when something goes wrong, I know how to adjust, and which variables I need to pay the most attention to. I may even design some setup to make that variable easier to deal with at the cost of a small bit of time, as reflected in the history of my Celestecord stratposts. 
-
-Whether or not you understand the full extent the technical details of the examples is not necessarily important, but I do hope that it's clear that these are the overall themes of what I am trying to accomplish. Celeste offers so many ways to play the speed vs precision tradeoff game that allows runners to take different paths to the same goal as an avenue of self expression. These show some of the ways that I express myself and drive my opinion on Celeste speedrunning being a performing art. The goal is to carry out a well-defined plan, allowing yourself an error margin of your choice at each step along the way.
 
 ## Leniency and convergence
 
@@ -62,7 +56,13 @@ In some cases, the divergence may be acceptable if it is reactable. For this hig
   <img src="./media/science/5a_rescue_fast2.webp" width="480"/>   <img src="./media/science/5a_rescue_fast2_labeled.png" width="480"/> <br>
   > A cloud of dust indicates where the coyote jump occured, serving as a visual cue for making a split-second decision on which trajectory you think you are on.
 
-The examples in the following sections showcase different ways I aim to make difficult movement more consistent, often by striving towards convergence, and sometimes at the cost of a small amount of time.
+---
+
+The core of science is understanding cause and effect. The main application of science towards consistency in gameplay is understanding the variables (causes) that your outcome (effect) is most sensitive to, and how to tune your actions to put yourself in a favorable position to get the outcome you want. Reducing sensitivity of my desired outcome to those critical variables is a key theme. In many cases, these can be achieved at little to no timeloss if it done with convergence. Some variables can be removed entirely in some situations, making the problem more tractable. Celeste's physics and leniency mechanics enable many situations where small changes in actions frequently lead to small or even no differences in outcome. 
+
+Runners need not understand all the frame data or underlying technical details, but I do find it helpful to understand the science of strats, at least to the extent of understanding how failure modes can happen. That way, when something goes wrong, I know how to adjust, and which variables I need to pay the most attention to. I may even design some setup to make that variable easier to deal with at the cost of a small bit of time, as reflected in the history of my Celestecord stratposts. Overall, the goal of this document is to showcase the themes I mentioned at the beginning.
+
+Celeste offers so many ways to play the speed vs precision tradeoff game that allows runners to take different paths to the same goal as an avenue of self expression. These show some of the ways that I express myself and drive my opinion on Celeste speedrunning being a performing art. The goal is to carry out a well-defined plan, allowing yourself an error margin of your choice at each step along the way.
 
 ---
 
