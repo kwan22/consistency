@@ -1,8 +1,4 @@
-[back to main](https://github.com/kwan22/consistency/blob/main/README.md)
-
 [back to science](https://github.com/kwan22/consistency/blob/main/science.md)
-
-[Previous: buffering](https://github.com/kwan22/consistency/blob/main/science1_buffering.md)
 
 # Transitions
 
@@ -81,5 +77,7 @@ The plot below shows the possible hyper trajectories, y-position and x-speed (u)
 </details>
 
 ---
+
+[Previous: buffering](https://github.com/kwan22/consistency/blob/main/science1_buffering.md)
 
 [Next: Other movement mechanics](https://github.com/kwan22/consistency/blob/main/science3_other.md)
