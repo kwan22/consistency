@@ -1,3 +1,7 @@
+[back to science](https://github.com/kwan22/consistency/blob/main/science.md)
+
+# Other movement mechanics
+
 Various other features of Madeline's movement options that can be leveraged for consistency.
 
 # Table of contents
@@ -130,3 +134,5 @@ The exact frame data here depends on subpixels so only nominal values are given,
 - tighter: most likely a faster y-speed while aiming the right dash
 - more arbitrary: either jump on some arbitrary mid-late extension frame to line up the wallbounce peak height, or right dash at some arbitrary position along the wallbounce trajectory
 - less normalized: add variables in the extension timing of the super and subsequent updash
+
+[back to top](#other-movement-mechanics)
