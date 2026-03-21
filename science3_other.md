@@ -15,6 +15,8 @@ Various other features of Madeline's movement mechanics that can be leveraged fo
 
 ## Half-gravity
 
+See "Falling and fastfalling" under the [TAS Reference](https://docs.google.com/document/d/1z4caXIKvoEX-0gK3ApuJaJmDpy8NYAe62Dqt7Xxa9Tk)
+
   <img src="./media/science/3a_demo.png" width="480"/>  <img src="./media/science/7b_heart_demo_crop.png" width="480"/> <br>
   > Half-gravity can be either helpful or harmful for precise vertical positioning.
 
@@ -35,6 +37,8 @@ Summary: releasing jump to avoid half-gravity can be done in a convergent manner
   <img src="./media/science/fw_sg_halfgrav.webp" width="480"/> <img src="./media/science/fw_sg_halfgrav.png" width="480"/> <br>
   
 ## ForceMove
+
+See "Walljumps" and "Springs" in the [TAS Reference](https://docs.google.com/document/d/1z4caXIKvoEX-0gK3ApuJaJmDpy8NYAe62Dqt7Xxa9Tk)
 
 Summary: understanding ForceMove is useful to normalize some trajectories and/or remove the variable of timing a directional input.
 
@@ -66,6 +70,8 @@ Turnarounds over (moving) blocks are notoriously divergent because of how sensit
 
 ## Cornercorrection
 
+See: "Colliding with floors" under the [TAS Reference](https://docs.google.com/document/d/1z4caXIKvoEX-0gK3ApuJaJmDpy8NYAe62Dqt7Xxa9Tk)
+
 Summary: some examples and patterns to think about when looking to make midair supers and hypers more consistent.
 
   For ground jumps there are 3 convergent vertical trajectories: full jump (jump held the whole time), [12f jump](https://www.youtube.com/watch?v=82gpR9rozdE), and full hyper. These are extremely common actions and provide various options for lining up for cornercorrection/floorsnapping, showcasing the speed vs precision tradeoff quite nicely. The plots below the vertical trajectories of these jumps, focusing on their alignment with 1-, 2-, and 3-tile height as canonical examples. Of the two collision correction mechanics, cornercorrection by itself is mainly useful for 2-tile extensions and other precise positioning setups as x-pos is perfectly normalized. Floorsnapping by itself is less useful and is generally harder to intentionally use because of its smaller pixel window, but has some niche applications. In general, when arbitrarily passing over a floor at max jump speed (105), there is a 78% chance that cornercorrection is a 2f and 12% chance a 3f. 1-tile height alignment happens to enjoy the luxury of a 3f window for cornercorrection, improving accessibility of some setups like [burgyscience](https://discord.com/channels/403698615446536203/617809769322774533/1092191710504828979). Combined cornercorrection/floorsnap leniency for alignment at max jump speed is virtually always a 4f, barring some shenanigans like floating point precision. <br>
@@ -93,6 +99,8 @@ In a similar vein, max height hypers always cornercorrect at 2-tile height. The 
   > The massive frame windows on 3-tile alignment might seem like overkill, but they reduce sensitivity to horizontal trajectories or other factors that influence the time at which the corner is reached. The actual frame windows for the above midair super/demohyper at 3-tile elevation gain may be less than 8f because of horizontal considerations and seekers, but they allow slightly different trajectories approaching the corner to still be viable.
 
 ## Dash attack
+
+See "Dashing" and "Wallbounces" in the [TAS Reference](https://docs.google.com/document/d/1z4caXIKvoEX-0gK3ApuJaJmDpy8NYAe62Dqt7Xxa9Tk)
 
 Summary: dash attack leniency can be used to relax precision on wallbounces, usually at the cost of a small amount of timeloss.
 
