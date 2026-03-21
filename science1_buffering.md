@@ -19,6 +19,8 @@
 
 Summary: some precise (1-3f window) inputs are transformed into a 5f or larger window by designing a buffer to overlap with the target window.
 
+---
+
   <img src="./media/science/generic_wallbounce.png" width="480"/> <br>
 > The faster you are moving, the less time you spend in a spatial window, and more precise it becomes to act within that spatial window. The plot shows the average frame window for hitting a wallbounce as a function of horizontal speed. Colored regions indicate nominal values for typical movement options.
 
@@ -43,6 +45,8 @@ The same principle applies to other dash tech. These downrights can be made much
 ## Converging extension timings
 
 Summary: some target extension frames can be turned into a buffer to optimize and/or normalize trajectories and mitigate divergence stemming slightly different extension timings.
+
+---
 
 <img src="./media/science/dashcd_gultra.png" width="480"/> <br>
 > Speed of a buffered grounded ultra as a function of jump timing on a hyper. DashCD 1-5 is extension timing, with DashCD(1) being the last extension frame. There is a range of ~21 px/s on the buffered grounded ultra speed over the extension timing window. That is half the difference between a good and bad cb, usually inconsequential and compensated by reaching hyper-speed earlier, but can propagate to noticeable differences when carrying that speed over great distances like in the eyeball room. 
@@ -95,6 +99,8 @@ The fundamental use case of these DashCD setups is that we are incurring a timer
 > "It's free time save, just buffer" - typical chatter
 
 Summary: long chains of consecutive buffers are not easy due to potential timing drift.
+
+---
 
   Much of Celeste's high input density and high-speed movement comes down to learning the muscle memory for movement sequences, where you may learn the timing of one input relative to a previous one. One of the challenges is chaining many consecutive buffers. A fundamental property of buffering is that the action does not occur at the same time as the input. This can add variance to timings that we are used to. A canonical example would be buffering extended hyper when landing without a dash. 
 
