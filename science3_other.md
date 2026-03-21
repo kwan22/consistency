@@ -22,6 +22,8 @@ See "Falling and fastfalling" under the [TAS Reference](https://docs.google.com/
 
 Summary: releasing jump to avoid half-gravity can be done in a convergent manner, enabling more consistent strats and can make fundamental movement optimizations more consistent.
 
+---
+
   Half-gravity can extend the duration Madeline exists at a given y-position. This typically manifests in line-ups with max-height jumps, e.g. 3a shaft demo and a whole class of demos out of a max height hyper. Certain actions and interactions apply autojump as well, that act as if we are holding jump to give us half-grav whether we want to or not. Fundamentally, half-gravity can improve frame-windows by keeping us in a small range of y-positions for an extended period of time. On the other hand, half-gravity can be detrimental sometimes, by introducing deadframes on some strats, or more fundamentally, adding unnecessary airtime. Avoiding half-gravity can also be convergent, where releasing jump on different frames gives the exact same trajectory if timed correctly (the so-called [12f jump](https://www.youtube.com/watch?v=82gpR9rozdE)). In summary, a 12f-17f jump gives the exact same trajectory for a normal jump, i.e. releasing jump at different times within this 6f window gives the same result. There is an even larger window for wallbounce jump release convergence (9f) and other vertically boosted trajectories. A good deal of RTA movement optimization comes from putting yourself in a position to enjoy the luxury of a convergent jump release timing. For a speedrunner's perspective, the main takeaway is "just hold jump" to use half-gravity, or "find the 6f+ jump release window" to avoid half-gravity. <br> 
   <img src="./media/science/6f_jump_release.png" width="480"/> <br>
   > Sometimes there are [setups](https://discord.com/channels/403698615446536203/617809769322774533/1269034670272680093) to have a 12f jump give an optimal landing
@@ -41,6 +43,8 @@ Summary: releasing jump to avoid half-gravity can be done in a convergent manner
 See "Walljumps" and "Springs" in the [TAS Reference](https://docs.google.com/document/d/1z4caXIKvoEX-0gK3ApuJaJmDpy8NYAe62Dqt7Xxa9Tk)
 
 Summary: understanding ForceMove is useful to normalize some trajectories and/or remove the variable of timing a directional input.
+
+---
 
   The main feature of ForceMove is that we lose horizontal aerial control and, barring an interruption like a dash, we are "forced" to travel along a specified horizontal trajectory. Typical sources of ForceMove are wallkicks (11f) and springs (19f). The first notable consequence for wallkicks is that holding into and holding away from a wall for a walljump are equivalent: it can be helpful to preferentially hold in towards walls by default for wallkicks to generally just remove the variable of needing to switch directions in the first place. 
 
@@ -74,6 +78,8 @@ See: "Colliding with floors" under the [TAS Reference](https://docs.google.com/d
 
 Summary: some examples and patterns to think about when looking to make midair supers and hypers more consistent.
 
+---
+
   For ground jumps there are 3 convergent vertical trajectories: full jump (jump held the whole time), [12f jump](https://www.youtube.com/watch?v=82gpR9rozdE), and full hyper. These are extremely common actions and provide various options for lining up for cornercorrection/floorsnapping, showcasing the speed vs precision tradeoff quite nicely. The plots below the vertical trajectories of these jumps, focusing on their alignment with 1-, 2-, and 3-tile height as canonical examples. Of the two collision correction mechanics, cornercorrection by itself is mainly useful for 2-tile extensions and other precise positioning setups as x-pos is perfectly normalized. Floorsnapping by itself is less useful and is generally harder to intentionally use because of its smaller pixel window, but has some niche applications. In general, when arbitrarily passing over a floor at max jump speed (105), there is a 78% chance that cornercorrection is a 2f and 12% chance a 3f. 1-tile height alignment happens to enjoy the luxury of a 3f window for cornercorrection, improving accessibility of some setups like [burgyscience](https://discord.com/channels/403698615446536203/617809769322774533/1092191710504828979). Combined cornercorrection/floorsnap leniency for alignment at max jump speed is virtually always a 4f, barring some shenanigans like floating point precision. <br>
   <img src="./media/science/jump_trajectory.png" width="480"/>   <img src="./media/science/jump_1tile.png" width="480"/> <br> 
   <img src="./media/science/jump_2tile.png" width="480"/>  <img src="./media/science/jump_3tile.png" width="480"/> <br>
@@ -103,6 +109,8 @@ In a similar vein, max height hypers always cornercorrect at 2-tile height. The 
 See "Dashing" and "Wallbounces" in the [TAS Reference](https://docs.google.com/document/d/1z4caXIKvoEX-0gK3ApuJaJmDpy8NYAe62Dqt7Xxa9Tk)
 
 Summary: dash attack leniency can be used to relax precision on wallbounces, usually at the cost of a small amount of timeloss.
+
+---
 
 Dash attack leniency here refers to the 6 frames after a dash ends while still retaining some properties of a dash. The key properties of interest here are
 1. regain aerial control
