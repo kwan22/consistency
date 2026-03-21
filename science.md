@@ -66,6 +66,6 @@ Celeste offers so many ways to play the speed vs precision tradeoff game that al
 
 ---
 
-[Next: Buffering and DashCD](https://github.com/kwan22/consistency/blob/main/science1.md)
+[Next: Buffering and DashCD](https://github.com/kwan22/consistency/blob/main/science1_buffering.md)
 
 [back to top](#the-science-of-consistency)
