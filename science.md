@@ -2,9 +2,17 @@
 
 # The science of consistency
 
-## Introduction
-
 <img src="./media/science/is_this_timeloss.png" width="480"/>
+
+## Table of contents
+
+- [Introduction](#introduction)
+- [Leniency and convergence](#leniency-and-convergence)
+- [Buffering and DashCD](https://github.com/kwan22/consistency/blob/main/science1.md)
+- [Transitions](https://github.com/kwan22/consistency/blob/main/science2.md)
+- [Other movement mechanics](https://github.com/kwan22/consistency/blob/main/science3.md)
+
+## Introduction
 
   The following discusses some common patterns that I look for in my own speedruns. It is not a recommendation for faster strats: many examples shown are intentionally slower than conventional strats. The recurring themes are 
 1. Maximizing use of the game's leniency mechanics.
@@ -19,13 +27,6 @@ The core of science is understanding cause and effect. A core theme of my playst
 Runners need not understand all the frame data or underlying technical details, but I do find it helpful to understand the science of strats, at least to the extent of understanding how failure modes can happen. That way, when something goes wrong, I know how to adjust, and which variables I need to pay the most attention to. I may even design some setup to make that variable easier to deal with at the cost of a small bit of time, as reflected in the history of my Celestecord stratposts. 
 
 Whether or not you understand the full extent the technical details of the examples is not necessarily important, but I do hope that it's clear that these are the overall themes of what I am trying to accomplish. Celeste offers so many ways to play the speed vs precision tradeoff game that allows runners to take different paths to the same goal as an avenue of self expression. These show some of the ways that I express myself and drive my opinion on Celeste speedrunning being a performing art. The goal is to carry out a well-defined plan, allowing yourself an error margin of your choice at each step along the way.
-
-## Table of contents
-
-- [Leniency and convergence](#leniency-and-convergence)
-- [Buffering and DashCD](https://github.com/kwan22/consistency/blob/main/science1.md)
-- [Transitions](https://github.com/kwan22/consistency/blob/main/science2.md)
-- [Other movement mechanics](https://github.com/kwan22/consistency/blob/main/science3.md)
 
 ## Leniency and convergence
 
@@ -61,7 +62,7 @@ In some cases, the divergence may be acceptable if it is reactable. For this hig
   <img src="./media/science/5a_rescue_fast2.webp" width="480"/>   <img src="./media/science/5a_rescue_fast2_labeled.png" width="480"/> <br>
   > A cloud of dust indicates where the coyote jump occured, serving as a visual cue for making a split-second decision on which trajectory you think you are on.
 
-The examples in the following sections showcase different ways to make difficult movement more consistent, often by striving towards convergence, and sometimes at the cost of a small amount of time.
+The examples in the following sections showcase different ways I aim to make difficult movement more consistent, often by striving towards convergence, and sometimes at the cost of a small amount of time.
 
 ---
 
