@@ -111,3 +111,9 @@ Summary: long chains of consecutive buffers are not easy due to potential timing
   > The dashjump is not a replacement for a jump, it is just adding insurance.
 
 This is a similar principle to staggering jumps on diagonal demo cornerkicks that are notorious for having variable timing because of the crouch state dynamics. In principle, one could roll a whole series of jumps as even more insurance, but not all of us have that luxury and would probably be more trouble than its worth to do for every instant hyper. <br>
+
+---
+
+[Previous: science overview](https://github.com/kwan22/consistency/blob/main/science.md)
+
+[Next: transitions](https://github.com/kwan22/consistency/blob/main/science2_transitions.md)
