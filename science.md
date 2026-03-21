@@ -10,7 +10,7 @@
 3. Eliminating variables to reduce input complexity and remove failure modes.
 4. Making small time sacrifices to relax precision, simplify inputs, and/or reduce sensitivity.
 
-Many examples are provided and discussed in great technical detail, including frame data, pixel and speed values, and inner game mechanics that go beyond basic speedrunning knowledge. For those less familiar, you may want to have the TAS [tech](https://docs.google.com/document/d/1RVXyO7AZB-r7X3FxkxrBob775qWdhfOyBEOGGbnTgws/edit?tab=t.0#heading=h.yyzcmogdk15a) and [reference](https://docs.google.com/document/d/1z4caXIKvoEX-0gK3ApuJaJmDpy8NYAe62Dqt7Xxa9Tk/edit?tab=t.0#heading=h.vr60wzpdjz6c) on hand. These details are provided to justify the logic and illustrate the concepts. The overall goal is to understand the themes mentioned above.
+Many examples are provided and discussed in great technical detail, including frame data, pixel and speed values, and inner game mechanics that go beyond basic speedrunning knowledge. For those less familiar, you may want to have the TAS [tech](https://docs.google.com/document/d/1RVXyO7AZB-r7X3FxkxrBob775qWdhfOyBEOGGbnTgws/edit?tab=t.0#heading=h.yyzcmogdk15a) and [reference](https://docs.google.com/document/d/1z4caXIKvoEX-0gK3ApuJaJmDpy8NYAe62Dqt7Xxa9Tk/edit?tab=t.0#heading=h.vr60wzpdjz6c) on hand. These details are provided to justify the logic and illustrate the concepts. The overall goal is to understand the themes mentioned above. A summary of each section is provided immediately under its header.
 
 ## Table of contents
 
@@ -23,6 +23,8 @@ Many examples are provided and discussed in great technical detail, including fr
 - [Conclusions](#conclusions)
 
 ## Leniency and convergence
+
+Summary: introducing the concept of convergence and divergence.
 
   Leniency is a fundamental property of speedrunning and is commonly expressed in terms of a window: the range of timings or positions you can perform an action and get the desired outcome. It is essentially a measure of your allowed margin for error. In Celeste speedrunning, frame windows are more prelevant than pixel windows, and many pixel windows are just translated into frame windows via speed. Not all frame windows of equal value are of the same difficulty. Context plays a major role in the perceived difficulty of a frame window. For example, extension timing is one of the easiest 5f windows to learn because the jump timing is anchored by the dash input. You are the one pressing dash, and then you learn the rhythm to press jump. However, hitting a random, unpracticed 5f window is quite difficult. 
 
@@ -67,6 +69,8 @@ In some cases, the divergence may be acceptable if it is reactable. For this hig
 
 ### DashCD position setups
 
+Summary: some precise (1-3f window) inputs are transformed into a 5f or larger window by designing a convergent leniency mechanic (buffering) to overlap with the target window.
+
   <img src="./media/science/generic_wallbounce.png" width="480"/> <br>
 > The faster you are moving, the less time you spend in a spatial window, and more precise it becomes to act within that spatial window. The plot shows the average frame window for hitting a wallbounce as a function of horizontal speed. Colored regions indicate nominal values for typical movement options.
 
@@ -90,6 +94,8 @@ The same principle applies to other dash tech. These downrights can be made much
 
 ### Converging extension timings
 
+Summary: some target extension frames can be turned into a buffer to optimize and/or normalize trajectories and mitigate divergence stemming slightly different extension timings.
+
 <img src="./media/science/dashcd_gultra.png" width="480"/> <br>
 > Speed of a buffered grounded ultra as a function of jump timing on a hyper. DashCD 1-5 is extension timing, with DashCD(1) being the last extension frame. There is a range of ~21 px/s on the buffered grounded ultra speed over the extension timing window. That is half the difference between a good and bad cb, usually inconsequential and compensated by reaching hyper-speed earlier, but can propagate to noticeable differences when carrying that speed over great distances like in the eyeball room. 
 
@@ -101,7 +107,7 @@ The same principle applies to other dash tech. These downrights can be made much
   Differences in extension timing may not always be relevant in terms of determing success vs failure of a strat, and are generally more important for intrinsic movement optimization. However, some strats are more sensitive to these small differences in speed. In these cases, I may take effort to target a particular extension frame I want if I feel that achieving success is sensitive enough to those speed differences to warrant it. For example, in the 2nd long room of 1500m, I try to be mindful of aiming for later extensions to generate higher speeds, making it easier to make the cycle I want. <br>
 <img src="./media/science/7a_1500m_2ndlong_ultra.png" width="480"/> <br>
 > Generally, a faster trajectory on this downdiagonal is achieved by jumping later on extension at the start of the room, among other factors.
-  
+
   The 5a eyeball room is particularly sensitive to small differences in initial trajectory. The most normalized entry for the eyeball room is to transition hyper and buffer a downright, but the speed of the buffered downright and ensuing Theo ultra depend on how much DashCD remains upon entering the room. Making the cycle requires good speed generation and preservation. Good speed generation means good Theo ultras (late extension), and good speed preservation, in practice, means fitting in has many bhops as possible. Ideally, one can fit 2 bhops in immediately at the start before performing the 2nd Theo ultra, but this requires precise jump press and release timings. I struggled with fitting in small bhops near the beginning, so instead I opted to line up my DashCD entering the eyeball room itself such that the first Theo ultra is as fast as possible given a buffered transition hyper into downright out of DashCD. This loses a bit of speed to the 2 bhop method, but simplifies the beginning of the room with just 1 big bhop instead of 2 small bhops that can easily go wrong. In terms of speed generation, dashing from as far away as possible (entering with the lowest DashCD) leads to the least loss to air friction and consequently the fastest ultra upon a buffered downright. However in this case, the lip at the start of the eyeball room presents some complications. If DashCD is too low when entering eyeball room, there is not enough height+distance covered to avoid the lip with a buffered hyper+downright, resulting in a grounded ultra on the upper platform before Theo (sometimes it still works but I wouldn't count on it). In essence, I am trying to compensate for the speed loss of not doing the extra bhop by optimizing the entry movement. <br>
 <img src="./media/science/5a_eyeball_dashcd.webp" width="480"/> <img src="./media/science/5a_eyeball_dashcd_labeled.png" width="480"/> <br>
 > Aiming the exit of the previous room to set up the eyeball entry to be as fast and consistent as possible. The red dashed line indicates the boundary where I aim to have Madeline be as close as possible to but not overlapping when starting the demodash.
@@ -126,7 +132,7 @@ Another niche but interesting use case is to use a wavedash to add buffer lenien
 <img src="./media/science/5arb_search_demo_setup.webp" width="480"/> <br>
 > Shoutouts to Preimi for pioneering this idea and applying it to not only [5arb](https://discord.com/channels/403698615446536203/1137847168850477146/1137847184616861757) but also [3a cassette](https://discord.com/channels/403698615446536203/1137847192028201030/1137847207035404308) and [7arb](https://discord.com/channels/403698615446536203/1137847217282093087/1137847240455639040).
 
-The fundamental use case of DashCD setups is that we are incurring a timer during which we cannot dash, and using that timer's expiration, combined with buffer leniency, to set up the next dash consistently. The above examples discussed setting up commonly occuring horizontal or vertical trajectories, but sometimes I'll just simply use DashCD as a timer for general timing/positioning purposes. The downdash after bonking the fish must be delayed by at least 1 frame after the first possible frame, but it also needs to be "as soon as possible" to make getting clean landing back on the starting platform as consistent as possible, i.e. there is a deadframe. I'll aim the downright into the fish such that I can buffer the downdash and have the deadframe occur while having a tiny bit of DashCD left, effectively removing the deadframe and getting a sufficiently early enough downdash to have the following clean landing be consistent. <br>
+The fundamental use case of these DashCD setups is that we are incurring a timer during which we cannot dash. We can use that timer's expiration, combined with buffer leniency, to set up the next dash consistently. The above examples discussed setting up commonly occuring horizontal or vertical trajectories, but sometimes I'll just simply use DashCD as a timer for general timing/positioning purposes. The downdash after bonking the fish must be delayed by at least 1 frame after the first possible frame, but it also needs to be "as soon as possible" to make getting clean landing back on the starting platform as consistent as possible, i.e. there is a deadframe. I'll aim the downright into the fish such that I can buffer the downdash and have the deadframe occur while having a tiny bit of DashCD left, effectively removing the deadframe and getting a sufficiently early enough downdash to have the following clean landing be consistent. <br>
 <img src="./media/science/fw_rem_dashcd.webp" width="480"/> <img src="./media/science/fw_rem_dashcd.png" width="480"/> <br>
 > In the particular execution of the 1st clip, I hit the fish with DashCD(2): the 3rd blue dash silhouette not appearing is a clear indicator that there is still some amount of DashCD left. This results in the downdash coming out on the 3rd frame after the bonk, safely avoiding the deadframe and still being sufficiently early enough for an easy clean landing. Care is taken to aim for a sufficiently consistent DashCD upon hitting the fish by approaching the fish with a particular, slightly suboptimal but reasonably fast trajectory. 
 
@@ -139,6 +145,8 @@ The fundamental use case of DashCD setups is that we are incurring a timer durin
 
   <img src="./media/science/just_spam_meme.png" height="270"/>  <img src="./media/science/just_spam_yujene.webp" width="480"/> <br>
 > "It's free time save, just buffer" - typical chatter
+
+Summary: long chains of consecutive buffers are not easy due to potential timing drift, I recommend using visual cues to anchor buffer timings.
 
   Much of Celeste's high input density and high-speed movement comes down to learning the muscle memory for movement sequences, where you may learn the timing of one input relative to a previous one. One of the challenges is chaining many consecutive buffers. A fundamental property of buffering is that the action does not occur at the same time as the input. This can add variance to timings that we are used to. A canonical example would be buffering extended hyper when landing without a dash. 
 
@@ -161,13 +169,15 @@ This is a similar principle to staggering jumps on diagonal demo cornerkicks tha
 
 ## Transitions
 
+Summary: transitions can converge slightly different trajectories onto the exact same one. These are showcased very well with a hyper shortly before transition, and frequently followed by releasing jump during transition. Sensitivity of a hyper's trajectory to jump timing release can be significantly dampened to a pre-transition hyper.
+
   Buffering transition movement (e.g. transition hyper) is well-known for being an excellent normalizer: these are so common and I discussed them briefly already, so I won't go over them again here. Hypering just before a transition seems like it adds variance depending on the starting x-position, but it turns out that it is still highly convergent across different starting x-positions because of the structure of the hyper trajectory and the properties of transitions. Some seemingly pixel-perfect or subpixel-precise strats involving a hyper before transition frequently have a pixel range that are a multiple of 5 in which they work because this convergence.
   
   The plot below shows the possible hyper trajectories, y-position and x-speed (u), upon a horizontal transition as a function of distance from transition. Each step represents a frame, and all positions up to the next step converge to the exact same trajectory. The outcomes (y, u) are weakly sensitive to the changes in action (x0). The other components of the trajectory are normalized: x is exactly on the transition boundary, and y-speed (v) is easy to control by either holding or releasing jump during transition. An extremely common pattern is to release jump during transition, enabling many strats that will be showcased in the upcoming examples. The consequence of this is that pre-transition hyper trajectories are discretized such that they increment every ~5 pixels away from transition. Furthermore, adjacent hyper trajectories are often similar enough where many strats work across multiple ~5-pixel windows. <br>
   <img src="./media/science/pretrans_hyper.png" width="480"/> <br>
   > The x-axis is really a "Time from hyper start upon reaching the transition", which has a 1-1 correspondence with trajectory upon transition. 
  
-  Transitions introduce a **spatial convergence** of trajectories, which is especially noticeable for hypers: different initial positions give the exact same result, and the range of positions is proportional to the speed. By comparison, buffering introduces a **temporal convergence** of inputs: different timings of button presses give the exact same result. Buffered transition hypers exhibit both spatial and temporal convergence and are the usual preferred method for converging horizontal trajectories. While this concept works for any well-defined trajectory, it is perhaps the most prevalent and well-illustrated by hypers before transition. Below shows examples where such pre-transition hypers are useful.
+  Transitions introduce a **spatial convergence** of trajectories, which is especially noticeable for hypers: different initial positions give the exact same result, and the range of positions is proportional to the speed. By comparison, buffering introduces a **temporal convergence** of inputs: different timings of button presses give the exact same result. Buffered transition hypers exhibit both spatial and temporal convergence and are the usual preferred method for converging horizontal trajectories. While this concept works for any well-defined trajectory, it is perhaps the most prevalent and well-illustrated by hypers before transition. Below shows several examples where such pre-transition hypers are useful.
 
 ---
   
@@ -241,6 +251,8 @@ This is a similar principle to staggering jumps on diagonal demo cornerkicks tha
   <img src="./media/science/3a_demo.png" width="480"/>  <img src="./media/science/7b_heart_demo_crop.png" width="480"/> <br>
   > Half-gravity can be either helpful or harmful for precise vertical positioning.
 
+Summary: releasing jump to avoid half-gravity can be done in a convergent manner, enabling more consistent strats and can make fundamental movement optimizations more consistent.
+
   Half-gravity can extend the duration Madeline exists at a given y-position. This typically manifests in line-ups with max-height jumps, e.g. 3a shaft demo and a whole class of demos out of a max height hyper. Certain actions and interactions apply autojump as well, that act as if we are holding jump to give us half-grav whether we want to or not. Fundamentally, half-gravity can improve frame-windows by keeping us in a small range of y-positions for an extended period of time. On the other hand, half-gravity can be detrimental sometimes, by introducing deadframes on some strats, or more fundamentally, adding unnecessary airtime. Avoiding half-gravity can also be convergent, where releasing jump on different frames gives the exact same trajectory if timed correctly (the so-called [12f jump](https://www.youtube.com/watch?v=82gpR9rozdE)). In summary, a 12f-17f jump gives the exact same trajectory for a normal jump, i.e. releasing jump at different times within this 6f window gives the same result. There is an even larger window for wallbounce jump release convergence (9f) and other vertically boosted trajectories. A good deal of RTA movement optimization comes from putting yourself in a position to enjoy the luxury of a convergent jump release timing. For a speedrunner's perspective, the main takeaway is "just hold jump" to use half-gravity, or "find the 6f+ jump release window" to avoid half-gravity. <br> 
   <img src="./media/science/6f_jump_release.png" width="480"/> <br>
   > Sometimes there are [setups](https://discord.com/channels/403698615446536203/617809769322774533/1269034670272680093) to have a 12f jump give an optimal landing
@@ -257,13 +269,15 @@ This is a similar principle to staggering jumps on diagonal demo cornerkicks tha
   
 ## ForceMove
 
+Summary: understanding ForceMove is useful to normalize some trajectories and/or remove the variable of timing a directional input.
+
   The main feature of ForceMove is that we lose horizontal aerial control and, barring an interruption like a dash, we are "forced" to travel along a specified horizontal trajectory. Typical sources of ForceMove are wallkicks (11f) and springs (19f). The first notable consequence for wallkicks is that holding into and holding away from a wall for a walljump are equivalent: it can be helpful to preferentially hold in towards walls by default for wallkicks to generally just remove the variable of needing to switch directions in the first place. 
 
   Because the horizontal trajectory is forced, it is also normalized horizontally. There are many situations where once we enter ForceMove state, we can simply ride the ForceMove and focus our attention elsewhere, frequently a dash in a different direction. As a bonus, the risk of misdash can be mitigated by preloading the direction we need to dash in long before we actually dash in that direction. Increased air friction from releasing forward is also frequently irrelevant (e.g. if bottleneck is vertical), and the horizontal deceleration can help with precise horizontal positioning. 
 
 Some strats rely on the properties of ForceMove to be set up precise positioning. <br>
   <img src="./media/science/3a_towels_wallkick.webp" width="480"/> <img src="./media/science/3a_shaft_demo_8f.webp" width="480"/> <br>
-> ForceMove allows the change of direction to be done in an extremely forgiving window while maintaining the exact same trajectory. This can help make the updash in towels easier, or open up some creative setups to make the [3a shaft demo an 8f window](https://discord.com/channels/403698615446536203/617809769322774533/1030745734707945492), where you are allowed a massive time window to switch from right to left between wallkicks and stay converged on the exact same trajectory for a subpixel-precise setup.
+> ForceMove allows a change of direction to be done in an extremely forgiving window while maintaining the exact same trajectory. This can help make the updash in towels easier, or open up some creative setups to make the [3a shaft demo an 8f window](https://discord.com/channels/403698615446536203/617809769322774533/1030745734707945492), where you are allowed a massive time window to switch from right to left between wallkicks and stay converged on the exact same trajectory for a subpixel-precise setup.
   
 Some spots where I let ForceMove carry me to reduce misdash risk and/or make a horizontal positioning easier at virtually no timeloss. <br>
   <img src="./media/science/7a_flag10_forcemove.webp" width="480"/>  <img src="./media/science/7a_flag5,4.webp" width="480"/> <br>
@@ -284,6 +298,8 @@ Turnarounds over (moving) blocks are notoriously divergent because of how sensit
 ---
 
 ## Cornercorrection lineups
+
+Summary: some examples and patterns to think about when looking to make midair dash tech more consistent.
 
   For ground jumps there are 3 convergent vertical trajectories: full jump (jump held the whole time), [12f jump](https://www.youtube.com/watch?v=82gpR9rozdE), and full hyper. These are extremely common actions and provide various options for lining up for cornercorrection/floorsnapping, showcasing the speed vs precision tradeoff quite nicely. The plots below the vertical trajectories of these jumps, focusing on their alignment with 1-, 2-, and 3-tile height as canonical examples. Of the two collision correction mechanics, cornercorrection by itself is mainly useful for 2-tile extensions and other precise positioning setups as x-pos is perfectly normalized. Floorsnapping by itself is less useful and is generally harder to intentionally use because of its smaller pixel window, but has some niche applications. In general, when arbitrarily passing over a floor at max jump speed (105), there is a 78% chance that cornercorrection is a 2f and 12% chance a 3f. 1-tile height alignment happens to enjoy the luxury of a 3f window for cornercorrection, improving accessibility of some setups like [burgyscience](https://discord.com/channels/403698615446536203/617809769322774533/1092191710504828979). Combined cornercorrection/floorsnap leniency for alignment at max jump speed is virtually always a 4f, barring some shenanigans like floating point precision. <br>
   <img src="./media/science/jump_trajectory.png" width="480"/>   <img src="./media/science/jump_1tile.png" width="480"/> <br> 
@@ -310,6 +326,8 @@ In a similar vein, max height hypers always cornercorrect at 2-tile height. The 
   > The massive frame windows on 3-tile alignment might seem like overkill, but they reduce sensitivity to horizontal trajectories or other factors that influence the time at which the corner is reached. The actual frame windows for the above midair super/demohyper at 3-tile elevation gain may be less than 8f because of horizontal considerations and seekers, but they allow slightly different trajectories approaching the corner to still be viable.
 
 ## Dash attack leniency
+
+Summary: dash attack leniency can be used to relax precision on wallbounces, usually at the cost of a small amount of timeloss.
 
 Dash attack leniency here refers to the 6 frames after a dash ends while still retaining some properties of a dash. The key properties of interest here are
 1. regain aerial control
