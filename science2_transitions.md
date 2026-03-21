@@ -2,6 +2,8 @@
 
 [back to science](https://github.com/kwan22/consistency/blob/main/science.md)
 
+[Previous: buffering](https://github.com/kwan22/consistency/blob/main/science1_buffering.md)
+
 # Transitions
 
 Summary: transitions can converge slightly different trajectories onto the exact same one. These are showcased very well with a hyper shortly before transition, and frequently followed by releasing jump during transition. Sensitivity of a hyper's trajectory to jump timing release can be significantly dampened to a pre-transition hyper.
@@ -79,3 +81,5 @@ The plot below shows the possible hyper trajectories, y-position and x-speed (u)
 </details>
 
 ---
+
+[Next: Other movement mechanics](https://github.com/kwan22/consistency/blob/main/science3_other.md)
