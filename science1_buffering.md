@@ -94,7 +94,7 @@ The fundamental use case of these DashCD setups is that we are incurring a timer
   <img src="./media/science/just_spam_meme.png" height="270"/>  <img src="./media/science/just_spam_yujene.webp" width="480"/> <br>
 > "It's free time save, just buffer" - typical chatter
 
-Summary: long chains of consecutive buffers are not easy due to potential timing drift, I recommend using visual cues to anchor buffer timings.
+Summary: long chains of consecutive buffers are not easy due to potential timing drift.
 
   Much of Celeste's high input density and high-speed movement comes down to learning the muscle memory for movement sequences, where you may learn the timing of one input relative to a previous one. One of the challenges is chaining many consecutive buffers. A fundamental property of buffering is that the action does not occur at the same time as the input. This can add variance to timings that we are used to. A canonical example would be buffering extended hyper when landing without a dash. 
 
