@@ -17,7 +17,7 @@
 
 ## DashCD position setups
 
-Summary: some precise (1-3f window) inputs are transformed into a 5f or larger window by designing a convergent leniency mechanic (buffering) to overlap with the target window.
+Summary: some precise (1-3f window) inputs are transformed into a 5f or larger window by designing a buffer to overlap with the target window.
 
   <img src="./media/science/generic_wallbounce.png" width="480"/> <br>
 > The faster you are moving, the less time you spend in a spatial window, and more precise it becomes to act within that spatial window. The plot shows the average frame window for hitting a wallbounce as a function of horizontal speed. Colored regions indicate nominal values for typical movement options.
