@@ -47,6 +47,17 @@ Changes in action generally refer to differences in timing or positioning. These
 
 ---
 
+Divergence in general means a high sensitivty of outcomes to small changes in actions. Bumpers, seekers, and core blocks are widely considered to be among the more frustrating mechanics for this reason. Rescue is one of the most challenging checkpoints for beginners because of how hard it can be to come up with a consistent stratset, as seekers can effectively behave randomly without sufficient attention to detail and precision in execution. High sensitivity can feel unpredictable because one tiny difference in the details of your movement can suddenly cause a strat to completely fail or otherwise have significant divergence from your intended outcome.
+
+<img src="./media/science/8a_bumper_berry.png" width="480"/> <br>
+> The infamous bumper berry can be a nightmare just from the sheer volume of bumpers. [Some work has been done](https://discord.com/channels/403698615446536203/617809769322774533/1451832604822339645) to introduce convergence.
+
+<img src="./media/science/8a_hotmh_bumper.webp" width="480"/> <br>
+> Getting this clean bumper hit in 8a-HOTM-H might look simple but is notoriously frustrating as it features a triple-stack of divergence, involving coyote, a turnaround, and a bumper, not to mention the core block that follows immediately. All 3 Core chapters can be generally challenging because they frequently feature divergence.
+
+<img src="./media/science/5b_mm2_seeker_srh.png" height="360"/> <img src="./media/science/srh_jimmy_pillars_crop.png" height="360"/> <br>
+> Seekers can be particularly challenging to understand because of how sensitive they are to small changes in movement. There are many possible variables that can affect a seeker's behavior. It can be difficult to identify what the actual important variables are, frequently causing confusion among speedrunners.
+
 From a frame-window and strats perspective, divergence usually manifests as a small and/or discontinuous window, or one where different sections of a window require different follow-ups. These are often difficult to deal with. High-speed (grounded ultra) coyote often lends itself to divergence: the strat requires high-speed to enable longer-distance coyote, but the high speed inherently spreads out your possible trajectories. For the under strat in 2a-start, the grounded ultra travels at about 6.5 px/frame. In theory there are up to 3 possible coyote hyper frames that are viable for the under strat, but these are spread out over about 13 pixels. The end result is that the frame window for the upright is directly dependent on which coyote frame was reached. The first possible coyote frame gives a 1f window for the upright, the 2nd a 2f, and the 3rd (last) frame a 3f window. <br>
   <img src="./media/science/2a_start_under_composite.png" width="480"/> <img src="./media/science/5a_archimedes_crop.png" width="480"/> <br> 
   > For the 2a under strat, the more coyote distance you get, the more lenient the following upright demo is. For the 5a "Archimedes": the updash is a 4f window, but each frame requires a different follow-up.
@@ -55,17 +66,6 @@ In some cases, the divergence may be acceptable if it is reactable. For this hig
   <img src="./media/science/5a_rescue_fast1.webp" width="480"/>   <img src="./media/science/5a_rescue_fast1_labeled.png" width="480"/> <br>
   <img src="./media/science/5a_rescue_fast2.webp" width="480"/>   <img src="./media/science/5a_rescue_fast2_labeled.png" width="480"/> <br>
   > A cloud of dust indicates where the coyote jump occured, serving as a visual cue for making a split-second decision on which trajectory you think you are on.
-
-Divergence in general means a high sensitivty of outcomes to small changes in actions. Bumpers, seekers, and core blocks are widely considered to be among the more frustrating mechanics for this reason. Rescue is one of the most challenging checkpoints for beginners because of how hard it can be to come up with a consistent stratset, as seekers can effectively behave randomly without sufficient attention to detail and precision in execution. High sensitivity can feel unpredictable because one tiny difference in the details of your movement can suddenly cause a strat to completely fail or otherwise have significant divergence from your intended outcome.
-
-<img src="./media/science/8a_bumper_berry.png" width="480"/> <br>
-> The infamous bumper berry can be a nightmare just from the sheer volume of bumpers. [Some work has been done](https://discord.com/channels/403698615446536203/617809769322774533/1451832604822339645) to introduce convergence.
-
-<img src="./media/science/8a_hotmh_bumper.webp" width="480"/> <br>
-> Getting this clean bumper hit in 8a-HOTM-H might look simple but is notoriously frustrating as it features a triple-stack of divergence, involving coyote, a turnaround, and a bumper, not to mention the core block that follows immediately. All 3 Core chapters can be generally challenging because they frequently feature divergent mechanics.
-
-<img src="./media/science/5b_mm2_seeker_srh.png" height="360"/> <img src="./media/science/srh_jimmy_pillars_crop.png" height="360"/> <br>
-> Seekers can be particularly challenging to understand because of how sensitive they are to small changes in movement. There are many possible variables that can affect a seeker's behavior. It can be difficult to identify what the actual important variables are, frequently causing confusion among speedrunners.
 
 While many instances of divergence remain unresolved, a lot of consistency can be gained by mitigating divergence where possible, as will be demonstrated in the later examples. 
 
