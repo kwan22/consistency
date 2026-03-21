@@ -124,7 +124,7 @@ With the right vertical positioning, using dash-attack leniency to hold towards 
 
 One caveat to be careful about is colliding with a wall, which immediately removes dash attack. For this transition wallbounce in 7arb 1500m towards the winged berry, I wait to hold left until shortly after hitting the wallbounce. In principle, holding left the whole time for the transition wallbounce is fine, but being slightly late on the transition buffer while holding left will cause the transition wallbounce to fail. The wallbounce being neutral for a few frames has essentially no impact on the room. <br>
   <img src="./media/science/7arb_1500m_winged.webp" width="480"/>  <img src="./media/science/7arb_1500m_winged.png" width="480"/> <br>
-  > Image shows the first frame I started holding left.
+  > Image shows the first frame I started holding left. The goal is to mitigate the possible failure mode of wall-collision during dash-attack leniency.
 
 ---
 
