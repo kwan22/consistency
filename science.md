@@ -15,7 +15,7 @@ Many examples are provided and discussed in great technical detail, including fr
 ## Table of contents
 
 - [Leniency and convergence](#leniency-and-convergence)
-- [Buffering and DashCD](#buffering-and-dashcd)
+- [Buffering and DashCD](https://github.com/kwan22/consistency/blob/main/science1.md)
 - [Transitions](#transitions)
 - [Half gravity](#half-gravity)
 - [Cornercorrection lineups](#cornercorrection-lineups)
