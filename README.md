@@ -13,3 +13,7 @@ I wanted to share my thoughts on how I approach consistency in two branches: the
 [The art](https://github.com/kwan22/consistency/blob/main/art.md)
 
 [The science](https://github.com/kwan22/consistency/blob/main/science.md)
+
+## Acknowledgements
+
+Thanks to wonder+yujene for introducing me to convergence as an initial concept, and to secureaccount for providing extremely detailed feedback.
