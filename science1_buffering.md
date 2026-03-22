@@ -120,6 +120,4 @@ This is a similar principle to staggering jumps on diagonal demo cornerkicks tha
 
 ---
 
-[Previous: science overview](https://github.com/kwan22/consistency/blob/main/science.md)
-
 [Next: transitions](https://github.com/kwan22/consistency/blob/main/science2_transitions.md)
