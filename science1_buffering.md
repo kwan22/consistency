@@ -1,4 +1,4 @@
-[back to science](https://github.com/kwan22/consistency/blob/main/science.md)
+[&#8592; science](https://github.com/kwan22/consistency/blob/main/science.md)
 
 # Buffering and DashCD
 
@@ -120,4 +120,6 @@ This is a similar principle to staggering jumps on diagonal demo cornerkicks tha
 
 ---
 
-[Next: transitions](https://github.com/kwan22/consistency/blob/main/science2_transitions.md)
+[Transitions &#8594;](https://github.com/kwan22/consistency/blob/main/science2_transitions.md)
+
+[&#8593; back to top](#buffering-and-dashcd)
