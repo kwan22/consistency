@@ -20,7 +20,7 @@ See "Falling and fastfalling" under the [TAS Reference](https://docs.google.com/
   <img src="./media/science/3a_demo.png" width="480"/>  <img src="./media/science/7b_heart_demo_crop.png" width="480"/> <br>
   > Half-gravity can be either helpful or harmful for precise vertical positioning.
 
-Summary: releasing jump to avoid half-gravity can be done in a convergent manner, enabling more consistent strats and can make fundamental movement optimizations more consistent.
+Summary: releasing jump to avoid half-gravity can be done in a convergent manner, improving consistency on both strats and fundamental movement optimizations.
 
 ---
 
