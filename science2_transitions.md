@@ -4,7 +4,7 @@
 
   <img src="./media/science/3a_start_winged_entry.png" width="960"/> <br>
 
-Summary: transitions can converge slightly different trajectories onto the exact same one or sufficiently similar ones. These are showcased very well with a hyper shortly before transition. Sensitivity of a hyper's trajectory to jump timing release can be nullified by allowing the release during transition, which is a commonly occuring pattern.
+Transitions can converge slightly different trajectories onto the exact same one or sufficiently similar ones. These are showcased very well with a hyper shortly before transition. The sensitivity of a hyper's trajectory to jump timing release can be nullified by allowing the release during transition, which is a commonly occuring pattern.
 
 ---
 
