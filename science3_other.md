@@ -82,7 +82,7 @@ Turnarounds over (moving) blocks are notoriously divergent because of how sensit
 <img src="./media/science/3a_hub3_cornercorrection.png" width="480"/>  <img src="./media/science/fw_rc_cornercorrect.png" width="480"/> <br>
 > Note the change in elevation in the horizontal dash silhouettes. The horizontal dashes were slightly lower but close enough to the floor height that the game allows us to dash onto the floor.
 
-Cornercorrection (and floorsnapping) is a leniency mechanic where dashing close enough to a corner is allowed to go past that corner, adding significant leniency to midair supers and demohypers (and wallbounces). Refer to "Colliding with floors" under the [TAS Reference](https://docs.google.com/document/d/1z4caXIKvoEX-0gK3ApuJaJmDpy8NYAe62Dqt7Xxa9Tk)
+Cornercorrection is a leniency mechanic where dashing close enough to a corner is allowed to go past that corner, adding significant leniency to midair supers and demohypers (and wallbounces). Floorsnapping is a similar leniency mechanic where Madeline gets "snapped" to the floor when horizontally dashing slightly above it (up to 2px). Refer to "Collisions in detail" under the [TAS Reference](https://docs.google.com/document/d/1z4caXIKvoEX-0gK3ApuJaJmDpy8NYAe62Dqt7Xxa9Tk)
 
 Below are some examples and patterns to think about when looking to make midair supers and hypers more consistent.
 
