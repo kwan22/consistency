@@ -4,10 +4,16 @@
 
   <img src="./media/science/4a_granny_ultra.png" width="960"/> <br>
 
-  Buffering is perhaps the epitome of convergence: inputs of different timings generate the exact same result. While chains of consecutive buffers can quickly become complicated and arguably divergent from a human perspective (more about this later), sparse buffers showcase the concept of convergence quite well. Common, visually obvious examples include transition buffers, cb and cornerkick setups, and pause-buffering. 
+  Refer to "Dashing" under the [TAS Reference](https://docs.google.com/document/d/1z4caXIKvoEX-0gK3ApuJaJmDpy8NYAe62Dqt7Xxa9Tk).
 
+  Buffering is perhaps the epitome of convergence: inputs of different timings generate the exact same result. While chains of consecutive buffers can quickly become complicated and arguably divergent from a human perspective (more about this later), sparse buffers showcase the concept of convergence quite well. The critical ingredient of buffering is that the inputting the action (jump or dash) has no/negligible effect until that action is even allowed. Common, visually obvious examples include transition buffers, cb and cornerkick setups, and pause-buffering. These usually involve a buffered jump, e.g. on landing, out of transition, reaching a wall/corner, etc. That is, it is not possible to jump until such an interaction occurs. Buffering a dash means the dash cannot happen until some interaction, where Madeline is prevented from dashing before and allowed to dash afterwards. The most visually obvious example would be when Madeline has no dash available (blue hair) and you can buffer a dash when that dash is restored, e.g. on landing, a dash refill, bubbles, etc.
+
+  Dashes themselves incur a timer known as DashCD (CD stands for 'cooldown' or 'countdown', depending on who you ask). Once a dash starts, a 15f timer starts where Madeline is locked out of dashing, no matter whether she has a dash available in her inventory or not. The consequence of this is that a dash can be buffered out of DashCD, which will be a major focus of the following discussion.
+  
   DashCD is one of the less visually obvious mechanics but has incredible potential in creating buffer setups. Besides the strats that essentially require it, a lot of leniency on otherwise hard strats can be gained by putting yourself in a position to buffer out of DashCD. Setting up the positioning may cost a small amount of time, opening an avenue to play the speed vs precision tradeoff game. In other cases, carefully designing the buffer leniency enables us to mitigate divergence in situations where small differences in extension timing can have significant impact. Below are some examples where understanding DashCD is useful.
 
+> DashCD is preserved across horizontal transitions and many other interactions. Dashing or performing dash tech (super, hyper) through a horizontal transition from sufficiently close to the transition means the next earliest possible dash happens some time after the transition is over, even though the transition restores your dash inventory. Some interactions such as bubbles, bumpers, Badeline, and upwards transitions immediately set DashCD to a specific value.
+  
 ## Table of contents
 - [DashCD position setups](#dashcd-position-setups)
 - [Converging extension timings](#converging-extension-timings)
