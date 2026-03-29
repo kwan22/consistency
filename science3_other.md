@@ -15,12 +15,12 @@ Various other features of Madeline's movement mechanics that can be leveraged fo
 
 ## Half-gravity
 
-Half gravity is a property of Madeline's vertical movement where she can experience half of her usual gravity (downwards acceleration) under the right conditions. Refer to "Falling and fastfalling" under the [TAS Reference](https://docs.google.com/document/d/1z4caXIKvoEX-0gK3ApuJaJmDpy8NYAe62Dqt7Xxa9Tk) and yujene's video on the [12f jump](https://www.youtube.com/watch?v=82gpR9rozdE).
-
   <img src="./media/science/3a_demo.png" width="480"/>  <img src="./media/science/7b_heart_demo_crop.png" width="480"/> <br>
   > Half-gravity can be either helpful or harmful for precise vertical positioning.
 
-Summary: releasing jump to avoid half-gravity can be done in a convergent manner, improving consistency on both strats and fundamental movement optimizations.
+Half gravity is a property of Madeline's vertical movement where she can experience half of her usual gravity (downwards acceleration) under the right conditions. Refer to "Falling and fastfalling" under the [TAS Reference](https://docs.google.com/document/d/1z4caXIKvoEX-0gK3ApuJaJmDpy8NYAe62Dqt7Xxa9Tk) and yujene's video on the [12f jump](https://www.youtube.com/watch?v=82gpR9rozdE).
+
+Avoiding half-gravity can be done in a convergent manner, improving consistency on both strats and fundamental movement optimizations.
 
 ---
 
@@ -40,12 +40,12 @@ Summary: releasing jump to avoid half-gravity can be done in a convergent manner
   
 ## ForceMove
 
-ForceMove is a state where Madeline loses horizontal aerial control and is forced to move along a particular horizontal trajectory, regardless of the player's directional inputs. Refer to "Walljumps" and "Springs" in the [TAS Reference](https://docs.google.com/document/d/1z4caXIKvoEX-0gK3ApuJaJmDpy8NYAe62Dqt7Xxa9Tk)
+<img src="./media/science/4a_trail_forcemove.png" width="480"/>  <img src="./media/science/7b_1500m_forcemove.png" width="480"/> <br>
+> Directional inputs for aerial drift are essentially ignored during ForceMove.
 
-  <img src="./media/science/4a_trail_forcemove.png" width="480"/>  <img src="./media/science/7b_1500m_forcemove.png" width="480"/> <br>
-  > Directional inputs for aerial drift are essentially ignored during ForceMove.
+ForceMove is a state where Madeline loses horizontal aerial control and is forced to move along a particular horizontal trajectory, regardless of the player's directional inputs. Refer to "Walljumps" and "Springs" in the [TAS Reference](https://docs.google.com/document/d/1z4caXIKvoEX-0gK3ApuJaJmDpy8NYAe62Dqt7Xxa9Tk). 
 
-Summary: understanding ForceMove is useful to normalize some trajectories and/or remove the variable of timing a directional input.
+Understanding ForceMove is useful to normalize some trajectories and/or remove the variable of timing a directional input.
 
 ---
 
@@ -82,7 +82,7 @@ Turnarounds over (moving) blocks are notoriously divergent because of how sensit
 
 Cornercorrection (and floorsnapping) is a leniency mechanic where dashing close enough to a corner is allowed to go past that corner, adding significant leniency to midair supers and demohypers (and wallbounces). Refer to "Colliding with floors" under the [TAS Reference](https://docs.google.com/document/d/1z4caXIKvoEX-0gK3ApuJaJmDpy8NYAe62Dqt7Xxa9Tk)
 
-Summary: some examples and patterns to think about when looking to make midair supers and hypers more consistent.
+Below are some examples and patterns to think about when looking to make midair supers and hypers more consistent.
 
 ---
 
@@ -112,20 +112,19 @@ In a similar vein, max height hypers always cornercorrect at 2-tile height. The 
 
 ## Dash attack
 
+<img src="./media/science/8a_hotmv_dashattack.png" width="480"/>  <img src="./media/science/7b_2500m_dashattack.png" width="480"/> <br>
+> With the right setup, the properties of dash attack can be leveraged to make these wallbounces and/or the ensuing movement sequence more lenient. Note the appearance of the 3rd dash silhouette that indicates that the dash itself has already ended.
+
+
 Dash attack leniency here refers to the 6 frames after a dash ends while still retaining some properties of a dash. The key properties of interest here are
 1. regain aerial control
 2. loss of vertical speed
 
-<img src="./media/science/8a_hotmv_dashattack.png" width="480"/>  <img src="./media/science/7b_2500m_dashattack.png" width="480"/> <br>
-> With the right setup, the properties of dash attack can be leveraged to make these wallbounces and/or the follow-up movement more lenient. Note the appearance of the 3rd dash silhouette that indicates that the dash itself has already ended.
-
 Refer to "Dashing" and "Wallbounces" in the [TAS Reference](https://docs.google.com/document/d/1z4caXIKvoEX-0gK3ApuJaJmDpy8NYAe62Dqt7Xxa9Tk)
 
-Summary: dash attack leniency can be used to relax precision on wallbounces, usually at the cost of a small amount of timeloss.
+Dash attack leniency can be used to relax precision on wallbounces and/or the movement sequence that follows them, usually at the cost of a small amount of timeloss.
 
 ---
-
-
 
 ### Aerial control 
 
