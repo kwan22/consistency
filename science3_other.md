@@ -119,7 +119,6 @@ In a similar vein, max height hypers always cornercorrect at 2-tile height. The 
 <img src="./media/science/8a_hotmv_dashattack.png" width="480"/>  <img src="./media/science/7b_2500m_dashattack.png" width="480"/> <br>
 > With the right setup, the properties of dash attack can be leveraged to make these wallbounces and/or the ensuing movement sequence more lenient. Note the appearance of the 3rd dash silhouette that indicates that the dash itself has already ended.
 
-
 Dash attack leniency here refers to the 6 frames after a dash ends while still retaining some properties of a dash. The key properties of interest here are
 1. regain aerial control
 2. loss of vertical speed
@@ -159,13 +158,13 @@ The loss of vertical speed opens up some setups enable a larger frame window to 
 Getting clean landing in 3a shaft-3 requires a wallbounce at the top ~5px of the 1-tile thick platform. The grounded ultra setup not only gives a consistent horizontal position for the updash, but also puts us in a vertical position such that dash attack leniency gives us a large and consistent (5-6f depending on cornercorrection) frame window to hit this clean landing. Otherwise, passing through this spatial window at max dash speed gives a 1-2f window on the jump input for clean landing. <br>
   <img src="./media/science/3a_shaft_dashattack.webp" width="480"/> <br>
 I apply a similar principle to a section of 7a Flag 1. It is optimal to super when dashing left towards the wall to resolve the vertical bottleneck. I opt to start the updash from the ground level and wallbounce during dash attack. This makes lining up the following super more normalized with larger frame windows, shown below. <br>
-  <img src="./media/science/7a_flag1_dashattack.webp" width="480"/>  <img src="./media/science/7a_flag1_dashattack_window.png" height="270"/> <br>
+  <img src="./media/science/7a_flag1_dashattack.webp" width="480"/>  <img src="./media/science/7a_flag1_dashattack.png" width="480"/> <br>
 > Nominal frame data for the right dash as a function of prior wallbounce timing when starting the updash from the ground. Frame 0 is the last frame of dash and the lowest viable wallbounce, frames 1-6 are dash attack leninecy. 
 
 The exact frame data here depends on subpixels so only nominal values are given, but regardless, the windows will be large. Furthermore, the timings are commonly performed timings: dash attack leniency and peak wallbounce height timings are commonly used in many places. I am well-versed in them and they take no additional brain space. By comparison, with the optimal super before the updash to save 0.1-0.2, the frame data becomes some combination of:
 - tighter: most likely a faster y-speed while aiming the right dash
 - more arbitrary: either jump on some arbitrary mid-late extension frame to line up the wallbounce peak height, or right dash at some arbitrary position along the wallbounce trajectory
-- less normalized: add variables in the extension timing of the super and subsequent updash
+- less normalized: add variables in the extension timing of the super and subsequent updash, and more sensitivity of the midair dash alignment to wallbounce timing
 
 ---
 
