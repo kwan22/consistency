@@ -37,6 +37,8 @@ Avoiding half-gravity can be done in a convergent manner, improving consistency 
 
   Getting the early activation on the long vertical block can be quite tricky since a jump release is required when over the falling spring block, but an arbitrary jump release makes this strat difficult to normalize. I aim to climbjump from the lower half of the spring block, usually allowing a 12f jump to hit the spring early enough to get the early activation on the next block. While there are other factors at play that can add variance to the strat, the goal is to effectively remove the variable of jump release timing by setting it up on a sufficiently convergent trajectory. <br>
   <img src="./media/science/fw_sg_halfgrav.webp" width="480"/> <img src="./media/science/fw_sg_halfgrav.png" width="480"/> <br>
+
+---
   
 ## ForceMove
 
@@ -109,6 +111,8 @@ In a similar vein, max height hypers always cornercorrect at 2-tile height. The 
 
   <img src="./media/science/2a_awake_demohypers.webp" width="480"/> <img src="./media/science/5a_rescue_eyecue.webp" width="480"/> <br>
   > The massive frame windows on 3-tile alignment might seem like overkill, but they reduce sensitivity to horizontal trajectories or other factors that influence the time at which the corner is reached. The actual frame windows for the above midair super/demohyper at 3-tile elevation gain may be less than 8f because of horizontal considerations and seekers, but they allow slightly different trajectories approaching the corner to still be viable.
+
+---
 
 ## Dash attack
 
