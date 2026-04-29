@@ -16,4 +16,4 @@ I wanted to share my thoughts on how I approach consistency in two branches: the
 
 ## Acknowledgements
 
-Thanks to wonder+yujene for introducing me to convergence as an initial concept, and to secureaccount for providing extremely detailed feedback.
+Thanks to wonder, yujene, zaj, and secureaccount for introducing me to convergence as an initial concept and providing feedback overall.
